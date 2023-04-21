@@ -8,7 +8,7 @@ public class ARPlaceOnPlane : MonoBehaviour
 {
     public ARRaycastManager arRaycaster;
     public GameObject test;
-
+    private ARPlaneManager arPlaneManager;
     GameObject spawnObject;
 
     // Start is called before the first frame update
@@ -43,6 +43,11 @@ public class ARPlaceOnPlane : MonoBehaviour
                 {
                     spawnObject.transform.position = hitPose.position;
                     spawnObject.transform.rotation = hitPose.rotation;
+
+                    foreach (var plane in arPlaneManager.trackables)
+                    {
+                        plane.gameObject.SetActive(false);
+                    }
                 }
                
             }
