@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6353749390322357790}
   - component: {fileID: -8896711581724590200}
   - component: {fileID: 1097437316425494795}
+  - component: {fileID: -4954992204121640114}
   m_Layer: 0
   m_Name: IronRing (1)
   m_TagString: material
@@ -202,6 +203,20 @@ MonoBehaviour:
   damping: -1
   inertia: 0
   remainingTranslation: {x: 0, y: 0, z: 0}
+--- !u!114 &-4954992204121640114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138156437229942804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2baa936f016a9a14e86ac8ea42211f4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &8138156437229942806
 GameObject:
   m_ObjectHideFlags: 0
