@@ -18,10 +18,10 @@ public class CrashCtrl : MonoBehaviour
     public GameObject watertank;
     public GameObject vial;
 
-    private void OnTriggerStay(Collider other)
+/*    private void OnTriggerStay(Collider other)
     {
         Debug.Log("충돌했음");
-        if (other.tag == "material")
+        if (other.tag == "Funnel")
         {
             Debug.Log("material에 충돌했음");
             switch (this.gameObject.tag)
@@ -99,6 +99,16 @@ public class CrashCtrl : MonoBehaviour
                     this.gameObject.tag = "material";
                     break;
             }
+        }
+    }*/
+
+    private void OnTriggerEnter(Collider coll)
+    {
+        if(this.gameObject.tag == coll.tag)
+        {
+            this.transform.position = coll.transform.position;
+            this.transform.rotation = coll.transform.rotation;
+            Destroy(coll, 1.0f);
         }
     }
     // Start is called before the first frame update

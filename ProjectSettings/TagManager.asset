@@ -17,6 +17,10 @@ TagManager:
   - tube2
   - rtube
   - vial
+  - Funnel
+  - Tube1
+  - Pinch
+  - Glasstube
   layers:
   - Default
   - TransparentFX
