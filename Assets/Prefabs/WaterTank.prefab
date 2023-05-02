@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 884026297758133477}
   - component: {fileID: -554101477671722797}
   - component: {fileID: -2931170312956498204}
-  - component: {fileID: 6430894443475423302}
   - component: {fileID: 7384601021322386497}
   m_Layer: 0
   m_Name: WaterTank
@@ -220,28 +219,6 @@ MonoBehaviour:
   damping: -1
   inertia: 0
   remainingTranslation: {x: 0, y: 0, z: 0}
---- !u!114 &6430894443475423302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7877119496710332160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad238ef8367a5a045b639a239455615b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  funnel: {fileID: 216544257107968191, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
-  tube1: {fileID: 0}
-  pinch: {fileID: 0}
-  glasstube: {fileID: 216544257107968191, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
-  flask: {fileID: 216544257107968191, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
-  tube2: {fileID: 216544257107968191, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
-  rtube: {fileID: 0}
-  tank_base: {fileID: 0}
-  watertank: {fileID: 0}
-  vial: {fileID: 0}
 --- !u!64 &7384601021322386497
 MeshCollider:
   m_ObjectHideFlags: 0

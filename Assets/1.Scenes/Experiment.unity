@@ -256,6 +256,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14932899}
   m_CullTransparentMesh: 1
+--- !u!1 &28829273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28829274}
+  - component: {fileID: 28829276}
+  - component: {fileID: 28829275}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &28829274
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28829273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2112193439}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &28829275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28829273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &28829276
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28829273}
+  m_CullTransparentMesh: 1
 --- !u!1001 &35039493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -319,7 +453,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8557e1bc99502fb43bc6ed65153a991c, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
 --- !u!1 &35039494 stripped
 GameObject:
@@ -348,6 +483,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &40919614
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +766,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8557e1bc99502fb43bc6ed65153a991c, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 07337b852ae4daf4ebfdc1dc7db5b960, type: 3}
 --- !u!1 &68417682 stripped
 GameObject:
@@ -659,6 +796,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &148178902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6335,7 +6473,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -6352,6 +6490,7 @@ RectTransform:
   m_Children:
   - {fileID: 1714130814}
   - {fileID: 811833766}
+  - {fileID: 2112193439}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6438,7 +6577,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8557e1bc99502fb43bc6ed65153a991c, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
 --- !u!1 &513563642 stripped
 GameObject:
@@ -6467,6 +6607,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &633987594
 GameObject:
   m_ObjectHideFlags: 0
@@ -7791,7 +7932,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: tankbase
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f0eec927f90a644428645e9bd80e6e36, type: 3}
 --- !u!1 &856669926 stripped
 GameObject:
@@ -7820,6 +7962,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &1032835285
 GameObject:
   m_ObjectHideFlags: 0
@@ -8130,7 +8273,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: tube1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 9c93a04885b1dac41aa29ddd48f890ac, type: 3}
 --- !u!1 &1081332813 stripped
 GameObject:
@@ -8159,6 +8303,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &1114040580
 GameObject:
   m_ObjectHideFlags: 0
@@ -8277,7 +8422,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: tube2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1d52938217551d74b8c18be0944e4b68, type: 3}
 --- !u!1 &1119171638 stripped
 GameObject:
@@ -8306,6 +8452,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &1140292047
 GameObject:
   m_ObjectHideFlags: 0
@@ -8787,7 +8934,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1c9be0d9789aa2246bf4e86ca55ff937, type: 3}
 --- !u!1 &1295702918 stripped
 GameObject:
@@ -8816,6 +8964,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1001 &1306074868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8875,7 +9024,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -169.333
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 33879d85c25078d4487608d5dfb7bf17, type: 3}
 --- !u!1 &1306074869 stripped
 GameObject:
@@ -8904,6 +9054,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &1345607568
 GameObject:
   m_ObjectHideFlags: 0
@@ -9474,7 +9625,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8557e1bc99502fb43bc6ed65153a991c, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7eda25e3886f24644b6127b1e8a7aa73, type: 3}
 --- !u!1 &1512889537 stripped
 GameObject:
@@ -9503,6 +9655,7 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
 --- !u!1 &1577749883
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +10462,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932451689}
   m_CullTransparentMesh: 1
+--- !u!1 &2112193438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112193439}
+  - component: {fileID: 2112193441}
+  - component: {fileID: 2112193440}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2112193439
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112193438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 28829274}
+  m_Father: {fileID: 370004236}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -350, y: 150}
+  m_SizeDelta: {x: -700, y: -300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2112193440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112193438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2112193441
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112193438}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2118790539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10536,7 +10765,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8557e1bc99502fb43bc6ed65153a991c, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 87382640776b09b4daabe5a81d31b204, type: 3}
 --- !u!1 &2134510771 stripped
 GameObject:
@@ -10565,3 +10795,4 @@ MonoBehaviour:
   tank_base: {fileID: 0}
   watertank: {fileID: 0}
   vial: {fileID: 0}
+  text: {fileID: 28829275}
