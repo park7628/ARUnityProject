@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 8495463577296072164}
   - component: {fileID: 3027868484349309166}
   - component: {fileID: -287722590651461252}
-  - component: {fileID: 3346422046835112579}
   m_Layer: 0
   m_Name: Y_Flask
   m_TagString: flask
@@ -220,20 +219,6 @@ MonoBehaviour:
   damping: -1
   inertia: 0
   remainingTranslation: {x: 0, y: 0, z: 0}
---- !u!114 &3346422046835112579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7380773909654199853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2baa936f016a9a14e86ac8ea42211f4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  selectedColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &7686711171509752356
 PrefabInstance:
   m_ObjectHideFlags: 0
