@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -533,7 +533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!120 &40919615
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -988,7 +988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!20 &165585584
 Camera:
   m_ObjectHideFlags: 0
@@ -9700,7 +9700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1114040581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11989,7 +11989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1577749884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12085,8 +12085,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.30343, y: 0.30343, z: 0.30343}
   m_Children:
-  - {fileID: 255174911}
   - {fileID: 1536619246}
+  - {fileID: 255174911}
   - {fileID: 1473945231}
   - {fileID: 1452110067}
   - {fileID: 1520977705}
@@ -12992,7 +12992,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 240103989}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.34163994
+  m_Size: 0.50517243
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
