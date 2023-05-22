@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -8447573971382953392}
   - component: {fileID: -6473058598604422668}
   - component: {fileID: 6876785479537719977}
+  - component: {fileID: -1896226295760835286}
   m_Layer: 0
   m_Name: tube2
   m_TagString: tube2
@@ -233,3 +234,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3491069238160038465, guid: df4e816a057dac94cb1061d4f6249083, type: 3}
+--- !u!114 &-1896226295760835286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876936211236867544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a51a205449eb90428fbf4b8829ad575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startVec: {x: 0, y: 0, z: 0}

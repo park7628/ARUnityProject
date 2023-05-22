@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -63693417922856460}
   - component: {fileID: 1753584130379085852}
   - component: {fileID: -191448169594145017}
+  - component: {fileID: -5816392412794268036}
   m_Layer: 0
   m_Name: rtube
   m_TagString: rtube
@@ -233,3 +234,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 849032210722914114, guid: ce5c84ddc4711894d935228e336de707, type: 3}
+--- !u!114 &-5816392412794268036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8223153409280516318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a51a205449eb90428fbf4b8829ad575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startVec: {x: 0, y: 0, z: 0}

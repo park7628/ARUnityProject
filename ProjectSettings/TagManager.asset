@@ -21,6 +21,11 @@ TagManager:
   - Tube1
   - Pinch
   - Glasstube
+  - gum_cover
+  - WATER
+  - MANGANIZ
+  - gameobject
+  - gwasanhwa
   layers:
   - Default
   - TransparentFX

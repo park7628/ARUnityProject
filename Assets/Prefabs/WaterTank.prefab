@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -554101477671722797}
   - component: {fileID: -2931170312956498204}
   - component: {fileID: 7384601021322386497}
+  - component: {fileID: -6227385397337269969}
   m_Layer: 0
   m_Name: WaterTank
   m_TagString: watertank
@@ -233,3 +234,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2232952877369940510, guid: ab3f951cf92da2e458678a48bb6ebd59, type: 3}
+--- !u!114 &-6227385397337269969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877119496710332160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a51a205449eb90428fbf4b8829ad575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startVec: {x: 0, y: 0, z: 0}

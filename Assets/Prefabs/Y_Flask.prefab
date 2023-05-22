@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3027868484349309166}
   - component: {fileID: -287722590651461252}
   - component: {fileID: 3558933042074159346}
+  - component: {fileID: 4632063395260250909}
   m_Layer: 0
   m_Name: Y_Flask
   m_TagString: flask
@@ -234,6 +235,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8889628670095534655, guid: 53e6c75975ec03944a7cf4645b7d4206, type: 3}
+--- !u!114 &4632063395260250909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7380773909654199853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a51a205449eb90428fbf4b8829ad575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startVec: {x: 0, y: 0, z: 0}
 --- !u!1001 &7686711171509752356
 PrefabInstance:
   m_ObjectHideFlags: 0
