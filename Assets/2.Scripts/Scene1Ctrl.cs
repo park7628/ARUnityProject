@@ -5,12 +5,16 @@ using UnityEngine;
 public class Scene1Ctrl : MonoBehaviour
 {
     private static GameObject Water;
+    private static GameObject liquid1;
     private static GameObject Mangan;
+    private static GameObject mangan;
 
     void Start()
     {
         Water = GameObject.FindWithTag("Water");
+        liquid1 = GameObject.FindWithTag("liquid1");
         Mangan = GameObject.FindWithTag("Mangan");
+        mangan = GameObject.FindWithTag("mangan");
     }
 
     void Update()
@@ -32,16 +36,18 @@ public class Scene1Ctrl : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "Water")
                     {
-                        if (Water != null)
+                        if (Water != null && liquid1 != null)
                         {
                             Water.GetComponent<Animator>().Play("Water");
+                            liquid1.SetActive(true);
                         }
                     }
                     if (hit.collider.gameObject.tag == "Mangan")
                     {
-                        if (Mangan != null)
+                        if (Mangan != null && mangan != null)
                         {
                             Mangan.GetComponent<Animator>().Play("MANG");
+                            mangan.SetActive(true);
                         }
                         GameManager.isScene1 = true;
                     }

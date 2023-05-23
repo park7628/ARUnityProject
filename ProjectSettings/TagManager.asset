@@ -26,6 +26,11 @@ TagManager:
   - MANGANIZ
   - gameobject
   - gwasanhwa
+  - liquid1
+  - mangan
+  - funnelliquid
+  - bubble
+  - oxygen
   layers:
   - Default
   - TransparentFX

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Scene3Ctrl : MonoBehaviour
 {
-    public static GameObject flask;
-    public static GameObject gameobject;
+    private static GameObject flask;
+    private static GameObject gameobject;
 
     // Start is called before the first frame update
     void Start()
