@@ -17,6 +17,20 @@ TagManager:
   - tube2
   - rtube
   - vial
+  - Funnel
+  - Tube1
+  - Pinch
+  - Glasstube
+  - gum_cover
+  - WATER
+  - MANGANIZ
+  - gameobject
+  - gwasanhwa
+  - liquid1
+  - mangan
+  - funnelliquid
+  - bubble
+  - oxygen
   layers:
   - Default
   - TransparentFX
