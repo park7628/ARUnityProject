@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     static public bool isScene7 = false;
     static public bool isScene8 = false;
 
-    public bool isFinish = true;
+    public bool isFinish = false;
 
     public GameObject Scene0;
     public GameObject Scene1;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CheckSceneState()
     {
-        while (isFinish)
+        while (!isFinish)
         {
             yield return new WaitForSeconds(0.3f); // 0.3초 후 while문 빠져나간다는 뜻
 
@@ -114,14 +114,14 @@ public class GameManager : MonoBehaviour
             }
             else if (isScene8)
             {
-                isFinish = false;//모든 실험 끝남
+                isFinish = true;//모든 실험 끝남
             }
         }
     }
 
     IEnumerator SceneAction()
     {
-        while (isFinish)
+        while (!isFinish)
         {
             yield return new WaitForSeconds(0.3f); // 0.3초 후 while문 빠져나간다는 뜻
 
