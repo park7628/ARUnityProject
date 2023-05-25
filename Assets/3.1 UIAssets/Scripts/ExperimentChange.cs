@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class SceneChange : MonoBehaviour
+public class ExperimentChange : MonoBehaviour
 {
     public void Ex1(){
         SceneManager.LoadScene("Experiment");

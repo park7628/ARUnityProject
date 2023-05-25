@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class MainUI : MonoBehaviour
 {
@@ -31,10 +30,6 @@ public class MainUI : MonoBehaviour
 
     #endregion
 
-
-    public void Ex1(){
-        SceneManager.LoadScene("Experiment");
-    }
 
     public void Nav1()
     { 
