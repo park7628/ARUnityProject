@@ -1,25 +1,59 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Scene2Ctrl : MonoBehaviour
 {
     private static GameObject gum;
-    
+    public Button button;
+    public Animator animator;
+    public string animationTrigger;
+
+    public static GameObject flask;
 
     void Start()
     {
+        
         gum = GameObject.FindWithTag("gum_cover");
+        flask = GameObject.FindWithTag("flask");
+
+        animator = flask.GetComponent<Animator>();
+
+        button = button.GetComponent<Button>();
+        button.onClick.AddListener(PlayAnimation3);
+    }
+ 
+
+    public void PlayAnimation3()
+    {
+        
+            UnityEngine.Debug.Log("Scene2버튼 클릭");
+            if (gum != null)
+            {
+                animator.SetTrigger(animationTrigger);
+                flask.GetComponent<Animator>().Play("gum");
+                
+                Invoke("ChangeScene23", 5.0f);
+
+
+            }
         
     }
-
-    void Update()
+    private void ChangeScene23()
     {
+        
+        
+        GameManager.isScene1 = false;
+        GameManager.isScene2 = true;
+        button.onClick.RemoveListener(PlayAnimation3);
+
 
     }
 
-    public static void touchgum_cover()
+    /*public static void touchgum_cover()
     {
         if (Input.touchCount > 0)
         {
@@ -43,5 +77,5 @@ public class Scene2Ctrl : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 }
