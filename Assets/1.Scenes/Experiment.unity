@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999946, b: 0.99999946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7966,6 +7966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Y_Flask (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7686711172642759545, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7864998437712331927, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -9884,6 +9888,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8642512835800101006, guid: 1d52938217551d74b8c18be0944e4b68, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8876936211236867544, guid: 1d52938217551d74b8c18be0944e4b68, type: 3}
       propertyPath: m_Name
       value: tube2 (1)
@@ -10576,6 +10584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterTank (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7877119496710332162, guid: 1c9be0d9789aa2246bf4e86ca55ff937, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7877119496710332188, guid: 1c9be0d9789aa2246bf4e86ca55ff937, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -10868,6 +10880,10 @@ PrefabInstance:
     - target: {fileID: 5337943952613445211, guid: 87382640776b09b4daabe5a81d31b204, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073552455985583, guid: 87382640776b09b4daabe5a81d31b204, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6184135639127480535, guid: 87382640776b09b4daabe5a81d31b204, type: 3}
       propertyPath: m_Enabled
@@ -11605,6 +11621,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1357866179732983111, guid: 9c93a04885b1dac41aa29ddd48f890ac, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1536472279875922600, guid: 9c93a04885b1dac41aa29ddd48f890ac, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -11984,6 +12004,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3991480063450686762, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4216339049671314757, guid: a979f32a0139def47ba3bb633166dd0c, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -12291,6 +12315,10 @@ PrefabInstance:
     - target: {fileID: 1262001081231070062, guid: 7eda25e3886f24644b6127b1e8a7aa73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587868725784261760, guid: 7eda25e3886f24644b6127b1e8a7aa73, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1929889062368283092, guid: 7eda25e3886f24644b6127b1e8a7aa73, type: 3}
       propertyPath: m_Name
@@ -13567,7 +13595,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 240103989}
   m_Direction: 2
   m_Value: 0.99999994
-  m_Size: 0.24791013
+  m_Size: 0.46964997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13803,6 +13831,10 @@ PrefabInstance:
     - target: {fileID: 8776972477762732370, guid: 33879d85c25078d4487608d5dfb7bf17, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142284861442629002, guid: 33879d85c25078d4487608d5dfb7bf17, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -14645,6 +14677,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 66a316a773d1c3e4899a4a23fb34d1ee, type: 2}
+    - target: {fileID: 9185782326544561417, guid: 07337b852ae4daf4ebfdc1dc7db5b960, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 07337b852ae4daf4ebfdc1dc7db5b960, type: 3}
