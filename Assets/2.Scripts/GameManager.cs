@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
 
     public State state = State.SCENE0;
 
+    public static bool IsSceneTransitionAllowed { get; set; } = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,51 +68,68 @@ public class GameManager : MonoBehaviour
 
             if (isScene0)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE1;
                 Scene0.SetActive(false);
                 Scene1.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene1)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE2;
                 Scene1.SetActive(false);
                 Scene2.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene2)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE3;
+                //Scene1.SetActive(false);
                 Scene2.SetActive(false);
                 Scene3.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene3)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE4;
                 Scene3.SetActive(false);
                 Scene4.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene4)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE5;
                 Scene4.SetActive(false);
                 Scene5.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene5)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE6;
                 Scene5.SetActive(false);
                 Scene6.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene6)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE7;
                 Scene6.SetActive(false);
                 Scene7.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene7)
             {
+                IsSceneTransitionAllowed = false;
                 state = State.SCENE8;
                 Scene7.SetActive(false);
                 Scene8.SetActive(true);
+                IsSceneTransitionAllowed = true;
             }
             else if (isScene8)
             {
@@ -118,7 +137,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    
     IEnumerator SceneAction()
     {
         while (!isFinish)
@@ -128,31 +147,34 @@ public class GameManager : MonoBehaviour
             switch (state)
             {
                 case State.SCENE0:
-                    Scene0Ctrl.touchYFlask();
+                    
+                    //Scene0Ctrl.touchYFlask();
                     break;
                 case State.SCENE1:
-                    Scene1Ctrl.touchWATERMANGANIZ();
+                    
+                    //Scene1Ctrl.touchWATERMANGANIZ();
                     break;
                 case State.SCENE2:
-                    Scene2Ctrl.touchgum_cover();
+                    
+                    //Scene2Ctrl.touchgum_cover();
                     break;
                 case State.SCENE3:
-                    Scene3Ctrl.touchYFlask();
+                    //Scene3Ctrl.touchYFlask();
                     break;
                 case State.SCENE4:
-                    Scene4Ctrl.touchGWASANHWA();
+                    //Scene4Ctrl.touchGWASANHWA();
                     break;
                 case State.SCENE5:
-                    Scene5Ctrl.touchpinch();
+                    //Scene5Ctrl.touchpinch();
                     break;
                 case State.SCENE6:
-                    Scene6Ctrl.touchvial();
+                    //Scene6Ctrl.touchvial();
                     break;
                 case State.SCENE7:
-                    Scene7Ctrl.touchglass_plate();
+                    //Scene7Ctrl.touchglass_plate();
                     break;
                 case State.SCENE8:
-                    Scene8Ctrl.touchvial();
+                    //Scene8Ctrl.touchvial();
                     break;
 
             }

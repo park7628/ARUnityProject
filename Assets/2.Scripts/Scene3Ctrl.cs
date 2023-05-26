@@ -1,25 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Scene3Ctrl : MonoBehaviour
 {
     private static GameObject flask;
     private static GameObject gameobject;
+    public Button button;
+    public Animator animator;
+    public string animationTrigger;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
         flask = GameObject.FindWithTag("flask");
         gameobject = GameObject.FindWithTag("gameobject");
+        gameobject.SetActive(false);
+        animator = flask.GetComponent<Animator>();
+
+
+        button = button.GetComponent<Button>();
+        button.onClick.AddListener(PlayAnimation4);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayAnimation4()
     {
         
+            
+            if (flask != null)
+            {
+                animator.SetTrigger(animationTrigger);
+                flask.GetComponent<Animator>().Play("yflask");
+                Invoke("isgameObject", 2.5f);
+                Invoke("ChangeScene34", 5.0f);
+            }
+        
+    }
+    private void isgameObject()
+    {
+        //gameobject.GetComponent<MeshRenderer>().enabled = true;
+        gameobject.SetActive(true);
     }
 
+    private void ChangeScene34()
+    {
+        
+        GameManager.isScene2 = false;
+        GameManager.isScene3 = true;
+        button.onClick.RemoveListener(PlayAnimation4);
+    }
+
+
+    /*
     static public void touchYFlask()
     {
         if (Input.touchCount > 0)
@@ -47,5 +82,5 @@ public class Scene3Ctrl : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 }

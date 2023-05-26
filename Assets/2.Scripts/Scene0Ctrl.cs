@@ -8,8 +8,7 @@ using UnityEngine.UI;
 public class Scene0Ctrl : MonoBehaviour
 {
 
-    public static GameObject flask;
-    public AnimationClip targetAnimation;
+    private static GameObject flask;
 
     public Button button;
 
@@ -19,36 +18,69 @@ public class Scene0Ctrl : MonoBehaviour
 
     public string animationTrigger;
 
+
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         flask = GameObject.FindWithTag("flask");
         gameobject = GameObject.FindWithTag("gameobject");
 
         animator = flask.GetComponent<Animator>();
 
 
-        button = GetComponent<Button>();
-        //button.onClick.AddListener(PlayAnimation);
+        button = button.GetComponent<Button>();
+        button.onClick.AddListener(PlayAnimation);
 
     }
 
+    
     // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+  
     public void PlayAnimation()
     {
-        if (flask != null)
+        
+            
+            if (flask != null)
+            {
+                animator.SetTrigger(animationTrigger);
+                flask.GetComponent<Animator>().Play("YFLASK1");
+                gameobject.SetActive(false);
+                Invoke("ChangeScene01", 4.5f);
+
+                //StartCoroutine(WaitForAnimation(animator));
+                // 오브젝트의 애니메이션 실행
+                //flask.GetComponent<Animator>().Play("YFLASK1");
+                //flask.GetComponent<Animation>().Play(targetAnimation.name);
+            }
+        
+    }
+    private void ChangeScene01()
+    {
+        GameManager.isScene0 = true;
+        button.onClick.RemoveListener(PlayAnimation);
+    }
+
+    /*IEnumerator WaitForAnimation(Animator animator)
+    {
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("YFLASK1"))
         {
-            animator.SetTrigger(animationTrigger);
-            flask.GetComponent<Animator>().Play("YFLASK1");
-            // 오브젝트의 애니메이션 실행
-            //flask.GetComponent<Animator>().Play("YFLASK1");
-            //flask.GetComponent<Animation>().Play(targetAnimation.name);
+            //전환 중일 때 실행되는 부분
+            
+            yield return null;
         }
+        
+
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < (exitTime + TransitionDuration)) {
+        //while (false == animator.IsInTransition(0)) { 
+
+            //yield return new WaitForEndOfFrame();
+            gameobject.SetActive(false);
+            yield return null;
+            }
+        //gameobject.SetActive(false);
+        
     }
 
 
@@ -76,8 +108,8 @@ public class Scene0Ctrl : MonoBehaviour
                     }
                 }
             }
-        }*/
+        }
 
 
-    }
+    }*/
 }
