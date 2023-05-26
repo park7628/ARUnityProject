@@ -3,34 +3,34 @@
 
 ### 아이콘 이미지 출처
 - 학생
-<a href="https://www.flaticon.com/kr/free-icons/" title="어린이 아이콘">어린이 아이콘  제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/children" title="children icons">Children icons created by Freepik - Flaticon</a>
 
 - 교사
-<a href="https://www.flaticon.com/kr/free-icons/" title=" 아이콘"> 아이콘  제작자: monkik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by monkik - Flaticon</a>
 
 - 뒤로가기
 <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a>
 
 - 네비게이션
-<a href="https://www.flaticon.com/kr/free-icons/" title="실험 아이콘">실험 아이콘  제작자: Freepik - Flaticon</a>
+1. <a href="https://www.flaticon.com/kr/free-icons/" title="실험 아이콘">실험 아이콘  제작자: Freepik - Flaticon</a>
 
-<a href="https://www.flaticon.com/kr/free-icons/" title="사용자 아이콘">사용자 아이콘  제작자: Freepik - Flaticon</a>
+2. <a href="https://www.flaticon.com/kr/free-icons/" title="사용자 아이콘">사용자 아이콘  제작자: Freepik - Flaticon</a>
 
-<a href="https://www.flaticon.com/kr/free-icons/" title="조종간 아이콘">조종간 아이콘  제작자: Hilmy Abiyyu A. - Flaticon</a>
+3. <a href="https://www.flaticon.com/kr/free-icons/" title="조종간 아이콘">조종간 아이콘  제작자: Hilmy Abiyyu A. - Flaticon</a>
 
-<a href="https://www.flaticon.com/kr/free-icons/-" title="개인 정보 아이콘">개인 정보 아이콘  제작자: Freepik - Flaticon</a>
+4. <a href="https://www.flaticon.com/kr/free-icons/-" title="개인 정보 아이콘">개인 정보 아이콘  제작자: Freepik - Flaticon</a>
 
 - 설정
-<a href="https://www.flaticon.com/kr/free-icons/" title="소리 아이콘">소리 아이콘  제작자: Bharat Icons - Flaticon</a>
+1. <a href="https://www.flaticon.com/kr/free-icons/" title="소리 아이콘">소리 아이콘  제작자: Bharat Icons - Flaticon</a>
 
-<a href="https://www.flaticon.com/kr/free-icons/" title="진동 아이콘">진동 아이콘  제작자: Pixel perfect - Flaticon</a>
+2. <a href="https://www.flaticon.com/kr/free-icons/" title="진동 아이콘">진동 아이콘  제작자: Pixel perfect - Flaticon</a>
 
-<a href="https://www.flaticon.com/kr/free-icons/" title="맑은 아이콘">맑은 아이콘  제작자: feen - Flaticon</a>
+3. <a href="https://www.flaticon.com/kr/free-icons/" title="맑은 아이콘">맑은 아이콘  제작자: feen - Flaticon</a>
 
 
 ### 단원 이미지 출처
 - 1. 지구와 달의 운동
-<a href='https://.pngtree.com/so/벡터'>벡터 png에서 .pngtree.com/</a>
+<a href='https://pngtree.com/so/Vector'>Vector png from pngtree.com/</a>
 
 - 2. 여러 가지 기체
 <a href="https://kr.freepik.com/free-vector/hot-air-balloons-background_4320751.htm#page=2&query=%EC%97%B4%EA%B8%B0%EA%B5%AC&position=44&from_view=search&track=sph#position=44&page=2&query=%EC%97%B4%EA%B8%B0%EA%B5%AC">작가 macrovector</a> 출처 Freepik
