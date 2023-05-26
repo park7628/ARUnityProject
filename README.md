@@ -30,7 +30,7 @@
 - 6. 계절의 변화
 출처 <a href="https://kr.freepik.com/free-vector/hand-drawn-seasons-collection_18981845.htm#query=%EA%B3%84%EC%A0%88&position=0&from_view=keyword&track=sph">Freepik</a>
 
--7. 연소와 소화
+- 7. 연소와 소화
 <a href="https://kr.freepik.com/free-vector/fireman-holding-fire-extinguisher-flat-vector-illustration-man-or-firefighter-providing-safety-preventing-fire-putting-out-flame-caution-emergency-safety-training-concept_26876926.htm#query=%EC%97%B0%EC%86%8C%EC%99%80%20%EC%86%8C%ED%99%94&position=1&from_view=search&track=ais">작가 pch.vector</a> 출처 Freepik
 
 - 8. 우리 몸의 구조와 기능
