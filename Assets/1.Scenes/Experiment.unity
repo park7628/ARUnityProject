@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999946, b: 0.99999946, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -349,17 +349,37 @@ MonoBehaviour:
   freeViewImage: {fileID: 1727822476}
   GuideTxt: {fileID: 1678779469}
   ButtonData:
+  - sprite: {fileID: 21300000, guid: e403ba95f4ef5ae4d95a47808a097bfc, type: 3}
+    description: "\uAE30\uCCB4 \uBC1C\uC0DD \uC7A5\uCE58\uC5D0\uC11C \uC0BC\uAC01
+      \uD50C\uB77C\uC2A4\uD06C\uB97C \uBD84\uB9AC\uD55C\uB2E4."
   - sprite: {fileID: 21300000, guid: 73bb9fd3289741f44aba9ffa6f500153, type: 3}
-    description: "\uC5EC\uAE30\uC5D0 \uC124\uBA85 \uC785\uB825 \uD558\uACE0 \uC606\uC5D0
-      \uBC84\uD2BC\uC744 \uB204\uB974\uBA74 \uB118\uC5B4\uAC00\uAC8C \uD558\uC790"
+    description: "\uC0BC\uAC01 \uD50C\uB77C\uC2A4\uD06C\uC5D0 \uBB3C\uC744 \uC870\uAE08
+      \uB123\uC740 \uB4A4 \uC774\uC0B0\uD654 \uB9DD\uAC00\uB2C8\uC988\uB97C \uD55C
+      \uC21F\uAC00\uB77D \uB123\uB294\uB2E4. "
+  - sprite: {fileID: 21300000, guid: cb1bc3b1683d44d43952e2200575db9a, type: 3}
+    description: "\uAE30\uCCB4\uAC00 \uC0C8\uC9C0 \uC54A\uB3C4\uB85D \uACE0\uBB34\uB9C8\uAC1C\uB85C
+      \uD50C\uB77C\uC2A4\uD06C \uC785\uAD6C\uB97C \uC798 \uB9C9\uB294\uB2E4. "
+  - sprite: {fileID: 21300000, guid: 2eab1c17e42f3e946a394ff18908b0e3, type: 3}
+    description: "\uC0BC\uAC01 \uD50C\uB77C\uC2A4\uD06C\uB97C \uC7A5\uCE58\uC5D0
+      \uB2E4\uC2DC \uC5F0\uACB0\uD55C\uB2E4."
   - sprite: {fileID: 21300000, guid: 3e9bac4424bc99842a7b07275d2b5370, type: 3}
-    description: "\uB118\uAE30\uBA74 \uAE00\uC790\uAC00 \uD558\uB098\uC529 \uB098\uC624\uAC8C
-      \uB418\uB294\uAC8C \uC788\uC5B4\uC11C \uB123\uC5B4\uBD24\uC5B4"
-  - sprite: {fileID: 21300000, guid: c19aadbdcbfc9184e8b4231d5c599719, type: 3}
-    description: "\uC2E4\uD5D8\uC744 \uB300\uB7B5\uC801\uC73C\uB85C \uC54C\uB824\uC8FC\uB294
-      \uC774\uBBF8\uC9C0 \uB123\uC5B4\uB450\uACE0 \uC124\uBA85\uC744 \uC5EC\uAE30\uC5D0
-      \uC798 \uC4F0\uBA74 \uC2E4\uD5D8\uACFC\uC815 \uC5B4\uB290\uC815\uB3C4 \uC124\uBA85
-      \uB418\uACA0\uC9C0??"
+    description: "\uBB3D\uC740 \uACFC\uC0B0\uD654 \uC218\uC18C\uC218\uB97C \uAE54\uB54C\uAE30\uC5D0
+      1/2 \uC815\uB3C4 \uBD93\uB294\uB2E4."
+  - sprite: {fileID: 21300000, guid: bf1fd395a7d2ad44688dbe3e992d2ab1, type: 3}
+    description: "\uD540\uCE58 \uC9D1\uAC8C\uB97C \uC870\uC808\uD558\uC5EC \uBB3D\uC740
+      \uACFC\uC0B0\uD654 \uC218\uC18C\uC218\uB97C \uC870\uAE08\uC529 \uD758\uB824
+      \uBCF4\uB0B8\uB2E4. (\uC774\uB54C \uD55C\uBC88\uC5D0 \uB108\uBB34 \uB9CE\uC740
+      \uC591\uC744 \uB123\uC9C0 \uC54A\uB3C4\uB85D \uC870\uC2EC\uD55C\uB2E4.)"
+  - sprite: {fileID: 21300000, guid: 344b08d850692de40a50e3b78fa9249d, type: 3}
+    description: "\uC9D1\uAE30\uBCD1\uC5D0 \uCC98\uC74C \uCC2C \uACF5\uAE30\uB294
+      \uBC84\uB9B0\uB2E4.(\uBC84\uB9AC\uB294 \uC774\uC720\uB294 \uC21C\uC218\uD55C
+      \uC0B0\uC18C\uB97C \uC5BB\uAE30 \uC704\uD574\uC11C \uC774\uB2E4.)"
+  - sprite: {fileID: 21300000, guid: 9741b5e0e7a94dc4aacf54d321a3158e, type: 3}
+    description: "\uC9D1\uAE30\uBCD1\uC5D0 \uC0B0\uC18C\uAC00 \uAC00\uB4DD \uCC28\uBA74
+      \uBB3C\uC18D\uC5D0\uC11C \uC720\uB9AC\uD310\uC73C\uB85C \uC9D1\uAE30\uBCD1
+      \uC785\uAD6C\uB97C \uB9C9\uB294\uB2E4. "
+  - sprite: {fileID: 21300000, guid: 3cec1f16ba50c1c478790ee732e662b1, type: 3}
+    description: "\uC9D1\uAE30\uBCD1\uC744 \uC218\uC870 \uBC16\uC73C\uB85C \uAEBC\uB0B8\uB2E4."
 --- !u!1 &28829273
 GameObject:
   m_ObjectHideFlags: 0
@@ -12947,7 +12967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68, y: 0}
+  m_AnchoredPosition: {x: 72.2, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678779469
@@ -13034,7 +13054,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -42.21396, y: 0, z: -25.202362, w: 0}
+  m_margin: {x: -42.21396, y: 0, z: -38.48665, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13180,7 +13200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116, y: -13}
+  m_AnchoredPosition: {x: -131.8, y: -13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727822476
@@ -13595,7 +13615,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 240103989}
   m_Direction: 2
   m_Value: 0.99999994
-  m_Size: 0.46964997
+  m_Size: 0.3154068
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14129,7 +14149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2106890442
 RectTransform:
   m_ObjectHideFlags: 0
