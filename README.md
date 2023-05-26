@@ -11,6 +11,23 @@
 - 뒤로가기
 <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a>
 
+- 네비게이션
+<a href="https://www.flaticon.com/kr/free-icons/" title="실험 아이콘">실험 아이콘  제작자: Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/kr/free-icons/" title="사용자 아이콘">사용자 아이콘  제작자: Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/kr/free-icons/" title="조종간 아이콘">조종간 아이콘  제작자: Hilmy Abiyyu A. - Flaticon</a>
+
+<a href="https://www.flaticon.com/kr/free-icons/-" title="개인 정보 아이콘">개인 정보 아이콘  제작자: Freepik - Flaticon</a>
+
+- 설정
+<a href="https://www.flaticon.com/kr/free-icons/" title="소리 아이콘">소리 아이콘  제작자: Bharat Icons - Flaticon</a>
+
+<a href="https://www.flaticon.com/kr/free-icons/" title="진동 아이콘">진동 아이콘  제작자: Pixel perfect - Flaticon</a>
+
+<a href="https://www.flaticon.com/kr/free-icons/" title="맑은 아이콘">맑은 아이콘  제작자: feen - Flaticon</a>
+
+
 ### 단원 이미지 출처
 - 1. 지구와 달의 운동
 <a href='https://.pngtree.com/so/벡터'>벡터 png에서 .pngtree.com/</a>
@@ -39,3 +56,24 @@
 - 9. 에너지와 생활
 <a href="https://kr.freepik.com/free-vector/green-energy-generated-by-wind-turbine-and-solar-panel_19713191.htm#query=%ED%83%9C%EC%96%91%EA%B4%91&position=20&from_view=search&track=sph">작가 brgfx</a> 출처 Freepik
 
+
+### 실험 이미지 출처
+- 1. 산소 발생 실험
+Image by <a href="https://www.freepik.com/free-photo/close-up-blurry-researcher-holding-glassware_11630647.htm#query=%EC%8B%A4%ED%97%98&position=0&from_view=search&track=ais">Freepik</a>
+
+- 2. 이산화탄소 발생 실험
+Image by <a href="https://www.freepik.com/free-photo/close-up-researcher-holding-glassware_11630658.htm#query=%EC%8B%A4%ED%97%98&position=1&from_view=search&track=ais">Freepik</a>
+
+- 3. 압력 변화에 따른 기체의 부피 변화 관찰 실험
+<a href="https://www.freepik.com/free-photo/steel-pipelines-cables-plant_1119702.htm#query=%EC%95%95%EB%A0%A5%20%EA%B3%B5%EA%B8%B0&position=1&from_view=search&track=ais">Image by fanjianhua</a> on Freepik
+
+- 4. 온도 변화에 따른 기체의 부피 변화 관찰 실험
+<a href="https://www.freepik.com/free-photo/3d-render-thermometer-show-hot-cold-temperature_35884337.htm#query=%EC%98%A8%EB%8F%84%20%EA%B3%B5%EA%B8%B0&position=18&from_view=search&track=ais">Image by upklyak</a> on Freepik
+
+
+### 게임 이미지 출처
+- 1. 달
+Image by <a href="https://www.freepik.com/free-vector/phases-moon-with-stars_1082441.htm#page=2&query=%EB%8B%AC%20%EC%9C%84%EC%83%81&position=2&from_view=search&track=ais">Freepik</a>
+
+- 2. 기체
+<a href="https://www.freepik.com/free-photo/beautiful-shot-wind-turbines-cloudy-sky-eiffel-region-germany_9184578.htm#query=air&from_query=%EA%B3%B5%EA%B8%B0&position=20&from_view=search&track=sph">Image by wirestock</a> on Freepik
