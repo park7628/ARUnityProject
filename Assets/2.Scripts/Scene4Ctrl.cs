@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scene4Ctrl : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class Scene4Ctrl : MonoBehaviour
     public Button button;
     public Animator animator;
     public string animationTrigger;
+    public TextMeshProUGUI ScriptTxt;
 
     // Start is called before the first frame update
     void Start()
     {
+        ScriptTxt.text = "묽은 과산화 수소수를 \r\n깔때기에 붓는다.";
         gwasan = GameObject.FindWithTag("gwasanhwa");
         funnelliquid = GameObject.FindWithTag("funnelliquid");
         funnelliquid.SetActive(false);
@@ -35,7 +38,7 @@ public class Scene4Ctrl : MonoBehaviour
             animator.SetTrigger(animationTrigger);
             gwasan.GetComponent<Animator>().Play("gwasanhwa");
             Invoke("isliquid", 2.5f);
-            Invoke("ChangeScene45", 5.0f);
+            Invoke("ChangeScene45", 5.5f);
         }
 
     }

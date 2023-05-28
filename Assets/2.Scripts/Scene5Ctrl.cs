@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scene5Ctrl : MonoBehaviour
 {
@@ -13,10 +14,12 @@ public class Scene5Ctrl : MonoBehaviour
     public Animator animator;
     public string animationTrigger;
 
+    public TextMeshProUGUI ScriptTxt;
 
     // Start is called before the first frame update
     void Start()
     {
+        ScriptTxt.text = "핀치 집게를 조절하여\r\n묽은 과산화 수소수를 \r\n조금씩 흘려 보낸다.";
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
@@ -46,6 +49,7 @@ public class Scene5Ctrl : MonoBehaviour
     }
     private void isoxygen()
     {
+        ScriptTxt.text = "삼각 플라스크에서 \r\n산소가 만들어지고 호스를 타고 기체가 이동한다.";
         oxygen.SetActive(true);
     }
     private void Scaling()

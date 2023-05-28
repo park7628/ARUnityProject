@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scene6Ctrl : MonoBehaviour
 {
@@ -17,9 +18,11 @@ public class Scene6Ctrl : MonoBehaviour
     public Animator animator2;
     //public string animationTrigger1;
     public string animationTrigger2;
+    public TextMeshProUGUI ScriptTxt;
 
     void Start()
     {
+        ScriptTxt.text = "처음 집기병에 찬 기체는\r\n원래 플라스크 안에 있던 \r\n기체이기 때문에 버린다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
         //rtube = GameObject.FindWithTag("rtube");
@@ -46,7 +49,7 @@ public class Scene6Ctrl : MonoBehaviour
             vial.GetComponent<Animator>().Play("vial");
             //animator.enabled = false;
             //oxygen.SetActive(false);
-            Invoke("ChangeScene67", 5.0f);
+            Invoke("ChangeScene67", 3.0f);
         }
 
     }

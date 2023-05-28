@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scene7Ctrl : MonoBehaviour
 {
@@ -15,10 +16,12 @@ public class Scene7Ctrl : MonoBehaviour
     public string animationTrigger;
     public Animator animator1;
     public string animationTrigger1;
-
+    public TextMeshProUGUI ScriptTxt;
+    
 
     void Start()
     {
+        ScriptTxt.text = "다시 집기병을 물로 가득\r\n채우고 순수한 산소만\r\n담는다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
         vial = GameObject.FindWithTag("vial");

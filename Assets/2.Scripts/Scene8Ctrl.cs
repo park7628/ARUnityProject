@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scene8Ctrl : MonoBehaviour
 {
@@ -18,10 +19,12 @@ public class Scene8Ctrl : MonoBehaviour
     public string animationTrigger2;
 
     private static GameObject gameobject;
-
+    public TextMeshProUGUI ScriptTxt;
+    
     // Start is called before the first frame update
     void Start()
     {
+        ScriptTxt.text = "집기병에 산소가 가득 차면\r\n물속에서 유리판으로\r\n집기병 입구를 막고 꺼낸다.";
         oxygen = GameObject.FindWithTag("oxygen");
         animator = oxygen.GetComponent<Animator>();
         animator.SetTrigger(animationTrigger);
@@ -48,7 +51,7 @@ public class Scene8Ctrl : MonoBehaviour
             glass.GetComponent<Animator>().Play("glass");
             Invoke("vialmoving", 3.5f);
             Invoke("removegameobject", 4.0f);
-            Invoke("ChangeScene89", 10.0f);
+            Invoke("ChangeScene89", 7.0f);
 
         }
     }
@@ -66,9 +69,11 @@ public class Scene8Ctrl : MonoBehaviour
     }
     private void ChangeScene89()
     {
+        ScriptTxt.text = "집기병에 순수한 산소만 \r\n존재한다.";
         GameManager.isScene7 = false;
         GameManager.isScene8 = true;
         button.onClick.RemoveListener(PlayAnimation9);
+        
     }
 
 
