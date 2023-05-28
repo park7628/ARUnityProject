@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/1.Scenes/ExperimentScript.unity
+    guid: 90c60a9ab60f37f47853fe49652f8228
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a05f6c9c4f2425441b4f714ddf165452, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 52899b9c6dc76244aa7bdd103172ab89, type: 2}
