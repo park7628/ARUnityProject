@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Scene4Ctrl : MonoBehaviour
+public class Scene4Ctrl1 : MonoBehaviour
 {
     private static GameObject gwasan;
     private static GameObject funnelliquid;
@@ -17,7 +17,7 @@ public class Scene4Ctrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScriptTxt.text = "진한 식초를 \r\n깔때기에 붓는다.";
+        ScriptTxt.text = "묽은 과산화 수소수를 \r\n깔때기에 붓는다.";
         gwasan = GameObject.FindWithTag("gwasanhwa");
         funnelliquid = GameObject.FindWithTag("funnelliquid");
         funnelliquid.SetActive(false);

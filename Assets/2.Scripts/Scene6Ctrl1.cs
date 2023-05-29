@@ -4,26 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Scene7Ctrl : MonoBehaviour
+public class Scene6Ctrl1 : MonoBehaviour
 {
     private static GameObject oxygen;
     private static GameObject cylinder;
-    private static GameObject rtube;
+    //private static GameObject rtube;
     private static GameObject vial;
     //private static GameObject glass;
     public Button button;
     public Animator animator;
     public string animationTrigger;
-    public Animator animator1;
-    public string animationTrigger1;
+    //public Animator animator1;
+    public Animator animator2;
+    //public string animationTrigger1;
+    public string animationTrigger2;
     public TextMeshProUGUI ScriptTxt;
-    
 
     void Start()
     {
-        ScriptTxt.text = "다시 집기병을 물로 가득\r\n채우고 순수한 \r\n이산화탄소만 담는다.";
+        ScriptTxt.text = "처음 집기병에 찬 기체는\r\n원래 플라스크 안에 있던 \r\n기체이기 때문에 버린다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
+        //rtube = GameObject.FindWithTag("rtube");
         vial = GameObject.FindWithTag("vial");
         //glass = GameObject.FindWithTag("glass");
         //oxygen.SetActive(false);
@@ -31,39 +33,36 @@ public class Scene7Ctrl : MonoBehaviour
         animator = oxygen.GetComponent<Animator>();
         animator.SetTrigger(animationTrigger);
         oxygen.GetComponent<Animator>().Play("oxygen");
-        animator1 = vial.GetComponent<Animator>();
+        //animator1 = rtube.GetComponent<Animator>();
+        animator2 = vial.GetComponent<Animator>();
         button = button.GetComponent<Button>();
-        button.onClick.AddListener(PlayAnimation8);
+        button.onClick.AddListener(PlayAnimation7);
 
     }
-    public void PlayAnimation8()
+    public void PlayAnimation7()
     {
-        if (vial != null) 
+        if (vial != null) //rtube 빠지고 
         {
-            animator1.SetTrigger(animationTrigger1);
-            vial.GetComponent<Animator>().Play("vial2");
-            Invoke("watering", 1.0f);
-            InvokeRepeating("Scaling", 2.5f, 1.1f);
-            Invoke("ChangeScene78", 8.5f);
-            
+            //animator1.SetTrigger(animationTrigger1);
+            //rtube.GetComponent<Animator>().Play("rtube");
+            animator2.SetTrigger(animationTrigger2);
+            vial.GetComponent<Animator>().Play("vial");
+            //animator.enabled = false;
+            //oxygen.SetActive(false);
+            Invoke("ChangeScene67", 3.0f);
         }
-    }
-    private void watering()
-    {
-        cylinder.SetActive(true);
-    }
-    private void Scaling()
-    {
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
-    }
-    private void ChangeScene78()
-    {
-        GameManager.isScene6 = false;
-        GameManager.isScene7 = true;
-        button.onClick.RemoveListener(PlayAnimation8);
 
     }
-    /*static public void touchglass_plate()
+
+    private void ChangeScene67()
+    {
+        GameManager.isScene5 = false;
+        GameManager.isScene6 = true;
+        button.onClick.RemoveListener(PlayAnimation7);
+
+    }
+
+    /*static public void touchvial()
     {
         if (Input.touchCount > 0)
         {
@@ -75,10 +74,10 @@ public class Scene7Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "glass_plate") //유리판 추가 필요
+                    if (hit.collider.gameObject.tag == "vial")
                     {
-                        
-                        GameManager.isScene7= true;
+                        //집기병이 수조 밖으로 나왔다가 다시 수조에 들어감(물이 다시 가득해짐) 애니메이션
+                        GameManager.isScene6 = true;
 
                     }
                 }

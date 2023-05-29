@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7510,10 +7510,10 @@ RectTransform:
   m_Father: {fileID: 4549676097303393694}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350.5, y: -87.5}
-  m_SizeDelta: {x: 225, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109264216
 MonoBehaviour:
@@ -7574,7 +7574,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1459199984}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: Ex2
+        m_MethodName: Ex3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12687,10 +12687,10 @@ RectTransform:
   m_Father: {fileID: 4549676097303393694}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 585.5, y: -87.5}
-  m_SizeDelta: {x: 225, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024008307
 MonoBehaviour:
@@ -13576,10 +13576,10 @@ RectTransform:
   m_Father: {fileID: 4549676097303393694}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.5, y: -270.5}
-  m_SizeDelta: {x: 225, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130436906
 MonoBehaviour:
@@ -31509,10 +31509,10 @@ RectTransform:
   m_Father: {fileID: 4549676097303393694}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.5, y: -87.5}
-  m_SizeDelta: {x: 225, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4549676096904066323
 MonoBehaviour:
@@ -31560,7 +31560,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1459199984}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: Ex1
+        m_MethodName: Ex2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36704,8 +36704,8 @@ RectTransform:
   m_Father: {fileID: 4549676097586645411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.23550707}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: -0.60601807}
   m_SizeDelta: {x: 20, y: 18.787}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -40131,7 +40131,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 84.31152}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &4549676097303393695
 MonoBehaviour:
@@ -43269,7 +43269,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 344.25455}
+  m_SizeDelta: {x: 0, y: 325.1752}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &4549676097388183692
 MonoBehaviour:
@@ -49744,7 +49744,7 @@ RectTransform:
   m_Father: {fileID: 4549676098676689187}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.63633}
+  m_AnchorMin: {x: 0, y: 0.6010632}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.60601807}
   m_SizeDelta: {x: 20, y: 18.787}
@@ -51199,7 +51199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4549676097700317063
 Transform:
   m_ObjectHideFlags: 0
@@ -61272,7 +61272,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4549676097609850856}
   m_Direction: 2
   m_Value: 0.99999994
-  m_Size: 0.36366993
+  m_Size: 0.39893678
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -65872,8 +65872,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4549676097179506185}
   m_HandleRect: {fileID: 4549676097179506184}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.7644929
+  m_Value: 1.0000005
+  m_Size: 0.60286254
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
