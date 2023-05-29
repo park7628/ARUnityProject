@@ -14,4 +14,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("ExperimentScript");
     }
+
+    public void ExUiToUi()
+    {
+        SceneManager.LoadScene("UIscene");
+    }
 }
