@@ -1058,7 +1058,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4. \uD0C4\uC0B0\uC218\uC18C\uB098\uD2B8\uB968\r"
+  m_Text: "4. \uBB3D\uC740 \uACFC\uC0B0\uD654 \uC218\uC18C\uC218"
 --- !u!222 &57590203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1271,7 +1271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3. \uBB3D\uC740 \uACFC\uC0B0\uD654\uC218\uC18C\uC218"
+  m_Text: "3. \uC9C4\uD55C \uC2DD\uCD08"
 --- !u!222 &86566764
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1402,8 +1402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button42
         m_Mode: 1
         m_Arguments:
@@ -1522,8 +1522,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q4. \uC0B0\uC18C\uB294 \uB2E4\uB978 \uBB3C\uC9C8\uC774 \uD0C0\uB294 \uB370
-    \uB3C4\uC6C0\uC744 \n      \uC904\uAE4C\uC694?"
+  m_Text: "Q4. \uC774\uC0B0\uD654\uD0C4\uC18C\uB294 \uB2E4\uB978 \uBB3C\uC9C8\uC774
+    \uD0C0\uB294 \uB370 \uB3C4\uC6C0\uC744 \n      \uC904\uAE4C\uC694?"
 --- !u!222 &107862817
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1764,8 +1764,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button22
         m_Mode: 1
         m_Arguments:
@@ -2618,7 +2618,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3. \uD0C4\uC0B0\uCE7C\uC298"
+  m_Text: "3. \uD0C4\uC0B0 \uCE7C\uC298"
 --- !u!222 &225717447
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4466,7 +4466,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: O
 --- !u!222 &312936089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4944,7 +4944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &346922702
 Transform:
   m_ObjectHideFlags: 0
@@ -5146,8 +5146,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q3. \uC0B0\uC18C\uAC00 \uB4E0 \uC9D1\uAE30\uBCD1\uC5D0 \uD5A5\uBD88\uC744
-    \uB123\uC73C\uBA74 \n      \uC5B4\uB5BB\uAC8C \uB420\uAE4C\uC694?"
+  m_Text: "Q3. \uC774\uC0B0\uD654\uD0C4\uC18C\uAC00 \uB4E0 \uC9D1\uAE30\uBCD1\uC5D0
+    \uD5A5\uBD88\uC744 \uB123\uC73C\uBA74 \n      \uC5B4\uB5BB\uAC8C \uB420\uAE4C\uC694?"
 --- !u!222 &351437964
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5970,7 +5970,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3. \uBB3D\uC740 \uACFC\uC0B0\uD654\uC218\uC18C\uC218"
+  m_Text: "3. \uC9C4\uD55C \uC2DD\uCD08"
 --- !u!222 &430454859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6094,8 +6094,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button34
         m_Mode: 1
         m_Arguments:
@@ -6437,7 +6437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2. \uD540\uCE58 \uC9D1\uAC8C"
+  m_Text: "2. \uAC00\uC9C0 \uB2EC\uB9B0 \uD50C\uB77C\uC2A4\uD06C"
 --- !u!222 &448374759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6845,7 +6845,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4. \uBB3D\uC740 \uC5FC\uC0B0"
+  m_Text: "4. \uBB3D\uC740 \uACFC\uC0B0\uD654 \uC218\uC18C\uC218"
 --- !u!222 &462318234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6926,7 +6926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q1. \uC0B0\uC18C \uBC1C\uC0DD \uC2E4\uD5D8\uC758 \uC900\uBE44\uBB3C\uB85C
+  m_Text: "Q1. \uC774\uC0B0\uD654\uD0C4\uC18C \uBC1C\uC0DD \uC2E4\uD5D8\uC758 \uC900\uBE44\uBB3C\uB85C
     \uC633\uC9C0 \uC54A\uC740     \n      \uAC83\uC740 \uBB34\uC5C7\uC77C\uAE4C\uC694?"
 --- !u!222 &479526357
 CanvasRenderer:
@@ -8383,7 +8383,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q1. \uC0B0\uC18C \uBC1C\uC0DD \uC2E4\uD5D8\uC758 \uC900\uBE44\uBB3C\uB85C
+  m_Text: "Q1. \uC774\uC0B0\uD654\uD0C4\uC18C \uBC1C\uC0DD \uC2E4\uD5D8\uC758 \uC900\uBE44\uBB3C\uB85C
     \uC633\uC9C0 \uC54A\uC740     \n      \uAC83\uC740 \uBB34\uC5C7\uC77C\uAE4C\uC694?"
 --- !u!222 &540165812
 CanvasRenderer:
@@ -9127,7 +9127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: O
 --- !u!222 &587623352
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10457,7 +10457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. \uBB3D\uC740 \uACFC\uC0B0\uD654\uC218\uC18C\uC218"
+  m_Text: "1. \uD0C4\uC0B0 \uC218\uC18C \uB098\uD2B8\uB968\r"
 --- !u!222 &660289109
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10858,7 +10858,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. \uBB3D\uC740 \uACFC\uC0B0\uD654\uC218\uC18C\uC218"
+  m_Text: "1. \uD0C4\uC0B0 \uC218\uC18C \uB098\uD2B8\uB968\r"
 --- !u!222 &695246283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11026,8 +11026,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button33
         m_Mode: 1
         m_Arguments:
@@ -12483,8 +12483,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button31
         m_Mode: 1
         m_Arguments:
@@ -13575,7 +13575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4. \uD0C4\uC0B0\uC218\uC18C\uB098\uD2B8\uB968\r"
+  m_Text: "4. \uBB3D\uC740 \uACFC\uC0B0\uD654 \uC218\uC18C\uC218"
 --- !u!222 &819841997
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13654,7 +13654,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3. \uD0C4\uC0B0\uCE7C\uC298"
+  m_Text: "3. \uD0C4\uC0B0 \uCE7C\uC298"
 --- !u!222 &823869448
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14302,7 +14302,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. \uC774\uC0B0\uD654\uB9DD\uAC00\uB2C8\uC988"
+  m_Text: "1. \uD0C4\uC0B0 \uC218\uC18C \uB098\uD2B8\uB968"
 --- !u!222 &900054742
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14381,7 +14381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2. \uD540\uCE58 \uC9D1\uAC8C"
+  m_Text: "2. \uAC00\uC9C0 \uB2EC\uB9B0 \uD50C\uB77C\uC2A4\uD06C"
 --- !u!222 &901916262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15372,8 +15372,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button33
         m_Mode: 1
         m_Arguments:
@@ -16528,7 +16528,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q2. \uC0B0\uC18C\uB294 \uC0C9\uAE54\uACFC \uB0C4\uC0C8\uAC00 \uC788\uC744\uAE4C\uC694?"
+  m_Text: "Q2. \uC774\uC0B0\uD654\uD0C4\uC18C\uB294 \uC0C9\uAE54\uACFC \uB0C4\uC0C8\uAC00
+    \uC788\uC744\uAE4C\uC694?"
 --- !u!222 &1064737835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18293,8 +18294,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q3. \uC0B0\uC18C\uAC00 \uB4E0 \uC9D1\uAE30\uBCD1\uC5D0 \uD5A5\uBD88\uC744
-    \uB123\uC73C\uBA74 \n      \uC5B4\uB5BB\uAC8C \uB420\uAE4C\uC694?"
+  m_Text: "Q3. \uC774\uC0B0\uD654\uD0C4\uC18C\uAC00 \uB4E0 \uC9D1\uAE30\uBCD1\uC5D0
+    \uD5A5\uBD88\uC744 \uB123\uC73C\uBA74 \n      \uC5B4\uB5BB\uAC8C \uB420\uAE4C\uC694?"
 --- !u!222 &1203096350
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19216,7 +19217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. \uBD88\uAF43\uC774 \uC791\uC544\uC9C4\uB2E4."
+  m_Text: "1. \uBD88\uAF43\uC774 \uCEE4\uC9C4\uB2E4."
 --- !u!222 &1233766789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19278,7 +19279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 0.42745098}
+  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0.42745098}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19647,7 +19648,7 @@ GameObject:
   - component: {fileID: 1243205557}
   - component: {fileID: 1243205556}
   m_Layer: 0
-  m_Name: check21
+  m_Name: check22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19872,8 +19873,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button41
         m_Mode: 1
         m_Arguments:
@@ -20936,8 +20937,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button11
         m_Mode: 1
         m_Arguments:
@@ -21070,8 +21071,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button32
         m_Mode: 1
         m_Arguments:
@@ -21557,8 +21558,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button21
         m_Mode: 1
         m_Arguments:
@@ -21945,8 +21946,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button22
         m_Mode: 1
         m_Arguments:
@@ -22160,8 +22161,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button51
         m_Mode: 1
         m_Arguments:
@@ -22442,8 +22443,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button53
         m_Mode: 1
         m_Arguments:
@@ -22576,8 +22577,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button31
         m_Mode: 1
         m_Arguments:
@@ -22710,8 +22711,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button14
         m_Mode: 1
         m_Arguments:
@@ -22925,7 +22926,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q2. \uC0B0\uC18C\uB294 \uC0C9\uAE54\uACFC \uB0C4\uC0C8\uAC00 \uC788\uC744\uAE4C\uC694?"
+  m_Text: "Q2. \uC774\uC0B0\uD654\uD0C4\uC18C\uB294 \uC0C9\uAE54\uACFC \uB0C4\uC0C8\uAC00
+    \uC788\uC744\uAE4C\uC694?"
 --- !u!222 &1400439665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23006,9 +23008,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q5. \uC0B0\uC18C\uB97C \uBC1C\uC0DD\uC2DC\uD0AC \uB54C \uD544\uC694\uD55C
-    \uBB3C\uC9C8\uC740 \n      \uC774\uC0B0\uD654\uB9DD\uAC00\uB2C8\uC988\uC640 (  
-    )\uC774\uB2E4."
+  m_Text: "Q5. \uC774\uC0B0\uD654\uD0C4\uC18C\uB97C \uBC1C\uC0DD\uC2DC\uD0AC \uB54C
+    \uD544\uC694\uD55C \uBB3C\uC9C8\uC740 \n      \uC9C4\uD55C \uC2DD\uCD08\uC640
+    (   )\uC774\uB2E4."
 --- !u!222 &1405179093
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23087,7 +23089,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. \uC774\uC0B0\uD654\uB9DD\uAC00\uB2C8\uC988"
+  m_Text: "1. \uD0C4\uC0B0 \uC218\uC18C \uB098\uD2B8\uB968"
 --- !u!222 &1407305608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23432,7 +23434,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: O
+  m_Text: X
 --- !u!222 &1445856379
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23525,8 +23527,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button14
         m_Mode: 1
         m_Arguments:
@@ -23645,7 +23647,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4. \uBB3D\uC740 \uC5FC\uC0B0"
+  m_Text: "4. \uBB3D\uC740 \uACFC\uC0B0\uD654 \uC218\uC18C\uC218"
 --- !u!222 &1452527003
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24261,7 +24263,6 @@ RectTransform:
   - {fileID: 2015420768}
   - {fileID: 559732646}
   - {fileID: 1354455958}
-  - {fileID: 2107494150}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25068,7 +25069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 0.42745098}
+  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0.42745098}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25481,7 +25482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: O
+  m_Text: X
 --- !u!222 &1569537617
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26016,8 +26017,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button32
         m_Mode: 1
         m_Arguments:
@@ -26178,7 +26179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1612983661
 Transform:
   m_ObjectHideFlags: 0
@@ -26615,8 +26616,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q4. \uC0B0\uC18C\uB294 \uB2E4\uB978 \uBB3C\uC9C8\uC774 \uD0C0\uB294 \uB370
-    \uB3C4\uC6C0\uC744 \n      \uC904\uAE4C\uC694?"
+  m_Text: "Q4. \uC774\uC0B0\uD654\uD0C4\uC18C\uB294 \uB2E4\uB978 \uBB3C\uC9C8\uC774
+    \uD0C0\uB294 \uB370 \uB3C4\uC6C0\uC744 \n      \uC904\uAE4C\uC694?"
 --- !u!222 &1632255584
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26750,8 +26751,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: scoring
         m_Mode: 1
         m_Arguments:
@@ -26884,8 +26885,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button13
         m_Mode: 1
         m_Arguments:
@@ -27093,8 +27094,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button12
         m_Mode: 1
         m_Arguments:
@@ -27448,6 +27449,9 @@ MonoBehaviour:
   Scene6: {fileID: 200297147}
   Scene7: {fileID: 1417917674}
   Scene8: {fileID: 1612983660}
+  QuizPanel: {fileID: 1884187276}
+  GuidePanel: {fileID: 2015420767}
+  button: {fileID: 252334708}
   state: 0
 --- !u!4 &1675749752
 Transform:
@@ -27748,7 +27752,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2. \uBD88\uAF43\uC774 \uCEE4\uC9C4\uB2E4."
+  m_Text: "2. \uBD88\uAF43\uC774 \uC791\uC544\uC9C4\uB2E4."
 --- !u!222 &1687046873
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28647,8 +28651,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button41
         m_Mode: 1
         m_Arguments:
@@ -29767,7 +29771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1818170382}
-  - component: {fileID: 1818170381}
+  - component: {fileID: 1818170383}
   m_Layer: 5
   m_Name: Quizmanager
   m_TagString: Untagged
@@ -29775,7 +29779,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1818170381
+--- !u!224 &1818170382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818170380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1884187277}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1818170383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29784,7 +29807,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818170380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dfaf64ae576c2c43a104c59e8da18eb, type: 3}
+  m_Script: {fileID: 11500000, guid: d15fb3f686ab1a54f896221671aab0f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Question: {fileID: 1234901342}
@@ -29826,25 +29849,6 @@ MonoBehaviour:
   check52a: {fileID: 1240049998}
   check53a: {fileID: 2002108524}
   check54a: {fileID: 1286287294}
---- !u!224 &1818170382
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818170380}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1884187277}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1820775166
 GameObject:
   m_ObjectHideFlags: 0
@@ -29929,8 +29933,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button42
         m_Mode: 1
         m_Arguments:
@@ -30382,9 +30386,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Q5. \uC0B0\uC18C\uB97C \uBC1C\uC0DD\uC2DC\uD0AC \uB54C \uD544\uC694\uD55C
-    \uBB3C\uC9C8\uC740 \n      \uC774\uC0B0\uD654\uB9DD\uAC00\uB2C8\uC988\uC640 (  
-    )\uC774\uB2E4."
+  m_Text: "Q5. \uC774\uC0B0\uD654\uD0C4\uC18C\uB97C \uBC1C\uC0DD\uC2DC\uD0AC \uB54C
+    \uD544\uC694\uD55C \uBB3C\uC9C8\uC740 \n      \uC9C4\uD55C \uC2DD\uCD08\uC640
+    (   )\uC774\uB2E4."
 --- !u!222 &1846547591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30694,8 +30698,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button54
         m_Mode: 1
         m_Arguments:
@@ -30828,8 +30832,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button52
         m_Mode: 1
         m_Arguments:
@@ -31570,7 +31574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. \uBD88\uAF43\uC774 \uC791\uC544\uC9C4\uB2E4."
+  m_Text: "1. \uBD88\uAF43\uC774 \uCEE4\uC9C4\uB2E4."
 --- !u!222 &1937719729
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31757,8 +31761,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button51
         m_Mode: 1
         m_Arguments:
@@ -32182,8 +32186,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button21
         m_Mode: 1
         m_Arguments:
@@ -33110,7 +33114,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.6963, y: 2.6963, z: 2.6963}
-  m_Children: []
+  m_Children:
+  - {fileID: 2107494150}
   m_Father: {fileID: 1466438317}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33593,8 +33598,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button13
         m_Mode: 1
         m_Arguments:
@@ -34197,8 +34202,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button53
         m_Mode: 1
         m_Arguments:
@@ -34331,8 +34336,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button12
         m_Mode: 1
         m_Arguments:
@@ -34508,8 +34513,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button52
         m_Mode: 1
         m_Arguments:
@@ -34803,7 +34808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2. \uBD88\uAF43\uC774 \uCEE4\uC9C4\uB2E4."
+  m_Text: "2. \uBD88\uAF43\uC774 \uC791\uC544\uC9C4\uB2E4."
 --- !u!222 &2081124174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35434,17 +35439,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107494149}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6963, y: 2.6963, z: 2.6963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 599788187}
-  m_Father: {fileID: 1466438317}
-  m_RootOrder: 9
+  m_Father: {fileID: 2015420768}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -409.99994, y: -183}
+  m_AnchoredPosition: {x: -145.65927, y: -41.840668}
   m_SizeDelta: {x: 275, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107494151
@@ -35740,8 +35745,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button34
         m_Mode: 1
         m_Arguments:
@@ -36031,8 +36036,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button54
         m_Mode: 1
         m_Arguments:
@@ -36438,8 +36443,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818170381}
-        m_TargetAssemblyTypeName: QuizUICtrl, Assembly-CSharp
+      - m_Target: {fileID: 1818170383}
+        m_TargetAssemblyTypeName: QuizUICtrl1, Assembly-CSharp
         m_MethodName: button11
         m_Mode: 1
         m_Arguments:
