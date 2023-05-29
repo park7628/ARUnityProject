@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -7191,7 +7191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -8658,6 +8658,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3464153923908447813, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
+      propertyPath: outlineWidth
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3464153923908447813, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
+      propertyPath: outlineColor.b
+      value: 0.1273585
+      objectReference: {fileID: 0}
+    - target: {fileID: 3464153923908447813, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
+      propertyPath: outlineColor.g
+      value: 0.77878714
+      objectReference: {fileID: 0}
+    - target: {fileID: 3464153923908447813, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
+      propertyPath: outlineColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7380773909654199853, guid: 22497c17c40844a4cb0e9af2b17e8fef, type: 3}
       propertyPath: m_Name
       value: Y_Flask (1)
@@ -9259,7 +9275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -9881,7 +9897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -10780,7 +10796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -11639,7 +11655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -12077,7 +12093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -13284,9 +13300,9 @@ RectTransform:
   m_Father: {fileID: 370004236}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275, y: 146}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 125, y: -51}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1557070630
@@ -14478,8 +14494,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 240103990}
   m_HandleRect: {fileID: 240103989}
   m_Direction: 2
-  m_Value: 0.99999994
-  m_Size: 0.3262088
+  m_Value: 1
+  m_Size: 0.34255487
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15125,7 +15141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.808957, b: 0, a: 1}
+  outlineColor: {r: 1, g: 0.77878714, b: 0.1273585, a: 1}
   outlineWidth: 8
   precomputeOutline: 0
   bakeKeys: []
@@ -15884,6 +15900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490c3e70c5a587e46b1abd823575f481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundOnIcom: {fileID: 0}
+  soundOffIcom: {fileID: 0}
   button: {fileID: 7582741665440687676}
 --- !u!4 &7266573023966226345
 Transform:
