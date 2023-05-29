@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Scene3Ctrl : MonoBehaviour
 {
@@ -10,12 +11,13 @@ public class Scene3Ctrl : MonoBehaviour
     public Button button;
     public Animator animator;
     public string animationTrigger;
+    public TextMeshProUGUI ScriptTxt;
 
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        ScriptTxt.text = "삼각 플라스크를 \r\n장치에 다시 연결한다.";
         flask = GameObject.FindWithTag("flask");
         gameobject = GameObject.FindWithTag("gameobject");
         gameobject.SetActive(false);
@@ -28,14 +30,12 @@ public class Scene3Ctrl : MonoBehaviour
 
     public void PlayAnimation4()
     {
-        
-            
             if (flask != null)
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("yflask");
-                Invoke("isgameObject", 2.5f);
-                Invoke("ChangeScene34", 5.0f);
+                Invoke("isgameObject", 1.7f);
+                Invoke("ChangeScene34", 2.8f);
             }
         
     }
@@ -47,7 +47,6 @@ public class Scene3Ctrl : MonoBehaviour
 
     private void ChangeScene34()
     {
-        
         GameManager.isScene2 = false;
         GameManager.isScene3 = true;
         button.onClick.RemoveListener(PlayAnimation4);

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material vial
-  m_Shader: {fileID: 4800000, guid: feeb5f386e49d1d44804b0416de61fd3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 97185255a37e0e147af82554b4f87b46, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,6 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - _Outline: 0.1
     - _OutlineWidth: 0.0019
     m_Colors:
     - _OutlineColor: {r: 1, g: 0.72671366, b: 0, a: 1}
