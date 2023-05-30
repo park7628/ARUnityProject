@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     static public bool isScene7 = false;
     static public bool isScene8 = false;
 
-    public bool isFinish = false;
+    static public bool isFinish = false;
 
     public GameObject Scene0;
     public GameObject Scene1;
@@ -28,6 +29,10 @@ public class GameManager : MonoBehaviour
     public GameObject Scene6;
     public GameObject Scene7;
     public GameObject Scene8;
+
+    //public GameObject QuizPanel;
+    //public GameObject GuidePanel;
+    //public Button button;
 
     public enum State
     {
@@ -134,6 +139,11 @@ public class GameManager : MonoBehaviour
             else if (isScene8)
             {
                 isFinish = true;//모든 실험 끝남
+                //GuidePanel.SetActive(false);
+                //button.interactable = false;
+                //button.gameObject.SetActive(false);
+                //QuizPanel.SetActive(true); //퀴즈 등장
+                
             }
         }
     }

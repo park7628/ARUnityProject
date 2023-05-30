@@ -24,7 +24,7 @@ public class Scene8Ctrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScriptTxt.text = "집기병에 산소가 가득 차면\r\n물속에서 유리판으로\r\n집기병 입구를 막고 꺼낸다.";
+        ScriptTxt.text = "집기병에 이산화탄소가 \r\n가득 차면 물속에서 \r\n유리판으로 집기병 입구를 \r\n막고 꺼낸다.";
         oxygen = GameObject.FindWithTag("oxygen");
         animator = oxygen.GetComponent<Animator>();
         animator.SetTrigger(animationTrigger);
@@ -69,7 +69,7 @@ public class Scene8Ctrl : MonoBehaviour
     }
     private void ChangeScene89()
     {
-        ScriptTxt.text = "집기병에 순수한 산소만 \r\n존재한다.";
+        ScriptTxt.text = "집기병에 순수한 \r\n이산화탄소만 존재한다.";
         GameManager.isScene7 = false;
         GameManager.isScene8 = true;
         button.onClick.RemoveListener(PlayAnimation9);

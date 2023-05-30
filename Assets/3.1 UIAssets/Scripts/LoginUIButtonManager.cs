@@ -18,6 +18,7 @@ public class LoginUIButtonManager : MonoBehaviour
     public GameObject TAgreeUI2;
     public GameObject TSignupUI;
     public GameObject Experiment1;
+    public GameObject GroupCodeSet;
 
 
 
@@ -150,6 +151,7 @@ public class LoginUIButtonManager : MonoBehaviour
     {
         LoginUI.SetActive(false);
         Experiment1.SetActive(true);
+        GroupCodeSet.SetActive(true);
     }
 
 }

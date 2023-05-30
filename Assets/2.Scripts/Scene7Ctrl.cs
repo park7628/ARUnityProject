@@ -21,7 +21,7 @@ public class Scene7Ctrl : MonoBehaviour
 
     void Start()
     {
-        ScriptTxt.text = "다시 집기병을 물로 가득\r\n채우고 순수한 산소만\r\n담는다.";
+        ScriptTxt.text = "다시 집기병을 물로 가득\r\n채우고 순수한 \r\n이산화탄소만 담는다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
         vial = GameObject.FindWithTag("vial");
