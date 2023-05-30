@@ -17,39 +17,39 @@ public class GlobalBgm : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //button.onClick.AddListener(() => BgmOnOff());
+        button.onClick.AddListener(() => BgmOnOff());
 
-        if (!PlayerPrefs.HasKey("isOn"))
-        {
-            PlayerPrefs.SetInt("isOn", 0);
-            Load();
-        }
-        else
-        {
-            Load();
-        }
-        UpdateIcone();
-        AudioListener.pause = isOn;
+        //if (!PlayerPrefs.HasKey("isOn"))
+        //{
+        //    PlayerPrefs.SetInt("isOn", 0);
+        //    Load();
+        //}
+        //else
+        //{
+        //    Load();
+        //}
+        //UpdateIcone();
+        //AudioListener.pause = isOn;
     }
 
     public void BgmOnOff()
     {
-        //UnityEngine.Debug.Log("버튼눌림");
-        //GetComponent<AudioSource>().mute = !isOn;
-        //isOn = !isOn;
+        UnityEngine.Debug.Log("버튼눌림");
+        GetComponent<AudioSource>().mute = !isOn;
+        isOn = !isOn;
 
-        if (isOn == false)
-        {
-            isOn = true;
-            AudioListener.pause = true;
+        //if (isOn == false)
+        //{
+        //    isOn = true;
+        //    AudioListener.pause = true;
 
-        }
-        else
-        {
-            isOn = false;
-            AudioListener.pause = false;
-        }
-        Save();
+        //}
+        //else
+        //{
+        //    isOn = false;
+        //    AudioListener.pause = false;
+        //}
+        //Save();
         UpdateIcone();
     }
 
@@ -67,15 +67,15 @@ public class GlobalBgm : MonoBehaviour
         }
     }
 
-    private void Load()
-    {
-        isOn = PlayerPrefs.GetInt("isOn") == 1;
-    }
+    //private void Load()
+    //{
+    //    isOn = PlayerPrefs.GetInt("isOn") == 1;
+    //}
 
-    private void Save()
-    {
-        PlayerPrefs.SetInt("isOn", isOn ? 1: 0);
-    }
+    //private void Save()
+    //{
+    //    PlayerPrefs.SetInt("isOn", isOn ? 1: 0);
+    //}
 
     // Update is called once per frame
     void Update()
