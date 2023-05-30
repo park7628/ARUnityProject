@@ -17,12 +17,18 @@ public class Scene5Ctrl : MonoBehaviour
     public TextMeshProUGUI ScriptTxt;
     public GameObject WarningPanel;
 
+    public GameObject GuidePanel;
+
+
     // Start is called before the first frame update
     void Start()
     {
         button.interactable = false;
+        button.gameObject.SetActive(false);
         WarningPanel.SetActive(true);
-
+        GuidePanel.SetActive(false);
+            
+        
         ScriptTxt.text = "핀치 집게를 조절하여\r\n진한 식초를 \r\n조금씩 흘려 보낸다.";
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");

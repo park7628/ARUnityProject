@@ -7,12 +7,15 @@ public class WarningCtrl : MonoBehaviour
 {
     public GameObject WarningPanel;
     public Button button;
-
+    public GameObject GuidePanel;
 
     public void WarnButtonClick()
     {
-        button.interactable = true;
+        
         WarningPanel.SetActive(false);
+        button.interactable = true;
+        button.gameObject.SetActive(true);
+        GuidePanel.SetActive(true);
     }
 
     [System.Serializable]
@@ -32,7 +35,6 @@ public class WarningCtrl : MonoBehaviour
 
     void Start()
     {
-        
         UpdateUI();
     }
 
