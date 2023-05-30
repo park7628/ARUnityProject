@@ -3,43 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuizButtonCtrl : MonoBehaviour
+public class GuideUIButtonCtrl : MonoBehaviour
 {
-    public GameObject QuizPanel;
     public GameObject GuidePanel;
     public Button button;
-    private bool isOn = false;
+    static public bool isOn = false;
 
-    public void QuizButtonClick()
+    public void GuideButtonClick()
     {
-        if (GameManager.isFinish)
-        {
-            if (!isOn) //´ÝÇôÀÖÀ¸¸é ÄûÁî ¿­±â
+            if (!isOn) //´ÝÇôÀÖÀ¸¸é ´Ù¸¥UI ¿­±â
             {
                 GuidePanel.SetActive(false);
                 button.interactable = false;
                 button.gameObject.SetActive(false);
-                QuizPanel.SetActive(true); //ÄûÁî µîÀå
+
                 isOn = true;
             }
             else//¿­·ÁÀÖÀ¸¸é ÄûÁî ´Ý±â
             {
-                QuizPanel.SetActive(false); //ÄûÁî ´Ý±â
                 GuidePanel.SetActive(true);
                 button.interactable = true;
                 button.gameObject.SetActive(true);
                 isOn = false;
-
             }
-
-        }
-
-
     }
-
-
-
-
 
     // Start is called before the first frame update
     void Start()
