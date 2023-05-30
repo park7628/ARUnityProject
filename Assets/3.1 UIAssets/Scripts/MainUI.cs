@@ -24,6 +24,8 @@ public class MainUI : MonoBehaviour
     public GameObject setG;
     public GameObject setI1;
     public GameObject setI2;
+    public GameObject GroupCodeSet;
+
     // public GameObject setGS1;
 
 
@@ -43,6 +45,8 @@ public class MainUI : MonoBehaviour
         Information1.SetActive(false);
         Information2.SetActive(false);
         GroupS1.SetActive(false);
+
+        GroupCodeSet.SetActive(false);
     }
 
     public void Nav2()
