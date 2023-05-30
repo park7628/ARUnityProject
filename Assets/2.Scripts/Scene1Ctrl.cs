@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
-
+//using static System.Net.Mime.MediaTypeNames;
+using TMPro;
 public class Scene1Ctrl : MonoBehaviour
 { 
     private static GameObject Water;
@@ -19,10 +20,10 @@ public class Scene1Ctrl : MonoBehaviour
     public string animationTrigger1;
     public string animationTrigger2;
 
- 
+    public TextMeshProUGUI ScriptTxt;
     void Start()
     {
-        
+        ScriptTxt.text = "삼각 플라스크에 물을 조금 넣은 뒤 탄산 수소 나트륨을 4~5숟가락 넣는다.";
         Water = GameObject.FindWithTag("WATER");
         liquid1 = GameObject.FindWithTag("liquid1");
         Mangan = GameObject.FindWithTag("MANGANIZ");

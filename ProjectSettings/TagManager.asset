@@ -31,6 +31,11 @@ TagManager:
   - funnelliquid
   - bubble
   - oxygen
+  - Water
+  - cylinder
+  - glass
+  - glass2
+  - funnelliquid2
   layers:
   - Default
   - TransparentFX
