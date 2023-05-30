@@ -23,7 +23,7 @@ public class Scene1Ctrl : MonoBehaviour
     public TextMeshProUGUI ScriptTxt;
     void Start()
     {
-        ScriptTxt.text = "삼각 플라스크에 물을 조금 넣은 뒤 이산화 망가니즈를 한 숟가락 넣는다.";
+        ScriptTxt.text = "삼각 플라스크에 물을 조금 넣은 뒤 탄산 수소 나트륨을 4~5숟가락 넣는다.";
         Water = GameObject.FindWithTag("WATER");
         liquid1 = GameObject.FindWithTag("liquid1");
         Mangan = GameObject.FindWithTag("MANGANIZ");
