@@ -28,7 +28,7 @@ public class GlobalBgm : MonoBehaviour
         //{
         //    Load();
         //}
-        //UpdateIcone();
+        UpdateIcone();
         //AudioListener.pause = isOn;
     }
 
@@ -36,6 +36,7 @@ public class GlobalBgm : MonoBehaviour
     {
         UnityEngine.Debug.Log("버튼눌림");
         GetComponent<AudioSource>().mute = !isOn;
+        UnityEngine.Debug.Log("버튼눌2");
         isOn = !isOn;
 
         //if (isOn == false)
@@ -80,6 +81,6 @@ public class GlobalBgm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       
     }
 }
