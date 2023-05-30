@@ -21,6 +21,12 @@ public class GuideUI : MonoBehaviour
     private Animator animator;
 
     int currentPage;
+
+    public GameObject GuidePanel;
+    public Button button;
+
+
+
     // Start is called before the first frame update
 
     private void Awake()
@@ -35,13 +41,22 @@ public class GuideUI : MonoBehaviour
 
     private IEnumerator CloseAfterDelay()
     {
+
+        GuidePanel.SetActive(true);
+        button.interactable = true;
+        button.gameObject.SetActive(true);
+        GuideUIButtonCtrl.isOn = false;
+
+
         animator.SetTrigger("close");
         yield return new WaitForSeconds(0.5f);
         gameObject.SetActive(false);
         animator.ResetTrigger("close");
+
     }
     void Start()
     {
+
         UpdateUI();
     }
 
