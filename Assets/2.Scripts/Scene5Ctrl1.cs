@@ -52,7 +52,7 @@ public class Scene5Ctrl1 : MonoBehaviour
     }
     private void isoxygen()
     {
-        ScriptTxt.text = "삼각 플라스크에서 산소가 \r\n만들어지고 \r\n호스를 타고 기체가 이동한다.";
+        ScriptTxt.text = "삼각 플라스크에서 산소가 \r\n만들어지고 호스를 타고 \r\n기체가 이동한다.";
         oxygen.SetActive(true);
     }
     private void Scaling()
