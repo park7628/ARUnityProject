@@ -64,11 +64,13 @@ public class Scene5Ctrl : MonoBehaviour
     }
     private void Scaling()
     {
-        if (i < 6)
-        {
-            cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
-        }
-        i++;
+
+        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        //if (i < 6)
+        //{
+        //    cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        //}
+        //i++;
     }
     private void ChangeScene56()
     {
