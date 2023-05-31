@@ -34,8 +34,8 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             Funnel.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z); //»õ·Î ¼öÁ¤
-            Instantiate(Funnel, newPosition, placementPose.rotation); // »õ·Î¼öÁ¤
+            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            Instantiate(Funnel, newPosition, placementPose.rotation); // ï¿½ï¿½ï¿½Î¼ï¿½ï¿½ï¿½ // í…Œì´ë¸”ì—ì„œëŠ” 0.3f..?
 
             //Instantiate(Funnel, placementPose.position, placementPose.rotation);
             
