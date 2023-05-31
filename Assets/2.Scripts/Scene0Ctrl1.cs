@@ -20,6 +20,11 @@ public class Scene0Ctrl1 : MonoBehaviour
 
     public TextMeshProUGUI ScriptTxt;
 
+    //public AudioClip WaterDrop;
+    //public GameObject soundEffect;
+    //public Button effectButton;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +35,23 @@ public class Scene0Ctrl1 : MonoBehaviour
 
         animator = flask.GetComponent<Animator>();
 
+        //effectButton = button.GetComponent<Button>();
+        //effectButton.onClick.AddListener(() => chageEffect());
 
         button = button.GetComponent<Button>();
         button.onClick.AddListener(PlayAnimation);
+        
+        
 
     }
 
-    
+    //public void chageEffect()
+    //{
+    //    soundEffect.GetComponent<AudioSource>().clip = WaterDrop;
+    //}
+
     // Update is called once per frame
-  
+
     public void PlayAnimation()
     {
         
