@@ -19,7 +19,7 @@ public class Scene5Ctrl : MonoBehaviour
 
     public GameObject GuidePanel;
 
-
+    private int i = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +64,11 @@ public class Scene5Ctrl : MonoBehaviour
     }
     private void Scaling()
     {
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        if (i < 6)
+        {
+            cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        }
+        i++;
     }
     private void ChangeScene56()
     {
