@@ -15,10 +15,19 @@ public class Scene5Ctrl1 : MonoBehaviour
     public string animationTrigger;
 
     public TextMeshProUGUI ScriptTxt;
+    public GameObject WarningPanel;
+    public GameObject GuidePanel;
 
+    private int i = 0;
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = false;
+        button.gameObject.SetActive(false);
+        WarningPanel.SetActive(true);
+        GuidePanel.SetActive(false);
+
+
         ScriptTxt.text = "핀치 집게를 조절하여\r\n묽은 과산화 수소수를 \r\n조금씩 흘려 보낸다.";
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");
@@ -37,6 +46,7 @@ public class Scene5Ctrl1 : MonoBehaviour
             bubble.SetActive(true);
             Invoke("isoxygen", 2.5f);
             Invoke("isanimation", 2.5f);
+
             InvokeRepeating("Scaling", 4.2f, 1.1f);
             Invoke("ChangeScene56", 10.0f);
         }
@@ -49,12 +59,18 @@ public class Scene5Ctrl1 : MonoBehaviour
     }
     private void isoxygen()
     {
-        ScriptTxt.text = "삼각 플라스크에서 산소가 \r\n만들어지고 \r\n호스를 타고 기체가 이동한다.";
+        ScriptTxt.text = "삼각 플라스크에서 산소가 \r\n만들어지고 호스를 타고 \r\n기체가 이동한다.";
         oxygen.SetActive(true);
     }
     private void Scaling()
     {
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        if (i < 6) 
+        { 
+            cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+            
+        }
+        i++;
+
     }
     private void ChangeScene56()
     {

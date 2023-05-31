@@ -15,10 +15,20 @@ public class Scene5Ctrl : MonoBehaviour
     public string animationTrigger;
 
     public TextMeshProUGUI ScriptTxt;
+    public GameObject WarningPanel;
 
+    public GameObject GuidePanel;
+
+    private int i = 0;
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = false;
+        button.gameObject.SetActive(false);
+        WarningPanel.SetActive(true);
+        GuidePanel.SetActive(false);
+            
+        
         ScriptTxt.text = "핀치 집게를 조절하여\r\n진한 식초를 \r\n조금씩 흘려 보낸다.";
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");
@@ -54,7 +64,11 @@ public class Scene5Ctrl : MonoBehaviour
     }
     private void Scaling()
     {
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        if (i < 6)
+        {
+            cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        }
+        i++;
     }
     private void ChangeScene56()
     {

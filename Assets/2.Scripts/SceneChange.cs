@@ -5,18 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    public static int SelectedExperiment;
+
     public void Ex1()
     {
+        //SceneManager.LoadScene("ExperimentPrepare");
         SceneManager.LoadScene("ExperimentPrepare");
+        SelectedExperiment = 1;
     }
 
     public void Ex2()
     {
-        SceneManager.LoadScene("ExperimentO2");
+        //SceneManager.LoadScene("ExperimentO2");
+        SceneManager.LoadScene("ExperimentPrepare");
+        SelectedExperiment = 2;
+
     }
     public void Ex3()
     {
-        SceneManager.LoadScene("ExperimentCO2");
+        //SceneManager.LoadScene("ExperimentCO2");
+
     }
     public void ExUiToUi()
     {
