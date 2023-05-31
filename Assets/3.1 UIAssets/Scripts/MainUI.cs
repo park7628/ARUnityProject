@@ -25,6 +25,8 @@ public class MainUI : MonoBehaviour
     public GameObject setI1;
     public GameObject setI2;
     public GameObject GroupCodeSet;
+    public GameObject O2Start;
+    public GameObject CO2Start;
 
     // public GameObject setGS1;
 
@@ -95,6 +97,8 @@ public class MainUI : MonoBehaviour
     {
         Experiment1.SetActive(false);
         Experiment2.SetActive(true);
+        O2Start.SetActive(false);
+        CO2Start.SetActive(false);
     }
 
     public void experimentC9()
@@ -140,5 +144,17 @@ public class MainUI : MonoBehaviour
         //setGS1.SetActive(false);
 
         LoginUI.SetActive(true);
+    }
+
+    public void O2StartActive()
+    {
+        Experiment2.SetActive(false);
+        O2Start.SetActive(true);
+    }
+
+    public void CO2StartActive()
+    {
+        Experiment2.SetActive(false);
+        CO2Start.SetActive(true);
     }
 }
