@@ -36,6 +36,10 @@ TagManager:
   - glass
   - glass2
   - funnelliquid2
+  - o2start
+  - co2start
+  - LoginUIButtonManager
+  - MainUI
   layers:
   - Default
   - TransparentFX

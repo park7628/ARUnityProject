@@ -1,19 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackManager : MonoBehaviour
 {
-    public static bool isBack = false;
-    // Start is called before the first frame update
-    void Start()
+    private BackManagerUI backManagerUI;
+
+    private void Start()
     {
-        
+
+
+        backManagerUI = FindObjectOfType<BackManagerUI>();
+        //BackManagerUI.LoginUIButtonManager = GameObject.FindWithTag("LoginUIButtonManager");
+        //BackManagerUI.MainUI = GameObject.FindWithTag("MainUI");
+
+        if (backManagerUI == null)
+        {
+            // BackManagerUI 오브젝트가 없는 경우, BackManagerUI 오브젝트 생성
+            GameObject backManagerUIObject = new GameObject("BackManagerUI");
+            backManagerUI = backManagerUIObject.AddComponent<BackManagerUI>();
+            DontDestroyOnLoad(backManagerUIObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BackButtonClick()
     {
-        
+        backManagerUI.BacktoStartScene();
     }
 }

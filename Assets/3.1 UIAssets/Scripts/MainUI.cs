@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -157,4 +159,6 @@ public class MainUI : MonoBehaviour
         Experiment2.SetActive(false);
         CO2Start.SetActive(true);
     }
+
+
 }
