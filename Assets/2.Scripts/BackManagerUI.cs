@@ -9,50 +9,79 @@ public class BackManagerUI : MonoBehaviour
 
     // 특정 오브젝트를 참조하는 변수
 
+    //GameObject BackManager;
+    int chooseexp;
+    public GameObject O2Start;
+    public GameObject CO2Start;
 
-    private static BackManagerUI instance;
-
-    public GameObject LoginUIButtonManager;
-    public GameObject MainUI;
-
-
-    private void Awake()
+    /*public bool isback = false;
+    void Start()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            DontDestroyOnLoad(LoginUIButtonManager);
-            DontDestroyOnLoad(MainUI);
+        //O2Start = GameObject.Find("O2Start");
+        //CO2Start = GameObject.Find("CO2Start");
+
+        //if (isback)
+        //{
+        isback = false;
+        UnityEngine.Debug.Log("BackManager 찾기");
+            BackManager = GameObject.Find("BackManager");
+            if (BackManager != null)
+            {
+                UnityEngine.Debug.Log("BackManager not null");
+                isback = BackManager.GetComponent<BackManagerUI>().isback;
+                
+                if (isback)
+                {
+                    UnityEngine.Debug.Log("isback true");
+                    chooseexp = BackManager.GetComponent<BackManager>().Exp;
+                UnityEngine.Debug.Log(chooseexp);
+                if (O2Start != null && CO2Start != null)
+                {
+                    BacktoStartScene();
+                }
+                }
+            
+            isback = false;
         }
-        else
+        //Destroy(BackManager);
+        //}
+
+    }*/
+
+    void Start()
+    {
+        //O2Start = GameObject.Find("O2Start");
+        //CO2Start = GameObject.Find("CO2Start");
+
+        if (BackManager.isback)
         {
-            Destroy(gameObject);
+            if (O2Start != null && CO2Start != null)
+            {
+                BacktoStartScene();
+            }
         }
+
+
     }
 
-    public void BacktoStartScene() {
-       
+
+    void Update()
+    {
+
+    }
+    public void BacktoStartScene()
+    {
+
         if (SceneChange.SelectedExperiment == 1)
         {
-
-            LoginUIButtonManager.GetComponent<LoginUIButtonManager>().LoginUISetActive();
-            LoginUIButtonManager.GetComponent<LoginUIButtonManager>().Experiment1SetActive();
-            MainUI.GetComponent<MainUI>().experimentC3();
-            MainUI.GetComponent<MainUI>().O2StartActive();
+            O2Start.SetActive(true);
         }
-    
+
         else if (SceneChange.SelectedExperiment == 2)
         {
-
-            LoginUIButtonManager.GetComponent<LoginUIButtonManager>().LoginUISetActive();
-            LoginUIButtonManager.GetComponent<LoginUIButtonManager>().Experiment1SetActive();
-            MainUI.GetComponent<MainUI>().experimentC3();
-            MainUI.GetComponent<MainUI>().CO2StartActive();
-
+            CO2Start.SetActive(true);
         }
 
     }
 
-   
 }

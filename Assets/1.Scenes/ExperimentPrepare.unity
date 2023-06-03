@@ -6107,13 +6107,14 @@ GameObject:
   m_Component:
   - component: {fileID: 232339359}
   - component: {fileID: 232339358}
+  - component: {fileID: 232339360}
   m_Layer: 0
   m_Name: BackManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &232339358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6126,6 +6127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4accc39f21f69484c8faef67c48e3193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Exp: 0
+  backmanager: {fileID: 232339357}
 --- !u!4 &232339359
 Transform:
   m_ObjectHideFlags: 0
@@ -6140,6 +6143,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232339360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232339357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39c1a36edc3ccd49aabfc846d5a05b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  O2Start: {fileID: 0}
+  CO2Start: {fileID: 0}
+  isback: 0
 --- !u!1 &240103988
 GameObject:
   m_ObjectHideFlags: 0
@@ -11017,6 +11035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607df0a6b62f3d549801ad6c2fbfb1cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bm: {fileID: 232339358}
 --- !u!1 &1192858938
 GameObject:
   m_ObjectHideFlags: 0

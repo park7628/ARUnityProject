@@ -1,29 +1,26 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BackManager : MonoBehaviour
 {
-    private BackManagerUI backManagerUI;
+    
+    public int Exp;
+    public GameObject backmanager;
 
-    private void Start()
+    public static bool isback = false;
+
+    void Start()
     {
-
-
-        backManagerUI = FindObjectOfType<BackManagerUI>();
-        //BackManagerUI.LoginUIButtonManager = GameObject.FindWithTag("LoginUIButtonManager");
-        //BackManagerUI.MainUI = GameObject.FindWithTag("MainUI");
-
-        if (backManagerUI == null)
-        {
-            // BackManagerUI 오브젝트가 없는 경우, BackManagerUI 오브젝트 생성
-            GameObject backManagerUIObject = new GameObject("BackManagerUI");
-            backManagerUI = backManagerUIObject.AddComponent<BackManagerUI>();
-            DontDestroyOnLoad(backManagerUIObject);
-        }
+        //isback = false;
     }
-
     public void BackButtonClick()
     {
-        backManagerUI.BacktoStartScene();
+        //BackManagerUI backManagerUI = backmanager.GetComponent<BackManagerUI>();
+        //backManagerUI.isback = true;
+        isback = true;
+        SceneManager.LoadScene("UIscene");
+        DontDestroyOnLoad(backmanager);
+        //씬이동
     }
 }
