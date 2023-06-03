@@ -19,7 +19,6 @@ public class Scene5Ctrl : MonoBehaviour
 
     public GameObject GuidePanel;
 
-    private int i = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +46,7 @@ public class Scene5Ctrl : MonoBehaviour
             bubble.SetActive(true);
             Invoke("isoxygen", 2.5f);
             Invoke("isanimation", 2.5f);
-            InvokeRepeating("Scaling", 4.2f, 1.1f);
+            InvokeRepeating("Scaling", 4.2f, 1.5f);
             Invoke("ChangeScene56", 10.0f);
         }
 
@@ -81,10 +80,10 @@ public class Scene5Ctrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        touchpinch();
     }
 
-    /*static public void touchpinch()
+    public void touchpinch()
     {
         if (Input.touchCount > 0)
         {
@@ -100,16 +99,12 @@ public class Scene5Ctrl : MonoBehaviour
                     {
                         if (bubble != null && oxygen != null)
                         {
-                            bubble.SetActive(true); //아래 삼각 플라스크에 묽은과산화수소수가 찬다 애니메이션
-                            oxygen.SetActive(true);
-                            oxygen.GetComponent<Animator>().Play("oxygen");
+                            PlayAnimation6();
                         }
-                        // 점점 산소가 이동해서 호스 끝에서 공기 나오는 애니메이션(분자구조?)
-                        GameManager.isScene5= true;
 
                     }
                 }
             }
         }
-    }*/
+    }
 }

@@ -96,11 +96,14 @@ public class Scene0Ctrl1 : MonoBehaviour
         //gameobject.SetActive(false);
         
     }
-
-
-    public static void touchYFlask()
+    */
+    void Update()
     {
-        /*if (Input.touchCount > 0)
+        touchYFlask();
+    }
+    public void touchYFlask()
+    {
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Began)
@@ -115,15 +118,14 @@ public class Scene0Ctrl1 : MonoBehaviour
 
                         if (flask != null && gameobject != null) 
                         {
-                            flask.GetComponent<Animator>().Play("YFLASK1");
-                            gameobject.SetActive(false);
+                            PlayAnimation();
                         }
-                        GameManager.isScene0= true;
+
                     }
                 }
             }
         }
 
 
-    }*/
+    }
 }

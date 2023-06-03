@@ -61,8 +61,12 @@ public class Scene6Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation7);
 
     }
+    void Update()
+    {
+        touchvial();
+    }
 
-    /*static public void touchvial()
+    public void touchvial()
     {
         if (Input.touchCount > 0)
         {
@@ -76,12 +80,10 @@ public class Scene6Ctrl1 : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "vial")
                     {
-                        //집기병이 수조 밖으로 나왔다가 다시 수조에 들어감(물이 다시 가득해짐) 애니메이션
-                        GameManager.isScene6 = true;
-
+                        PlayAnimation7();
                     }
                 }
             }
         }
-    }*/
+    }
 }

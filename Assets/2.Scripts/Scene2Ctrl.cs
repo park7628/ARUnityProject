@@ -54,8 +54,11 @@ public class Scene2Ctrl : MonoBehaviour
 
 
     }
-
-    /*public static void touchgum_cover()
+    void Update()
+    {
+        touchgum_cover();
+    }
+    public void touchgum_cover()
     {
         if (Input.touchCount > 0)
         {
@@ -71,13 +74,12 @@ public class Scene2Ctrl : MonoBehaviour
                     {
                         if (gum != null)
                         {
-                            gum.GetComponent<Animator>().Play("yflask");
-                            
+                            PlayAnimation3();
                         }
-                        GameManager.isScene2 = true;
+                       
                     }
                 }
             }
         }
-    }*/
+    }
 }

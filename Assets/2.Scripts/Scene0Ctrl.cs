@@ -83,11 +83,14 @@ public class Scene0Ctrl : MonoBehaviour
         //gameobject.SetActive(false);
         
     }
-
-
-    public static void touchYFlask()
+    */
+    void Update()
     {
-        /*if (Input.touchCount > 0)
+        touchYFlask();
+    }
+    public void touchYFlask()
+    {
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Began)
@@ -99,18 +102,23 @@ public class Scene0Ctrl : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "Y_Flask")
                     {
-
-                        if (flask != null && gameobject != null) 
+                        if (flask != null)
                         {
+                            animator.SetTrigger(animationTrigger);
                             flask.GetComponent<Animator>().Play("YFLASK1");
                             gameobject.SetActive(false);
+                            Invoke("ChangeScene01", 4.5f);
+
+                            //StartCoroutine(WaitForAnimation(animator));
+                            // 오브젝트의 애니메이션 실행
+                            //flask.GetComponent<Animator>().Play("YFLASK1");
+                            //flask.GetComponent<Animation>().Play(targetAnimation.name);
                         }
-                        GameManager.isScene0= true;
                     }
                 }
             }
         }
 
 
-    }*/
+    }
 }

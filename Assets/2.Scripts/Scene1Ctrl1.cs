@@ -98,8 +98,11 @@ public class Scene1Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation2);
     }
 
-    /*
-    public static void touchWATERMANGANIZ()
+    void Update()
+    {
+        touchWATERMANGANIZ();
+    }
+    public void touchWATERMANGANIZ()
     {
         if (Input.touchCount > 0)
         {
@@ -115,22 +118,20 @@ public class Scene1Ctrl1 : MonoBehaviour
                     {
                         if (Water != null && liquid1 != null)
                         {
-                            Water.GetComponent<Animator>().Play("Water");
-                            liquid1.SetActive(true);
+                            PlayAnimation1();
                         }
                     }
                     if (hit.collider.gameObject.tag == "Mangan")
                     {
                         if (Mangan != null && mangan != null)
                         {
-                            Mangan.GetComponent<Animator>().Play("MANG");
-                            mangan.SetActive(true);
+                            PlayAnimation2();
                         }
-                        GameManager.isScene1 = true;
+
                     }
                 }
             }
         }
-    }*/
+    }
 
 }

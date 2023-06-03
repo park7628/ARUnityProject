@@ -63,7 +63,13 @@ public class Scene7Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation8);
 
     }
-    /*static public void touchglass_plate()
+    void Update()
+    {
+        touchvial();
+    }
+
+
+    public void touchvial()
     {
         if (Input.touchCount > 0)
         {
@@ -75,14 +81,14 @@ public class Scene7Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "glass_plate") //유리판 추가 필요
+                    if (hit.collider.gameObject.tag == "vial")
                     {
-                        
-                        GameManager.isScene7= true;
+
+                        PlayAnimation8();
 
                     }
                 }
             }
         }
-    }*/
+    }
 }

@@ -52,9 +52,12 @@ public class Scene3Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation4);
     }
 
+    void Update()
+    {
+        touchYFlask();
+    }
 
-    /*
-    static public void touchYFlask()
+    public void touchYFlask()
     {
         if (Input.touchCount > 0)
         {
@@ -66,20 +69,14 @@ public class Scene3Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                        if (hit.collider.gameObject.tag == "Y_Flask")
-                        {
+                    if (hit.collider.gameObject.tag == "Y_Flask")
+                    {
+                        PlayAnimation4();
+                    }
 
-                            if (flask != null && gameobject != null)
-                            {
-                                flask.GetComponent<Animator>().Play("YFLASK1");
-                                gameobject.SetActive(true);
-                            }
-                            GameManager.isScene3 = true;
-                        }
-
-                        //삼각 플라스크가 장치 원래 자리에 돌아간다
+                    //삼각 플라스크가 장치 원래 자리에 돌아간다
                 }
             }
         }
-    }*/
+    }
 }
