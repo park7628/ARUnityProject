@@ -22,6 +22,7 @@ public class Scene6Ctrl : MonoBehaviour
 
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "처음 집기병에 찬 기체는\r\n원래 플라스크 안에 있던 \r\n기체이기 때문에 버린다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
@@ -41,6 +42,7 @@ public class Scene6Ctrl : MonoBehaviour
     }
     public void PlayAnimation7()
     {
+        button.interactable = false;
         if (vial != null) 
         {
             //animator1.SetTrigger(animationTrigger1);

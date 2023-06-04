@@ -3960,7 +3960,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cd5a405bf1878a24cbd8b0797eb51d8e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+      objectReference: {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
     - target: {fileID: 919132149155446097, guid: cd5a405bf1878a24cbd8b0797eb51d8e, type: 3}
       propertyPath: m_Name
       value: water2 (2)
@@ -4112,7 +4112,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5016,7 +5016,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cd5a405bf1878a24cbd8b0797eb51d8e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+      objectReference: {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
     - target: {fileID: 919132149155446097, guid: cd5a405bf1878a24cbd8b0797eb51d8e, type: 3}
       propertyPath: m_Name
       value: water2
@@ -7710,6 +7710,8 @@ MonoBehaviour:
   button: {fileID: 252334708}
   animator: {fileID: 0}
   animationTrigger: isoxy
+  animator1: {fileID: 0}
+  animationTrigger1: isCylinder
   ScriptTxt: {fileID: 599788188}
   WarningPanel: {fileID: 1006265036552004381}
   GuidePanel: {fileID: 2015420767}
@@ -12493,7 +12495,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14632,6 +14634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 847793474}
+  - component: {fileID: 847793475}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: cylinder
@@ -14654,6 +14657,25 @@ Transform:
   m_Father: {fileID: 568249142}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &847793475
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847793473}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 257686ae7cbcc4745a15329fe9db2631, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &874685820
 GameObject:
   m_ObjectHideFlags: 0
@@ -21777,7 +21799,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23770,6 +23792,8 @@ MonoBehaviour:
   animationTrigger: isoxy
   animator1: {fileID: 0}
   animationTrigger1: isvial
+  animator2: {fileID: 0}
+  animationTrigger2: isCylinder
   ScriptTxt: {fileID: 599788188}
 --- !u!1 &1422389159
 GameObject:
@@ -24288,6 +24312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1453267591}
+  - component: {fileID: 1453267592}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: cylinder
@@ -24310,6 +24335,25 @@ Transform:
   m_Father: {fileID: 1092263963}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1453267592
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453267590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 257686ae7cbcc4745a15329fe9db2631, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1454737146
 GameObject:
   m_ObjectHideFlags: 0
@@ -26989,7 +27033,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29044,7 +29088,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cd5a405bf1878a24cbd8b0797eb51d8e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+      objectReference: {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
     - target: {fileID: 919132149155446097, guid: cd5a405bf1878a24cbd8b0797eb51d8e, type: 3}
       propertyPath: m_Name
       value: water2 (1)
@@ -31807,7 +31851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1880182199
 AudioListener:
   m_ObjectHideFlags: 0
@@ -32136,7 +32180,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35283,7 +35327,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35706,7 +35750,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e905c4ea3d47abb47882bbef80660055, type: 2}
+  - {fileID: 2100000, guid: 833f80323814fdf48890c1b87591db70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50118,7 +50162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8645312341281215691
 Transform:
   m_ObjectHideFlags: 0

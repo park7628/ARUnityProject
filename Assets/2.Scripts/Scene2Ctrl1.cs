@@ -18,6 +18,7 @@ public class Scene2Ctrl1 : MonoBehaviour
 
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "기체가 새지 않도록\r\n고무마개로\r\n플라스크 입구를 잘 막는다.";
         gum = GameObject.FindWithTag("gum_cover");
         flask = GameObject.FindWithTag("flask");
@@ -31,9 +32,9 @@ public class Scene2Ctrl1 : MonoBehaviour
 
     public void PlayAnimation3()
     {
-        
-            //UnityEngine.Debug.Log("Scene2버튼 클릭");
-            if (gum != null)
+        button.interactable = false;
+        //UnityEngine.Debug.Log("Scene2버튼 클릭");
+        if (gum != null)
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("gum");

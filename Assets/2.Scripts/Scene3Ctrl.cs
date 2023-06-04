@@ -16,7 +16,7 @@ public class Scene3Ctrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        button.interactable = true;
         ScriptTxt.text = "삼각 플라스크를 \r\n장치에 다시 연결한다.";
         flask = GameObject.FindWithTag("flask");
         gameobject = GameObject.FindWithTag("gameobject");
@@ -30,7 +30,8 @@ public class Scene3Ctrl : MonoBehaviour
 
     public void PlayAnimation4()
     {
-            if (flask != null)
+        button.interactable = false;
+        if (flask != null)
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("yflask");

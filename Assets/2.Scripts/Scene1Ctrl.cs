@@ -23,6 +23,7 @@ public class Scene1Ctrl : MonoBehaviour
     public TextMeshProUGUI ScriptTxt;
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "삼각 플라스크에 물을 조금 넣은 뒤 탄산 수소 나트륨을 4~5숟가락 넣는다.";
         Water = GameObject.FindWithTag("WATER");
         liquid1 = GameObject.FindWithTag("liquid1");
@@ -44,11 +45,11 @@ public class Scene1Ctrl : MonoBehaviour
 
     private void PlayAnimation1()
     {
+        button.interactable = false;
 
-            
-            //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
+        //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
 
-            if (Water != null && liquid1 != null)
+        if (Water != null && liquid1 != null)
             {
                 //UnityEngine.Debug.Log("settrigger");
                 animator1.SetTrigger(animationTrigger1);

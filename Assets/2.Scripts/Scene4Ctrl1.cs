@@ -18,6 +18,7 @@ public class Scene4Ctrl1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "묽은 과산화 수소수를 \r\n깔때기에 붓는다.";
         gwasan = GameObject.FindWithTag("gwasanhwa");
         funnelliquid = GameObject.FindWithTag("funnelliquid");
@@ -36,7 +37,7 @@ public class Scene4Ctrl1 : MonoBehaviour
     public void PlayAnimation5()
     {
 
-
+        button.interactable = false;
         if (gwasan != null)
         {
             animator.SetTrigger(animationTrigger);

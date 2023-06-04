@@ -28,7 +28,7 @@ public class Scene0Ctrl1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        button.interactable = true;
         ScriptTxt.text = "기체 발생 장치에서\r\n삼각 플라스크를 분리한다.";
         flask = GameObject.FindWithTag("flask");
         gameobject = GameObject.FindWithTag("gameobject");
@@ -54,8 +54,8 @@ public class Scene0Ctrl1 : MonoBehaviour
 
     public void PlayAnimation()
     {
-        
-            
+
+        button.interactable = false;
             if (flask != null)
             {
                 animator.SetTrigger(animationTrigger);
@@ -68,7 +68,7 @@ public class Scene0Ctrl1 : MonoBehaviour
                 //flask.GetComponent<Animator>().Play("YFLASK1");
                 //flask.GetComponent<Animation>().Play(targetAnimation.name);
             }
-        
+        //button.interactable = true;
     }
     private void ChangeScene01()
     {

@@ -24,6 +24,7 @@ public class Scene8Ctrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "집기병에 이산화탄소가 \r\n가득 차면 물속에서 \r\n유리판으로 집기병 입구를 \r\n막고 꺼낸다.";
         oxygen = GameObject.FindWithTag("oxygen");
         animator = oxygen.GetComponent<Animator>();
@@ -45,6 +46,7 @@ public class Scene8Ctrl : MonoBehaviour
 
     public void PlayAnimation9()
     {
+        button.interactable = false;
         if (vial != null)
         {
             animator1.SetTrigger(animationTrigger1);

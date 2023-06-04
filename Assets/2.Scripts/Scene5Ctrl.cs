@@ -14,6 +14,9 @@ public class Scene5Ctrl : MonoBehaviour
     public Animator animator;
     public string animationTrigger;
 
+    public Animator animator1;
+    public string animationTrigger1;
+
     public TextMeshProUGUI ScriptTxt;
     public GameObject WarningPanel;
 
@@ -32,6 +35,7 @@ public class Scene5Ctrl : MonoBehaviour
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
+        animator1 = cylinder.GetComponent<Animator>();
         bubble.SetActive(false);
         oxygen.SetActive(false);
         animator = oxygen.GetComponent<Animator>();
@@ -41,13 +45,14 @@ public class Scene5Ctrl : MonoBehaviour
     }
     public void PlayAnimation6()
     {
+        button.interactable = false;
         if (oxygen != null)
         {
             bubble.SetActive(true);
             Invoke("isoxygen", 2.5f);
             Invoke("isanimation", 2.5f);
-            InvokeRepeating("Scaling", 4.2f, 1.5f);
-            Invoke("ChangeScene56", 10.0f);
+            Invoke("Scaling", 4.2f);
+            Invoke("ChangeScene56", 8.0f);
         }
 
     }
@@ -63,13 +68,8 @@ public class Scene5Ctrl : MonoBehaviour
     }
     private void Scaling()
     {
-
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
-        //if (i < 6)
-        //{
-        //    cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
-        //}
-        //i++;
+        animator1.SetTrigger(animationTrigger1);
+        cylinder.GetComponent<Animator>().Play("vialcylinder");
     }
     private void ChangeScene56()
     {
