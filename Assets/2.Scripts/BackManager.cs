@@ -1,19 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackManager : MonoBehaviour
 {
-    public static bool isBack = false;
-    // Start is called before the first frame update
+    
+    public int Exp;
+    public GameObject backmanager;
+
+    public static bool isback = false;
+
     void Start()
     {
-        
+        //isback = false;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void BackButtonClick()
     {
-        
+        //BackManagerUI backManagerUI = backmanager.GetComponent<BackManagerUI>();
+        //backManagerUI.isback = true;
+        isback = true;
+        SceneManager.LoadScene("UIscene");
+        DontDestroyOnLoad(backmanager);
+        //æ¿¿Ãµø
     }
 }

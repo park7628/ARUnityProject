@@ -6,7 +6,12 @@ using UnityEngine.SceneManagement;
 public class SceneReloader : MonoBehaviour
 {
 
+    void Start()
+    {
 
+        BackManager.isback = false;
+
+    }
     public GameManager GameManager;
 
     // 씬을 다시 로드하는 함수
