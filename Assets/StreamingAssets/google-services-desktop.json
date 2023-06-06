@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206361011530",
+    "project_id": "arandroid-6daa0",
+    "storage_bucket": "arandroid-6daa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206361011530:android:007735917d312d07938db3",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ARproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206361011530-1pirnvspmus13pnr1fpa4ddgl6gtfu12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK5NK7Z5_QDqycHc79TiLnQJVSmH-Bn6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206361011530-1pirnvspmus13pnr1fpa4ddgl6gtfu12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
