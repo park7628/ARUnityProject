@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
+using System.Threading;
+//using System.Diagnostics;
+using System.Net;
+using UnityEditor;
 
 public class LoginUIButtonManager : MonoBehaviour
 {
@@ -19,9 +24,18 @@ public class LoginUIButtonManager : MonoBehaviour
     public GameObject TSignupUI;
     public GameObject Experiment1;
     public GameObject GroupCodeSet;
+    public GameObject LogInSystemScript;
 
 
+    public static bool cc;
 
+    private void Start()
+    {
+
+        cc = false;
+
+        //FirebaseLogInManager.Instance2.Init();
+    }
 
     // FirstUI 에서 로그인 버튼 클릭 시 LoginUI로 이동
     // TSChoiceUI에서 로그인 버튼 클릭 시 이전화면(LoginUI)으로 이동
@@ -29,6 +43,21 @@ public class LoginUIButtonManager : MonoBehaviour
     // SSignupUI, TSignupUI에서 회원가입 버튼 클릭 시 LoginUI로 이동
     public void LoginUISetActive()
     {
+        //if (CreateBool == false)
+        //{
+        //    return;
+        //}
+        //if (CreateBool == true)
+        //{
+        //    FirstUI.SetActive(false);
+        //    TSChoiceUI.SetActive(false);
+        //    FindIDUI.SetActive(false);
+        //    FindPWUI.SetActive(false);
+        //    SSignupUI.SetActive(false);
+        //    TSignupUI.SetActive(false);
+
+        //    LoginUI.SetActive(true);
+        //}
         FirstUI.SetActive(false);
         TSChoiceUI.SetActive(false);
         FindIDUI.SetActive(false);
@@ -57,6 +86,8 @@ public class LoginUIButtonManager : MonoBehaviour
     
     public void SAgreeUISetActive()
     {
+
+        
         TSChoiceUI.SetActive(false);
         SAgreeUI1.SetActive(false);
         SAgreeUI2.SetActive(false);
@@ -82,8 +113,12 @@ public class LoginUIButtonManager : MonoBehaviour
     // SAgreeUI에서 다음단계 버튼 클릭 시 SSignupUI로 이동
     public void SSignupUISetActive()
     {
+
+        
         SAgreeUI.SetActive(false);
         SSignupUI.SetActive(true);
+        
+        
     }
 
     // TSChoiceUI에서 교사 버튼 클릭 시 TAgreeUI로 이동
@@ -143,15 +178,54 @@ public class LoginUIButtonManager : MonoBehaviour
     {
         LoginUI.SetActive(false);
         FindPWUI.SetActive(true);
+        
     }
 
+    //IEnumerator WaitForIt()
+    //{
+    //    yield return new WaitForSeconds(2.0f);
+    //    Debug.LogError("지연됨");
 
+    //}
     // LoginUI에서 로그인 버튼 클릭 시 메인 화면(Experiment1)으로 이동
+
+    
     public void Experiment1SetActive()
     {
-        LoginUI.SetActive(false);
-        Experiment1.SetActive(true);
-        GroupCodeSet.SetActive(true);
+
+        //쓰려면 void 왼쪽이 async 해줘
+        //await Task.Run(() =>
+        //{
+        //    Debug.LogError("LoginUIButtonManager : 나옴");
+        //    //Debug.LogError("LoginUIButtonManager : " + LogInSystem.password2);
+        //    //LogInSystem.LogIn();
+        //    //LogInSystemScript.GetComponentInChildren<LogInSystem>().LogIn();
+        //});
+       
+           
+        
+        if (cc == true)
+        {
+            Debug.LogError("cc = "+cc);
+            LoginUI.SetActive(false);
+            Experiment1.SetActive(true);
+            GroupCodeSet.SetActive(true);
+            
+        }
+        if (cc == false)
+        {
+            Debug.LogError("cc = false");
+        }
+        
+        
+        
+        
+        
+    }
+
+    public void Update()
+    {
+        //
     }
 
 }

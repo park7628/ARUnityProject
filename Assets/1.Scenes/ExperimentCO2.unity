@@ -29020,8 +29020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39c1a36edc3ccd49aabfc846d5a05b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  O2Start: {fileID: 0}
-  CO2Start: {fileID: 0}
+  O2Start: {fileID: 8849586352064188392, guid: fde499313885bdc43ad0b2bf887b0f21, type: 3}
+  CO2Start: {fileID: 700482351159214113, guid: cd0e2d1a7ba02b74f9d841c5090e8f17, type: 3}
 --- !u!1001 &1753230233
 PrefabInstance:
   m_ObjectHideFlags: 0

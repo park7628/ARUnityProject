@@ -2,83 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Auth;
-using System.Xml.Serialization;
-using System;
-//using UnityEngine.UI;
+using UnityEngine.UI;
 
 
-public class FirebaseLogInManager
+public class FirebaseLogInManager : MonoBehaviour
 {
-    private static FirebaseLogInManager instance2 = null;
+    public GameObject LoginUI;
+    public GameObject Experiment1;
+    public GameObject GroupCodeSet;
 
-    public static FirebaseLogInManager Instance2
-    {
-        get
-        {
-            if (instance2 == null)
-            {
-                instance2 = new FirebaseLogInManager();
-            }
-
-            return instance2;
-        }
-    }
     private FirebaseAuth auth;
     private FirebaseUser user;
 
+    public InputField email;
+    public InputField password;
 
-    public Action<bool> LoginState;
+    public InputField getEmail;
+    public InputField getPassword;
+    public LoginUIButtonManager loginUIButtonManager;
 
-    public void Init()
+    public static bool aa;
+    // Start is called before the first frame update
+    void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
-        //LoginState = loginStateCallback;
-        if (auth.CurrentUser != null)
-        {
-            LogOut();
-        }
-        auth.StateChanged += OnChanged;
-
+        aa = false;
     }
 
-    private void OnChanged(object sender, EventArgs e)
+    public void Create()
     {
-        if (auth.CurrentUser != null)
-        {
-            bool signed = (auth.CurrentUser != user && auth.CurrentUser != null);
-            if (!signed && user != null)
-            {
-                Debug.Log("로그아웃");
-                LoginState?.Invoke(false);
-            }
-            user = auth.CurrentUser;
-            if (signed)
-            {
-                Debug.Log("로그인");
-                LoginState?.Invoke(false);
-            }
-        }
-    }
-
-    public string UserId
-    {
-        get { return user != null ? user.UserId : string.Empty; }
-    }
-    //public InputField email;
-    //public InputField password;
-
-    //public InputField getEmail;
-    //public InputField getPassword;
-
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    auth = FirebaseAuth.DefaultInstance;   
-    //}
-
-    public void Create(string getEmail, string getPassword)
-    {
-        auth.CreateUserWithEmailAndPasswordAsync(getEmail, getPassword).ContinueWith(task =>
+        auth.CreateUserWithEmailAndPasswordAsync(getEmail.text, getPassword.text).ContinueWith(task =>
         {
             if (task.IsCanceled)
             {
@@ -97,25 +50,41 @@ public class FirebaseLogInManager
         });
     }
 
-    public void Login(string email, string password)
+    public void Login()
     {
-        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
+        auth.SignInWithEmailAndPasswordAsync(email.text, password.text).ContinueWith(task =>
         {
+            
             if (task.IsCanceled)
             {
-                Debug.LogError("로그인 취소");
+                //Debug.LogError("로그인 취소");
+                aa = false;
                 return;
             }
             if (task.IsFaulted)
             {
                 Debug.LogError("로그인 실패");
+                aa = false;
                 return;
             }
 
+
+            aa = true;
             FirebaseUser newUser = task.Result.User;
+
             //FirebaseUser newUser = task.Result;
-            Debug.LogError("로그인 완료");
+            //Debug.LogError("로그인 완료");
+            
+            
+            //loginUIButtonManager.Experiment1SetActive();
         });
+
+        if (aa)
+        {
+            LoginUI.SetActive(false);
+            Experiment1.SetActive(true);
+            GroupCodeSet.SetActive(true);
+        }
     }
 
     public void LogOut()
