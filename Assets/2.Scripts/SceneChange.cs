@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    public static int SelectedExperiment;
+    public static int SelectedExperiment = 0;
 
     public void Ex1()
     {

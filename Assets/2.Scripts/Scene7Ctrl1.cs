@@ -16,11 +16,14 @@ public class Scene7Ctrl1 : MonoBehaviour
     public string animationTrigger;
     public Animator animator1;
     public string animationTrigger1;
+    public Animator animator2;
+    public string animationTrigger2;
     public TextMeshProUGUI ScriptTxt;
     
 
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "다시 집기병을 물로 가득\r\n채우고 순수한 산소만 \r\n담는다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
@@ -28,6 +31,8 @@ public class Scene7Ctrl1 : MonoBehaviour
         //glass = GameObject.FindWithTag("glass");
         //oxygen.SetActive(false);
         cylinder.SetActive(false);
+
+        animator2 = cylinder.GetComponent<Animator>();
         animator = oxygen.GetComponent<Animator>();
         animator.SetTrigger(animationTrigger);
         oxygen.GetComponent<Animator>().Play("oxygen");
@@ -38,13 +43,14 @@ public class Scene7Ctrl1 : MonoBehaviour
     }
     public void PlayAnimation8()
     {
+        button.interactable = false;
         if (vial != null) 
         {
             animator1.SetTrigger(animationTrigger1);
             vial.GetComponent<Animator>().Play("vial2");
             Invoke("watering", 1.0f);
-            InvokeRepeating("Scaling", 2.5f, 1.1f);
-            Invoke("ChangeScene78", 8.5f);
+            Invoke("Scaling", 2.5f);
+            Invoke("ChangeScene78", 7.5f);
             
         }
     }
@@ -54,7 +60,8 @@ public class Scene7Ctrl1 : MonoBehaviour
     }
     private void Scaling()
     {
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        animator2.SetTrigger(animationTrigger2);
+        cylinder.GetComponent<Animator>().Play("vialcylinder");
     }
     private void ChangeScene78()
     {
@@ -63,7 +70,13 @@ public class Scene7Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation8);
 
     }
-    /*static public void touchglass_plate()
+    void Update()
+    {
+        touchvial();
+    }
+
+
+    public void touchvial()
     {
         if (Input.touchCount > 0)
         {
@@ -75,14 +88,14 @@ public class Scene7Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "glass_plate") //유리판 추가 필요
+                    if (hit.collider.gameObject.tag == "vial")
                     {
-                        
-                        GameManager.isScene7= true;
+
+                        PlayAnimation8();
 
                     }
                 }
             }
         }
-    }*/
+    }
 }

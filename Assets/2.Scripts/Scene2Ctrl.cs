@@ -18,6 +18,7 @@ public class Scene2Ctrl : MonoBehaviour
 
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "기체가 새지 않도록\r\n고무마개로\r\n플라스크 입구를 잘 막는다.";
         gum = GameObject.FindWithTag("gum_cover");
         flask = GameObject.FindWithTag("flask");
@@ -31,9 +32,9 @@ public class Scene2Ctrl : MonoBehaviour
 
     public void PlayAnimation3()
     {
-        
-            //UnityEngine.Debug.Log("Scene2버튼 클릭");
-            if (gum != null)
+        button.interactable = false;
+        //UnityEngine.Debug.Log("Scene2버튼 클릭");
+        if (gum != null)
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("gum");
@@ -54,8 +55,11 @@ public class Scene2Ctrl : MonoBehaviour
 
 
     }
-
-    /*public static void touchgum_cover()
+    void Update()
+    {
+        touchgum_cover();
+    }
+    public void touchgum_cover()
     {
         if (Input.touchCount > 0)
         {
@@ -71,13 +75,12 @@ public class Scene2Ctrl : MonoBehaviour
                     {
                         if (gum != null)
                         {
-                            gum.GetComponent<Animator>().Play("yflask");
-                            
+                            PlayAnimation3();
                         }
-                        GameManager.isScene2 = true;
+                       
                     }
                 }
             }
         }
-    }*/
+    }
 }
