@@ -74,10 +74,10 @@ public class FirebaseLogInManager : MonoBehaviour
             FirebaseUser newUser = task.Result.User;
 
             //FirebaseUser newUser = task.Result;
-            //Debug.LogError("로그인 완료");
+            Debug.LogError("로그인 완료");
             
             
-            //loginUIButtonManager.Experiment1SetActive();
+            loginUIButtonManager.Experiment1SetActive();
         });
 
         if (aa)
