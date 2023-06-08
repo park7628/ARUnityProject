@@ -16,7 +16,6 @@ public class MainUI : MonoBehaviour
     public GameObject Game;
     public GameObject Information1;
     public GameObject Information2;
-    public GameObject GroupS1;
     public GameObject LoginUI;
     public GameObject setE1;
     public GameObject setE2;
@@ -29,6 +28,7 @@ public class MainUI : MonoBehaviour
     public GameObject GroupCodeSet;
     public GameObject O2Start;
     public GameObject CO2Start;
+    public GameObject bgmsound;
 
     // public GameObject setGS1;
 
@@ -48,7 +48,6 @@ public class MainUI : MonoBehaviour
         Game.SetActive(false);
         Information1.SetActive(false);
         Information2.SetActive(false);
-        GroupS1.SetActive(false);
 
         GroupCodeSet.SetActive(false);
     }
@@ -64,7 +63,6 @@ public class MainUI : MonoBehaviour
         Game.SetActive(false);
         Information1.SetActive(false);
         Information2.SetActive(false);
-        GroupS1.SetActive(false);
     }
 
     public void Nav3()
@@ -78,7 +76,6 @@ public class MainUI : MonoBehaviour
         Game.SetActive(true);
         Information1.SetActive(false);
         Information2.SetActive(false);
-        GroupS1.SetActive(false);
     }
 
     public void Nav4()
@@ -92,7 +89,6 @@ public class MainUI : MonoBehaviour
         Game.SetActive(false);
         Information1.SetActive(true);
         Information2.SetActive(false);
-        GroupS1.SetActive(false);
     }
 
     public void experimentC3()
@@ -133,7 +129,6 @@ public class MainUI : MonoBehaviour
         Game.SetActive(false);
         Information1.SetActive(false);
         Information2.SetActive(false);
-        GroupS1.SetActive(false);
 
         setE1.SetActive(false);
         setE2.SetActive(false);
@@ -146,6 +141,7 @@ public class MainUI : MonoBehaviour
         //setGS1.SetActive(false);
 
         LoginUI.SetActive(true);
+        bgmsound.SetActive(false);
     }
 
     public void O2StartActive()

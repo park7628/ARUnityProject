@@ -10,6 +10,7 @@ public class FirebaseLogInManager : MonoBehaviour
     public GameObject LoginUI;
     public GameObject Experiment1;
     public GameObject GroupCodeSet;
+    public GameObject bgmsound;
 
     private FirebaseAuth auth;
     private FirebaseUser user;
@@ -84,6 +85,7 @@ public class FirebaseLogInManager : MonoBehaviour
             LoginUI.SetActive(false);
             Experiment1.SetActive(true);
             GroupCodeSet.SetActive(true);
+            bgmsound.SetActive(true);
         }
     }
 
