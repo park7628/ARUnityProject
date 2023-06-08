@@ -278,7 +278,7 @@ public class QuizUICtrl : MonoBehaviour
         }
         else 
         { 
-            right4.SetActive(true); 
+            right5.SetActive(true); 
         }
     }
 }
