@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     //public GameObject QuizPanel;
     //public GameObject GuidePanel;
     //public Button button;
-
+    public Image quizbutton;
     public enum State
     {
         SCENE0,
@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
                 //button.interactable = false;
                 //button.gameObject.SetActive(false);
                 //QuizPanel.SetActive(true); //ƒ˚¡Ó µÓ¿Â
-                
+                quizbutton.gameObject.SetActive(true);
             }
         }
     }

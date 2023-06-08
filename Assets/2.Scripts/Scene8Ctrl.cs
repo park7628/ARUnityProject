@@ -20,10 +20,11 @@ public class Scene8Ctrl : MonoBehaviour
 
     private static GameObject gameobject;
     public TextMeshProUGUI ScriptTxt;
-    
+
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "집기병에 이산화탄소가 \r\n가득 차면 물속에서 \r\n유리판으로 집기병 입구를 \r\n막고 꺼낸다.";
         oxygen = GameObject.FindWithTag("oxygen");
         animator = oxygen.GetComponent<Animator>();
@@ -45,6 +46,7 @@ public class Scene8Ctrl : MonoBehaviour
 
     public void PlayAnimation9()
     {
+        button.interactable = false;
         if (vial != null)
         {
             animator1.SetTrigger(animationTrigger1);
@@ -73,12 +75,15 @@ public class Scene8Ctrl : MonoBehaviour
         GameManager.isScene7 = false;
         GameManager.isScene8 = true;
         button.onClick.RemoveListener(PlayAnimation9);
-        
+
     }
 
+    void Update()
+    {
+        touchglass_plate();
+    }
 
-
-    /*static public void touchvial()
+    public void touchglass_plate()
     {
         if (Input.touchCount > 0)
         {
@@ -90,14 +95,14 @@ public class Scene8Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "vial")
+                    if (hit.collider.gameObject.tag == "glass")
                     {
                         //유리병 입구가 막히고 집기병이 수조 밖으로 나온다 다른 장치들은 사라지고 집기병만 가운데에
-                        GameManager.isScene8= true;
+                        PlayAnimation9();
 
                     }
                 }
             }
         }
-    }*/
+    }
 }

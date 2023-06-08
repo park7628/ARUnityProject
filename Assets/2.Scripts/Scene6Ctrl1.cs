@@ -22,6 +22,7 @@ public class Scene6Ctrl1 : MonoBehaviour
 
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "처음 집기병에 찬 기체는\r\n원래 플라스크 안에 있던 \r\n기체이기 때문에 버린다.";
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
@@ -41,6 +42,7 @@ public class Scene6Ctrl1 : MonoBehaviour
     }
     public void PlayAnimation7()
     {
+        button.interactable = false;
         if (vial != null) //rtube 빠지고 
         {
             //animator1.SetTrigger(animationTrigger1);
@@ -61,8 +63,12 @@ public class Scene6Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation7);
 
     }
+    void Update()
+    {
+        touchvial();
+    }
 
-    /*static public void touchvial()
+    public void touchvial()
     {
         if (Input.touchCount > 0)
         {
@@ -76,12 +82,10 @@ public class Scene6Ctrl1 : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "vial")
                     {
-                        //집기병이 수조 밖으로 나왔다가 다시 수조에 들어감(물이 다시 가득해짐) 애니메이션
-                        GameManager.isScene6 = true;
-
+                        PlayAnimation7();
                     }
                 }
             }
         }
-    }*/
+    }
 }

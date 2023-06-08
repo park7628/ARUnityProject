@@ -37,6 +37,15 @@ public class QuizButtonCtrl : MonoBehaviour
 
     }
 
+    public void Close()
+    {
+        gameObject.SetActive(false);
+        GuidePanel.SetActive(true);
+        button.interactable = true;
+        button.gameObject.SetActive(true);
+        isOn = false;
+
+    }
 
 
 

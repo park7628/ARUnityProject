@@ -18,6 +18,7 @@ public class Scene4Ctrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = true;
         ScriptTxt.text = "진한 식초를 \r\n깔때기에 붓는다.";
         gwasan = GameObject.FindWithTag("gwasanhwa");
         funnelliquid = GameObject.FindWithTag("funnelliquid");
@@ -35,7 +36,7 @@ public class Scene4Ctrl : MonoBehaviour
     public void PlayAnimation5()
     {
 
-
+        button.interactable = false;
         if (gwasan != null)
         {
             animator.SetTrigger(animationTrigger);
@@ -61,9 +62,11 @@ public class Scene4Ctrl : MonoBehaviour
     }
 
     // Update is called once per frame
-
-    /*
-    static public void touchGWASANHWA()
+    void Update()
+    {
+        touchGWASANHWA();
+    }
+    public void touchGWASANHWA()
     {
         if (Input.touchCount > 0)
         {
@@ -75,20 +78,16 @@ public class Scene4Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "gwasanhwa") //오브젝트 추가 필요
+                    if (hit.collider.gameObject.tag == "gwasanhwa")
                     {
 
                         if (gwasan != null && funnelliquid != null)
                         {
-                            gwasan.GetComponent<Animator>().Play("gwasanhwa"); //과산화 수소수 비커 움직임
-                            funnelliquid.SetActive(true); //묽은 과산화 수소수가 깔때기에 담긴다 애니메이션
+                            PlayAnimation5();
                         }
-                        
-                        GameManager.isScene4= true;
-
                     }
                 }
             }
         }
-    }*/
+    }
 }

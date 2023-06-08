@@ -23,7 +23,8 @@ public class Scene1Ctrl1 : MonoBehaviour
     public TextMeshProUGUI ScriptTxt;
     void Start()
     {
-        ScriptTxt.text = "삼각 플라스크에 물을 조금 넣은 뒤 이산화 망가니즈를 한숟가락 넣는다.";
+        button.interactable = true;
+        ScriptTxt.text = "삼각 플라스크에 물을 넣은 뒤 이산화 망가니즈를 한숟가락 넣는다.";
         Water = GameObject.FindWithTag("WATER");
         liquid1 = GameObject.FindWithTag("liquid1");
         Mangan = GameObject.FindWithTag("MANGANIZ");
@@ -45,10 +46,10 @@ public class Scene1Ctrl1 : MonoBehaviour
     private void PlayAnimation1()
     {
 
-            
-            //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
+        
+        //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
 
-            if (Water != null && liquid1 != null)
+        if (Water != null && liquid1 != null)
             {
                 //UnityEngine.Debug.Log("settrigger");
                 animator1.SetTrigger(animationTrigger1);
@@ -65,9 +66,9 @@ public class Scene1Ctrl1 : MonoBehaviour
    
     private void PlayAnimation2()
     {
-     
-            
-            if (Mangan != null && mangan != null)
+
+        button.interactable = false;
+        if (Mangan != null && mangan != null)
             {
                 animator2.SetTrigger(animationTrigger2);
                 Mangan.GetComponent<Animator>().Play("MANG");
@@ -98,8 +99,11 @@ public class Scene1Ctrl1 : MonoBehaviour
         button.onClick.RemoveListener(PlayAnimation2);
     }
 
-    /*
-    public static void touchWATERMANGANIZ()
+    void Update()
+    {
+        touchWATERMANGANIZ();
+    }
+    public void touchWATERMANGANIZ()
     {
         if (Input.touchCount > 0)
         {
@@ -115,22 +119,20 @@ public class Scene1Ctrl1 : MonoBehaviour
                     {
                         if (Water != null && liquid1 != null)
                         {
-                            Water.GetComponent<Animator>().Play("Water");
-                            liquid1.SetActive(true);
+                            PlayAnimation1();
                         }
                     }
                     if (hit.collider.gameObject.tag == "Mangan")
                     {
                         if (Mangan != null && mangan != null)
                         {
-                            Mangan.GetComponent<Animator>().Play("MANG");
-                            mangan.SetActive(true);
+                            PlayAnimation2();
                         }
-                        GameManager.isScene1 = true;
+
                     }
                 }
             }
         }
-    }*/
+    }
 
 }

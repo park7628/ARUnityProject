@@ -14,15 +14,28 @@ public class Scene5Ctrl : MonoBehaviour
     public Animator animator;
     public string animationTrigger;
 
+    public Animator animator1;
+    public string animationTrigger1;
+
     public TextMeshProUGUI ScriptTxt;
+    public GameObject WarningPanel;
+
+    public GameObject GuidePanel;
 
     // Start is called before the first frame update
     void Start()
     {
+        button.interactable = false;
+        button.gameObject.SetActive(false);
+        WarningPanel.SetActive(true);
+        GuidePanel.SetActive(false);
+            
+        
         ScriptTxt.text = "핀치 집게를 조절하여\r\n진한 식초를 \r\n조금씩 흘려 보낸다.";
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
+        animator1 = cylinder.GetComponent<Animator>();
         bubble.SetActive(false);
         oxygen.SetActive(false);
         animator = oxygen.GetComponent<Animator>();
@@ -32,13 +45,14 @@ public class Scene5Ctrl : MonoBehaviour
     }
     public void PlayAnimation6()
     {
+        button.interactable = false;
         if (oxygen != null)
         {
             bubble.SetActive(true);
             Invoke("isoxygen", 2.5f);
             Invoke("isanimation", 2.5f);
-            InvokeRepeating("Scaling", 4.2f, 1.1f);
-            Invoke("ChangeScene56", 10.0f);
+            Invoke("Scaling", 4.2f);
+            Invoke("ChangeScene56", 8.0f);
         }
 
     }
@@ -54,7 +68,8 @@ public class Scene5Ctrl : MonoBehaviour
     }
     private void Scaling()
     {
-        cylinder.transform.localScale -= new Vector3(0.0f, 0.005f, 0.0f);
+        animator1.SetTrigger(animationTrigger1);
+        cylinder.GetComponent<Animator>().Play("vialcylinder");
     }
     private void ChangeScene56()
     {
@@ -65,10 +80,10 @@ public class Scene5Ctrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        touchpinch();
     }
 
-    /*static public void touchpinch()
+    public void touchpinch()
     {
         if (Input.touchCount > 0)
         {
@@ -84,16 +99,12 @@ public class Scene5Ctrl : MonoBehaviour
                     {
                         if (bubble != null && oxygen != null)
                         {
-                            bubble.SetActive(true); //아래 삼각 플라스크에 묽은과산화수소수가 찬다 애니메이션
-                            oxygen.SetActive(true);
-                            oxygen.GetComponent<Animator>().Play("oxygen");
+                            PlayAnimation6();
                         }
-                        // 점점 산소가 이동해서 호스 끝에서 공기 나오는 애니메이션(분자구조?)
-                        GameManager.isScene5= true;
 
                     }
                 }
             }
         }
-    }*/
+    }
 }
