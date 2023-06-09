@@ -77,7 +77,7 @@ public class FirebaseLogInManager : MonoBehaviour
             Debug.LogError("로그인 완료");
             
             
-            loginUIButtonManager.Experiment1SetActive();
+            //loginUIButtonManager.Experiment1SetActive();
         });
 
         if (aa)

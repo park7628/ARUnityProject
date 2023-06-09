@@ -252,7 +252,7 @@ public class LoginUIButtonManager : MonoBehaviour
     {
         //
         //Experiment1SetActive();
-        cc = FirebaseLogInManager.aa;
+        //cc = FirebaseLogInManager.aa;
     }
 
 }

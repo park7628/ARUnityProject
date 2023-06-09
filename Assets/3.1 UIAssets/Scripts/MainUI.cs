@@ -142,6 +142,7 @@ public class MainUI : MonoBehaviour
 
         LoginUI.SetActive(true);
         bgmsound.SetActive(false);
+        LoginUIButtonManager.cc = false;
     }
 
     public void O2StartActive()
