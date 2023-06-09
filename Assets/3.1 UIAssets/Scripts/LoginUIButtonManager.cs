@@ -6,6 +6,7 @@ using System.Threading;
 //using System.Diagnostics;
 using System.Net;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class LoginUIButtonManager : MonoBehaviour
 {
@@ -25,6 +26,12 @@ public class LoginUIButtonManager : MonoBehaviour
     public GameObject Experiment1;
     public GameObject GroupCodeSet;
     public GameObject LogInSystemScript;
+    public Toggle ToggleS1;
+    public Toggle ToggleS2;
+    public Toggle ToggleS3;
+    public Toggle ToggleT1;
+    public Toggle ToggleT2;
+    public Toggle ToggleT3;
 
 
     public static bool cc;
@@ -113,12 +120,17 @@ public class LoginUIButtonManager : MonoBehaviour
     // SAgreeUI에서 다음단계 버튼 클릭 시 SSignupUI로 이동
     public void SSignupUISetActive()
     {
+        // 모두 동의 안 하면 이동 X
+        if (ToggleS2.isOn && ToggleS3.isOn)
+        {
+            SAgreeUI.SetActive(false);
+            SSignupUI.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("모두 동의하세요.");
+        }
 
-        
-        SAgreeUI.SetActive(false);
-        SSignupUI.SetActive(true);
-        
-        
     }
 
     // TSChoiceUI에서 교사 버튼 클릭 시 TAgreeUI로 이동
@@ -151,8 +163,16 @@ public class LoginUIButtonManager : MonoBehaviour
     // TAgreeUI에서 다음단계 버튼 클릭 시 TSignupUI로 이동
     public void TSignupUISetActive()
     {
-        TAgreeUI.SetActive(false);
-        TSignupUI.SetActive(true);
+        // 모두 동의 안 하면 이동 X
+        if (ToggleT2.isOn && ToggleT3.isOn)
+        {
+            TAgreeUI.SetActive(false);
+            TSignupUI.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("모두 동의하세요.");
+        }
     }
 
     // LoginUI에서 뒤로가기 버튼 클릭 시 이전화면(FirstUI)으로 이동
@@ -181,6 +201,10 @@ public class LoginUIButtonManager : MonoBehaviour
         
     }
 
+
+
+
+
     //IEnumerator WaitForIt()
     //{
     //    yield return new WaitForSeconds(2.0f);
@@ -189,7 +213,7 @@ public class LoginUIButtonManager : MonoBehaviour
     //}
     // LoginUI에서 로그인 버튼 클릭 시 메인 화면(Experiment1)으로 이동
 
-    
+
     public void Experiment1SetActive()
     {
 
