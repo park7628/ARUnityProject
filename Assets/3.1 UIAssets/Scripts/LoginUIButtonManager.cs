@@ -201,9 +201,10 @@ public class LoginUIButtonManager : MonoBehaviour
         //    //LogInSystem.LogIn();
         //    //LogInSystemScript.GetComponentInChildren<LogInSystem>().LogIn();
         //});
-       
-           
-        
+
+        LogInSystemScript.GetComponent<FirebaseLogInManager>().Login();
+
+
         if (cc == true)
         {
             Debug.LogError("cc = "+cc);
@@ -226,6 +227,8 @@ public class LoginUIButtonManager : MonoBehaviour
     public void Update()
     {
         //
+        //Experiment1SetActive();
+        cc = FirebaseLogInManager.aa;
     }
 
 }
