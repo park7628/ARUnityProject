@@ -53468,6 +53468,12 @@ MonoBehaviour:
   Experiment1: {fileID: 274676912}
   GroupCodeSet: {fileID: 379844592}
   LogInSystemScript: {fileID: 1268470794}
+  ToggleS1: {fileID: 458145802214905399}
+  ToggleS2: {fileID: 1894752142106748588}
+  ToggleS3: {fileID: 3150309299998889042}
+  ToggleT1: {fileID: 603961110}
+  ToggleT2: {fileID: 1213941717}
+  ToggleT3: {fileID: 1060996941}
 --- !u!4 &1322717083
 Transform:
   m_ObjectHideFlags: 0
