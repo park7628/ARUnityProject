@@ -13330,7 +13330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &346418365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13347,8 +13347,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 159.21}
-  m_SizeDelta: {x: 800, y: 281.59}
+  m_AnchoredPosition: {x: 0, y: 112.489}
+  m_SizeDelta: {x: 800, y: 188.148}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &346418366
 MonoBehaviour:
@@ -21161,6 +21161,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543631261}
   m_CullTransparentMesh: 1
+--- !u!1 &544984038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544984040}
+  - component: {fileID: 544984039}
+  m_Layer: 0
+  m_Name: DBManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &544984039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544984038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb330ed83f82774f9238788b34d91e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataBase: {fileID: 1598514522}
+  emileInput: {fileID: 8364759897974519404}
+  groupInput: {fileID: 5591976760455081741}
+  numInput: {fileID: 4922217724814267109}
+  idInput: {fileID: 6447404663933146174}
+  userNameInput: {fileID: 7652069779868117964}
+  pwInput: {fileID: 8197471957623192957}
+  yyInput: {fileID: 702790509152690850}
+  mmInput: {fileID: 8105749340892736678}
+  ddInput: {fileID: 2105832875244241799}
+  emileInputT: {fileID: 1861800932440721392}
+  idInputT: {fileID: 1574663001637053115}
+  userNameInputT: {fileID: 6291724986170282364}
+  pwInputT: {fileID: 3630914672723338134}
+  yyInputT: {fileID: 4815558235560438520}
+  mmInputT: {fileID: 749903554063911997}
+  ddInputT: {fileID: 2403394438006211979}
+  groupCodeSet: {fileID: 1775166251}
+--- !u!4 &544984040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544984038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547322631
 GameObject:
   m_ObjectHideFlags: 0
@@ -51398,6 +51459,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1598514522}
+        m_TargetAssemblyTypeName: DataBase, Assembly-CSharp
+        m_MethodName: InputGroupSetWrite
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1262891135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51616,6 +51689,8 @@ MonoBehaviour:
   password: {fileID: 1639631548637621152}
   getEmail: {fileID: 8364759897974519404}
   getPassword: {fileID: 8197471957623192957}
+  getEmailT: {fileID: 1861800932440721392}
+  getPasswordT: {fileID: 3630914672723338134}
   loginUIButtonManager: {fileID: 1322717082}
 --- !u!4 &1268470796
 Transform:
@@ -63574,6 +63649,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596324900}
   m_CullTransparentMesh: 1
+--- !u!1 &1598514521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598514523}
+  - component: {fileID: 1598514522}
+  m_Layer: 0
+  m_Name: DataBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1598514522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598514521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b86bad4458404b479d68ec2bee6d1c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DBurl: https://arandroid-6daa0-default-rtdb.firebaseio.com/
+--- !u!4 &1598514523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598514521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601294589
 GameObject:
   m_ObjectHideFlags: 0
@@ -86172,7 +86291,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.00012207031}
-  m_SizeDelta: {x: 494, y: 56.99803}
+  m_SizeDelta: {x: 494, y: -93.00189}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &935554002900845399
 RectTransform:
@@ -91163,7 +91282,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.00012207031}
-  m_SizeDelta: {x: 494, y: 16.998032}
+  m_SizeDelta: {x: 494, y: -133.00189}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2540872327141840136
 MonoBehaviour:
@@ -92207,8 +92326,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7288233299097044104}
   m_HandleRect: {fileID: 9087888952403173696}
   m_Direction: 2
-  m_Value: 1.0000153
-  m_Size: 0.9150103
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -94370,6 +94489,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 544984039}
+        m_TargetAssemblyTypeName: DBManager, Assembly-CSharp
+        m_MethodName: InputTeacherData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: CreateTeacher
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &3751060412701970406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -96107,9 +96250,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LogInSystem, Assembly-CSharp
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
         m_MethodName: Create
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 544984039}
+        m_TargetAssemblyTypeName: DBManager, Assembly-CSharp
+        m_MethodName: InputStudentData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -99891,8 +100046,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9192821894896902868}
   m_HandleRect: {fileID: 5830215866965812761}
   m_Direction: 2
-  m_Value: 1.0000045
-  m_Size: 0.7625081
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -100292,7 +100447,7 @@ RectTransform:
   m_Father: {fileID: 3565066017920568479}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.2374919}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -106534,7 +106689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC544\uC774\uB514"
+  m_Text: "\uC774\uBA54\uC77C"
 --- !u!224 &7414311201911905253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -108585,8 +108740,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3617408823440247932}
   m_TextComponent: {fileID: 3786689605357296536}
   m_Placeholder: {fileID: 2420520767732468356}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -109579,6 +109734,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: Experiment1SetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: checkString
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1598514522}
+        m_TargetAssemblyTypeName: DataBase, Assembly-CSharp
+        m_MethodName: readDB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -110937,7 +111116,7 @@ RectTransform:
   m_Father: {fileID: 6802904330101573822}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.08498973}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
