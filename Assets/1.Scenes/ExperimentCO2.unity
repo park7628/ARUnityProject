@@ -14935,6 +14935,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1446311782124657116, guid: 06dad6cf60784934b96716a67d1f0b4f, type: 3}
   m_PrefabInstance: {fileID: 840200560}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &840200562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1446311782125078012, guid: 06dad6cf60784934b96716a67d1f0b4f, type: 3}
+  m_PrefabInstance: {fileID: 840200560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &840200563
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840200562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: b7dca15f6ae75524ebf80f29b2e6ca89, type: 3}
 --- !u!1 &840636214
 GameObject:
   m_ObjectHideFlags: 0
@@ -20265,6 +20284,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &1231494099
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231494097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 45192ae98374b744cae07e91f915c43d, type: 3}
 --- !u!1 &1233766786
 GameObject:
   m_ObjectHideFlags: 0
@@ -47246,6 +47279,7 @@ GameObject:
   - component: {fileID: 3337233247887302448}
   - component: {fileID: 3337233247886335472}
   - component: {fileID: 3337233247884133169}
+  - component: {fileID: 3337233247884133171}
   m_Layer: 0
   m_Name: Beaker_500mL_WithLiquid
   m_TagString: gwasanhwa
@@ -47290,6 +47324,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3337233247884133171
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3337233247884133168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7016a217ebeacff4bab40c103dccdb77, type: 3}
 --- !u!4 &3337233247884435216
 Transform:
   m_ObjectHideFlags: 0
@@ -48552,6 +48600,7 @@ GameObject:
   - component: {fileID: 4872269246696455334}
   - component: {fileID: 4872269246697553510}
   - component: {fileID: 4872269246695284903}
+  - component: {fileID: 4872269246695284904}
   m_Layer: 0
   m_Name: Beaker_100mL_WithLiquid
   m_TagString: WATER
@@ -48578,6 +48627,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &4872269246695284904
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872269246695284902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 0a3f3c5d2b5c90844b524d43f07ddb77, type: 3}
 --- !u!33 &4872269246696455332
 MeshFilter:
   m_ObjectHideFlags: 0
