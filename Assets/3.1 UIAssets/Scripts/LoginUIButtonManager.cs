@@ -188,6 +188,9 @@ public class LoginUIButtonManager : MonoBehaviour
         else
         {
             Debug.Log("모두 동의하세요.");
+            ToastMsg.Instrance.showMessage("약관에 모두 동의해주세요.", 1.0f);
+            ImageToast.Instrance.showImage(1.0f);
+
         }
     }
 
@@ -256,6 +259,8 @@ public class LoginUIButtonManager : MonoBehaviour
         if (cc == false)
         {
             Debug.LogError("cc = false");
+            ToastMsg.Instrance.showMessage("아이디 혹은 비밀번호가 틀립니다.", 1.0f);
+            ImageToast.Instrance.showImage(1.0f);
         }
         
         
