@@ -34,7 +34,7 @@ public class LoginUIButtonManager : MonoBehaviour
     public Toggle ToggleT3;
 
 
-    public static List<string> lst = new List<string>() { "teacher@naver.com" };
+    public static List<string> lst = new List<string>() { "teacher@naver.com", "teacherpark@naver.com" };
     public InputField teacherEmailData;
 
     public InputField loginTeacherEmaildData;

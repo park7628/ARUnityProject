@@ -115,14 +115,14 @@ public class Scene1Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "Water")
+                    if (hit.collider.gameObject.tag == "WATER")
                     {
                         if (Water != null && liquid1 != null)
                         {
                             PlayAnimation1();
                         }
                     }
-                    if (hit.collider.gameObject.tag == "MANGANIZ")
+                    else if (hit.collider.gameObject.tag == "MANGANIZ")
                     {
                         if (Mangan != null && mangan != null)
                         {
