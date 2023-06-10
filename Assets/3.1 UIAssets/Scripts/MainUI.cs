@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class MainUI : MonoBehaviour
 {
     #region gameobject
+    public GameObject FirstUI;
     public GameObject Experiment1;
     public GameObject Experiment2;
     public GameObject GroupS;
@@ -113,6 +114,7 @@ public class MainUI : MonoBehaviour
         Experiment2.SetActive(true);
         O2Start.SetActive(false);
         CO2Start.SetActive(false);
+        FirstUI.SetActive(false);
     }
 
     public void experimentC9()
