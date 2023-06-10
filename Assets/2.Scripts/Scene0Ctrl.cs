@@ -100,7 +100,7 @@ public class Scene0Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "Y_Flask")
+                    if (hit.collider.gameObject.tag == "flask")
                     {
                         if (flask != null)
                         {

@@ -81,7 +81,6 @@ public class Scene4Ctrl1 : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "gwasanhwa")
                     {
-
                         if (gwasan != null && funnelliquid != null)
                         {
                             PlayAnimation5();

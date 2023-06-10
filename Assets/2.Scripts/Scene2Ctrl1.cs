@@ -72,7 +72,7 @@ public class Scene2Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "gum_cover")
+                    if (hit.collider.gameObject.tag == "flask")
                     {
                         if (gum != null)
                         {

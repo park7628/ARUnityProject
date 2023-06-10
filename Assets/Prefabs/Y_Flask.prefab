@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 3027868484349309166}
   - component: {fileID: -287722590651461252}
   - component: {fileID: 3558933042074159346}
-  - component: {fileID: 3464153923908447813}
   - component: {fileID: 4632063395260250909}
   m_Layer: 0
   m_Name: Y_Flask
@@ -236,24 +235,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8889628670095534655, guid: 53e6c75975ec03944a7cf4645b7d4206, type: 3}
---- !u!114 &3464153923908447813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7380773909654199853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 5.6
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &4632063395260250909
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -122,7 +122,7 @@ public class Scene1Ctrl1 : MonoBehaviour
                             PlayAnimation1();
                         }
                     }
-                    if (hit.collider.gameObject.tag == "Mangan")
+                    if (hit.collider.gameObject.tag == "MANGANIZ")
                     {
                         if (Mangan != null && mangan != null)
                         {
