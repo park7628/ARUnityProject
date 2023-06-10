@@ -638,8 +638,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 29808696}
   m_HandleRect: {fileID: 29808695}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.70699173
+  m_Value: 1.0000001
+  m_Size: 0.7831578
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -861,7 +861,7 @@ RectTransform:
   m_Father: {fileID: 1323647032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.29300824}
+  m_AnchorMin: {x: 0, y: 0.21684217}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.60601807}
   m_SizeDelta: {x: 20, y: 18.787}
@@ -1719,7 +1719,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 2.8580017}
+  m_SizeDelta: {x: 0, y: -38.34787}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &58666538
 MonoBehaviour:
@@ -4909,7 +4909,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 158.51749}
+  m_SizeDelta: {x: 0, y: 117.311615}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &140592408
 MonoBehaviour:
@@ -6413,7 +6413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -140}
+  m_AnchoredPosition: {x: 80, y: -100}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183821947
@@ -10594,7 +10594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -180}
+  m_AnchoredPosition: {x: 80, y: -140}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269451632
@@ -11557,6 +11557,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1214548752}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12650,7 +12662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -180}
+  m_AnchoredPosition: {x: 80, y: -140}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331439518
@@ -12727,7 +12739,7 @@ RectTransform:
   m_Father: {fileID: 923050780}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4559355}
+  m_AnchorMin: {x: 0, y: 0.37669346}
   m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -13300,6 +13312,138 @@ Transform:
   m_Father: {fileID: 1948716085}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &346418364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 346418365}
+  - component: {fileID: 346418368}
+  - component: {fileID: 346418367}
+  - component: {fileID: 346418366}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &346418365
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346418364}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7414311200941580420}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 112.489}
+  m_SizeDelta: {x: 800, y: 188.148}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &346418366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346418364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 346418367}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &346418367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346418364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &346418368
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346418364}
+  m_CullTransparentMesh: 1
 --- !u!1 &346905982
 GameObject:
   m_ObjectHideFlags: 0
@@ -15022,7 +15166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &379844593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15326,7 +15470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -100}
+  m_AnchoredPosition: {x: 80, y: -60}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388022162
@@ -19350,8 +19494,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1505073856}
   m_HandleRect: {fileID: 1505073855}
   m_Direction: 2
-  m_Value: 1.0000006
-  m_Size: 0.37223983
+  m_Value: 1.0000011
+  m_Size: 0.5955835
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -21017,6 +21161,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543631261}
   m_CullTransparentMesh: 1
+--- !u!1 &544984038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544984040}
+  - component: {fileID: 544984039}
+  m_Layer: 0
+  m_Name: DBManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &544984039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544984038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb330ed83f82774f9238788b34d91e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataBase: {fileID: 1598514522}
+  emileInput: {fileID: 8364759897974519404}
+  groupInput: {fileID: 5591976760455081741}
+  numInput: {fileID: 4922217724814267109}
+  idInput: {fileID: 6447404663933146174}
+  userNameInput: {fileID: 7652069779868117964}
+  pwInput: {fileID: 8197471957623192957}
+  yyInput: {fileID: 702790509152690850}
+  mmInput: {fileID: 8105749340892736678}
+  ddInput: {fileID: 2105832875244241799}
+  emileInputT: {fileID: 1861800932440721392}
+  idInputT: {fileID: 1574663001637053115}
+  userNameInputT: {fileID: 6291724986170282364}
+  pwInputT: {fileID: 3630914672723338134}
+  yyInputT: {fileID: 4815558235560438520}
+  mmInputT: {fileID: 749903554063911997}
+  ddInputT: {fileID: 2403394438006211979}
+  groupCodeSet: {fileID: 1775166251}
+--- !u!4 &544984040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544984038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547322631
 GameObject:
   m_ObjectHideFlags: 0
@@ -21492,7 +21697,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21728,8 +21933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 67.69949, y: 102.353516}
-  m_SizeDelta: {x: -50, y: -88.55792}
+  m_AnchoredPosition: {x: 67.69946, y: 0}
+  m_SizeDelta: {x: -50, y: -128.55792}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &566864861
 MonoBehaviour:
@@ -25300,8 +25505,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 335959536}
   m_HandleRect: {fileID: 335959535}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.54406446
+  m_Value: 1
+  m_Size: 0.6233065
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -27588,7 +27793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -140}
+  m_AnchoredPosition: {x: 240, y: -100}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720146137
@@ -28623,6 +28828,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1214548752}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32770,6 +32987,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &869733990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34363,6 +34592,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &893403296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35719,8 +35960,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 34}
-  m_SizeDelta: {x: 225, y: 156.403}
+  m_AnchoredPosition: {x: 0, y: 35}
+  m_SizeDelta: {x: 225, y: 185.825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917790224
 MonoBehaviour:
@@ -35808,7 +36049,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 237.08649}
+  m_SizeDelta: {x: 0, y: 195.88062}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &918769370
 MonoBehaviour:
@@ -36469,7 +36710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -140}
+  m_AnchoredPosition: {x: 240, y: -100}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926755506
@@ -36892,8 +37133,8 @@ RectTransform:
   m_Father: {fileID: 700603332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -38864,6 +39105,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: LogOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &987497093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39379,7 +39632,7 @@ RectTransform:
   m_Father: {fileID: 620265522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.316274}
+  m_AnchorMin: {x: 0, y: 0.23042819}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -45714,6 +45967,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1161361936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46808,7 +47073,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -47042,7 +47307,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -24.482513}
+  m_SizeDelta: {x: 0, y: -65.688385}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1184218415
 MonoBehaviour:
@@ -49448,7 +49713,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -36, y: 0}
-  m_SizeDelta: {x: -35.99997, y: -87.12802}
+  m_SizeDelta: {x: -35.99997, y: -127.12802}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1226422848
 MonoBehaviour:
@@ -51194,6 +51459,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1598514522}
+        m_TargetAssemblyTypeName: DataBase, Assembly-CSharp
+        m_MethodName: InputGroupSetWrite
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1262891135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51412,6 +51689,8 @@ MonoBehaviour:
   password: {fileID: 1639631548637621152}
   getEmail: {fileID: 8364759897974519404}
   getPassword: {fileID: 8197471957623192957}
+  getEmailT: {fileID: 1861800932440721392}
+  getPasswordT: {fileID: 3630914672723338134}
   loginUIButtonManager: {fileID: 1322717082}
 --- !u!4 &1268470796
 Transform:
@@ -52864,7 +53143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -100}
+  m_AnchoredPosition: {x: 240, y: -60}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318151688
@@ -53468,6 +53747,14 @@ MonoBehaviour:
   Experiment1: {fileID: 274676912}
   GroupCodeSet: {fileID: 379844592}
   LogInSystemScript: {fileID: 1268470794}
+  ToggleS1: {fileID: 458145802214905399}
+  ToggleS2: {fileID: 1894752142106748588}
+  ToggleS3: {fileID: 3150309299998889042}
+  ToggleT1: {fileID: 603961110}
+  ToggleT2: {fileID: 1213941717}
+  ToggleT3: {fileID: 1060996941}
+  teacherEmailData: {fileID: 1861800932440721392}
+  loginTeacherEmaildData: {fileID: 7414311200259649817}
 --- !u!4 &1322717083
 Transform:
   m_ObjectHideFlags: 0
@@ -53593,85 +53880,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330009679}
   m_CullTransparentMesh: 1
---- !u!1 &1330152129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1330152132}
-  - component: {fileID: 1330152131}
-  - component: {fileID: 1330152130}
-  m_Layer: 5
-  m_Name: LogInText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1330152130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330152129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 3
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
---- !u!222 &1330152131
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330152129}
-  m_CullTransparentMesh: 1
---- !u!224 &1330152132
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330152129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7414311200941580420}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.281, y: 56.756}
-  m_SizeDelta: {x: 271.362, y: 30.687}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1332996970
 GameObject:
   m_ObjectHideFlags: 0
@@ -57436,7 +57644,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -4.999817, y: 0}
-  m_SizeDelta: {x: -4.999817, y: 151.81152}
+  m_SizeDelta: {x: -4.999817, y: 110.60565}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1427596333
 MonoBehaviour:
@@ -57754,7 +57962,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 401327294}
   m_HandleRect: {fileID: 401327293}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -59828,8 +60036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00041044, y: 14.056}
-  m_SizeDelta: {x: 225, y: 146.888}
+  m_AnchoredPosition: {x: -0.00041044, y: 15}
+  m_SizeDelta: {x: 225, y: 184.334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499046194
 MonoBehaviour:
@@ -60056,7 +60264,7 @@ RectTransform:
   m_Father: {fileID: 1303164057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6277602}
+  m_AnchorMin: {x: 0, y: 0.4044165}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -62254,8 +62462,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1606056249}
   m_HandleRect: {fileID: 1606056248}
   m_Direction: 2
-  m_Value: 0.999968
-  m_Size: 0.98979264
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -63240,7 +63448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -180}
+  m_AnchoredPosition: {x: 240, y: -140}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595457751
@@ -63443,6 +63651,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596324900}
   m_CullTransparentMesh: 1
+--- !u!1 &1598514521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598514523}
+  - component: {fileID: 1598514522}
+  m_Layer: 0
+  m_Name: DataBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1598514522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598514521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b86bad4458404b479d68ec2bee6d1c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DBurl: https://arandroid-6daa0-default-rtdb.firebaseio.com/
+--- !u!4 &1598514523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598514521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601294589
 GameObject:
   m_ObjectHideFlags: 0
@@ -63744,8 +63996,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 993552284}
   m_HandleRect: {fileID: 993552283}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.683726
+  m_Value: 0.99999887
+  m_Size: 0.76957154
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -64128,7 +64380,7 @@ RectTransform:
   m_Father: {fileID: 720853686}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.010207028}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -67326,7 +67578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -100}
+  m_AnchoredPosition: {x: 80, y: -60}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702784315
@@ -67670,6 +67922,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1707996638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67742,7 +68006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -180}
+  m_AnchoredPosition: {x: 240, y: -140}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710989068
@@ -68718,7 +68982,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -225, y: -0.00024414062}
-  m_SizeDelta: {x: 431.522, y: 421.61002}
+  m_SizeDelta: {x: 431.522, y: 271.6101}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1731454846
 MonoBehaviour:
@@ -69797,8 +70061,8 @@ RectTransform:
   m_Father: {fileID: 1919497132}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -71743,6 +72007,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1807624543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72301,7 +72577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -140}
+  m_AnchoredPosition: {x: 80, y: -100}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823611562
@@ -72850,7 +73126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -100}
+  m_AnchoredPosition: {x: 240, y: -60}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842495894
@@ -74750,7 +75026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 67.69949, y: 102.353516}
+  m_AnchoredPosition: {x: 67.69946, y: 0}
   m_SizeDelta: {x: -50, y: -88.55792}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1910694704
@@ -75324,6 +75600,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1214548752}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -77658,6 +77946,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1214548752}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: Login
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -85993,7 +86293,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.00012207031}
-  m_SizeDelta: {x: 494, y: 137.32976}
+  m_SizeDelta: {x: 494, y: -93.00189}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &935554002900845399
 RectTransform:
@@ -89659,7 +89959,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.0008544922}
-  m_SizeDelta: {x: 494, y: -53.237976}
+  m_SizeDelta: {x: 494, y: -203.23788}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2022603341600260444
 CanvasRenderer:
@@ -90984,7 +91284,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.00012207031}
-  m_SizeDelta: {x: 494, y: 16.998032}
+  m_SizeDelta: {x: 494, y: -133.00189}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2540872327141840136
 MonoBehaviour:
@@ -92028,8 +92328,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7288233299097044104}
   m_HandleRect: {fileID: 9087888952403173696}
   m_Direction: 2
-  m_Value: 1.0000153
-  m_Size: 0.9150103
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -94191,6 +94491,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 544984039}
+        m_TargetAssemblyTypeName: DBManager, Assembly-CSharp
+        m_MethodName: InputTeacherData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: CreateTeacher
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1322717082}
+        m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
+        m_MethodName: GetTeacherEmail
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &3751060412701970406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -95029,7 +95365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4058767518954335946
 GameObject:
   m_ObjectHideFlags: 0
@@ -95928,9 +96264,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LogInSystem, Assembly-CSharp
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
         m_MethodName: Create
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 544984039}
+        m_TargetAssemblyTypeName: DBManager, Assembly-CSharp
+        m_MethodName: InputStudentData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -99712,8 +100060,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9192821894896902868}
   m_HandleRect: {fileID: 5830215866965812761}
   m_Direction: 2
-  m_Value: 1.0000011
-  m_Size: 0.42779252
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -100113,7 +100461,7 @@ RectTransform:
   m_Father: {fileID: 3565066017920568479}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.57220745}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -105196,7 +105544,7 @@ RectTransform:
   - {fileID: 3774338249823156334}
   - {fileID: 7414311202114245695}
   - {fileID: 7414311201834021053}
-  - {fileID: 1330152132}
+  - {fileID: 346418365}
   m_Father: {fileID: 2638190763597245058}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -106355,7 +106703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC544\uC774\uB514"
+  m_Text: "\uC774\uBA54\uC77C"
 --- !u!224 &7414311201911905253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -108406,8 +108754,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3617408823440247932}
   m_TextComponent: {fileID: 3786689605357296536}
   m_Placeholder: {fileID: 2420520767732468356}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -109400,6 +109748,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: Experiment1SetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1268470795}
+        m_TargetAssemblyTypeName: FirebaseLogInManager, Assembly-CSharp
+        m_MethodName: checkString
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1598514522}
+        m_TargetAssemblyTypeName: DataBase, Assembly-CSharp
+        m_MethodName: readDB
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1322717082}
+        m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
+        m_MethodName: CheackTeacherEmail
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -110758,7 +111142,7 @@ RectTransform:
   m_Father: {fileID: 6802904330101573822}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.08498973}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -110986,7 +111370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &9192821894896902868
 MonoBehaviour:
   m_ObjectHideFlags: 0

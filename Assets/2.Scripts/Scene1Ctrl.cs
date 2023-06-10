@@ -45,7 +45,7 @@ public class Scene1Ctrl : MonoBehaviour
 
     private void PlayAnimation1()
     {
-        button.interactable = false;
+        //button.interactable = false;
 
         //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
 
@@ -66,9 +66,9 @@ public class Scene1Ctrl : MonoBehaviour
    
     private void PlayAnimation2()
     {
-     
-            
-            if (Mangan != null && mangan != null)
+
+        button.interactable = false;
+        if (Mangan != null && mangan != null)
             {
                 animator2.SetTrigger(animationTrigger2);
                 Mangan.GetComponent<Animator>().Play("MANG");

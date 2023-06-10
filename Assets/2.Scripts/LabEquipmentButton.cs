@@ -34,11 +34,11 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             Funnel.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z); //���� ����
-            Instantiate(Funnel, newPosition, placementPose.rotation); // ���μ��� // 테이블에서는 0.3f..?
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z); //���� ����
+            //Instantiate(Funnel, newPosition, placementPose.rotation); // ���μ��� // 테이블에서는 0.3f..?
 
-            //Instantiate(Funnel, placementPose.position, placementPose.rotation);
-            
+            Instantiate(Funnel, placementPose.position, placementPose.rotation);
+
         }
     }
 
@@ -55,10 +55,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             glass_tube.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(glass_tube, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(glass_tube, newPosition, placementPose.rotation);
 
-            //Instantiate(glass_tube, placementPose.position, placementPose.rotation);
+            Instantiate(glass_tube, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -75,10 +75,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             ironring.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(ironring, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(ironring, newPosition, placementPose.rotation);
 
-            //Instantiate(ironring, placementPose.position, placementPose.rotation);
+            Instantiate(ironring, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -95,10 +95,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             pinch_all.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(pinch_all, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(pinch_all, newPosition, placementPose.rotation);
 
-            //Instantiate(pinch_all, placementPose.position, placementPose.rotation);
+            Instantiate(pinch_all, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -115,10 +115,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             retortstand.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(retortstand, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(retortstand, newPosition, placementPose.rotation);
 
-            //Instantiate(retortstand, placementPose.position, placementPose.rotation);
+            Instantiate(retortstand, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -135,10 +135,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             rtube.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(rtube, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(rtube, newPosition, placementPose.rotation);
 
-            //Instantiate(rtube, placementPose.position, placementPose.rotation);
+            Instantiate(rtube, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -155,10 +155,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             tube1.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(tube1, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(tube1, newPosition, placementPose.rotation);
 
-            //Instantiate(tube1, placementPose.position, placementPose.rotation);
+            Instantiate(tube1, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -175,10 +175,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             tube2.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
-            Instantiate(tube2, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.5f, placementPose.position.z);
+            //Instantiate(tube2, newPosition, placementPose.rotation);
 
-            //Instantiate(tube2, placementPose.position, placementPose.rotation);
+            Instantiate(tube2, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -195,10 +195,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             Vial.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.55f, placementPose.position.z);
-            Instantiate(Vial, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.55f, placementPose.position.z);
+            //Instantiate(Vial, newPosition, placementPose.rotation);
 
-            //Instantiate(Vial, placementPose.position, placementPose.rotation);
+            Instantiate(Vial, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -215,10 +215,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             WaterTank.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.65f, placementPose.position.z);
-            Instantiate(WaterTank, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.65f, placementPose.position.z);
+            //Instantiate(WaterTank, newPosition, placementPose.rotation);
 
-            //Instantiate(WaterTank, placementPose.position, placementPose.rotation);
+            Instantiate(WaterTank, placementPose.position, placementPose.rotation);
         }
     }
 
@@ -235,10 +235,10 @@ public class LabEquipmentButton : MonoBehaviour
             
 
             Y_Flask.SetActive(true);
-            Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.55f, placementPose.position.z);
-            Instantiate(Y_Flask, newPosition, placementPose.rotation);
+            //Vector3 newPosition = new Vector3(placementPose.position.x, placementPose.position.y + 0.55f, placementPose.position.z);
+            //Instantiate(Y_Flask, newPosition, placementPose.rotation);
 
-            //Instantiate(Y_Flask, placementPose.position, placementPose.rotation);
+            Instantiate(Y_Flask, placementPose.position, placementPose.rotation);
         }
     }
 }

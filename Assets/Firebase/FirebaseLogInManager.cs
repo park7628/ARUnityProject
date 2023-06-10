@@ -15,11 +15,18 @@ public class FirebaseLogInManager : MonoBehaviour
     private FirebaseAuth auth;
     private FirebaseUser user;
 
+    public static InputField checkEmail;
+    public static InputField checkPassword;
+    public static InputField checkUser;
+
     public InputField email;
     public InputField password;
 
     public InputField getEmail;
     public InputField getPassword;
+
+    public InputField getEmailT;
+    public InputField getPasswordT;
     public LoginUIButtonManager loginUIButtonManager;
 
     public static bool aa;
@@ -30,9 +37,37 @@ public class FirebaseLogInManager : MonoBehaviour
         aa = false;
     }
 
+    public void checkString()
+    {
+        checkEmail = email;
+        //checkPassword = password;
+
+        Debug.LogError(checkEmail.text);
+    }
     public void Create()
     {
         auth.CreateUserWithEmailAndPasswordAsync(getEmail.text, getPassword.text).ContinueWith(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.LogError("회원가입 취소");
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.LogError("회원가입 실패");
+                return;
+            }
+
+            FirebaseUser newUser = task.Result.User;
+            //newUser.User.DisplayName, newUser.User.UserId);
+            Debug.LogError("회원가입 완료");
+        });
+    }
+
+    public void CreateTeacher()
+    {
+        auth.CreateUserWithEmailAndPasswordAsync(getEmailT.text, getPasswordT.text).ContinueWith(task =>
         {
             if (task.IsCanceled)
             {
@@ -59,34 +94,36 @@ public class FirebaseLogInManager : MonoBehaviour
             if (task.IsCanceled)
             {
                 //Debug.LogError("로그인 취소");
-                aa = false;
+                LoginUIButtonManager.cc = false;
                 return;
             }
             if (task.IsFaulted)
             {
                 Debug.LogError("로그인 실패");
-                aa = false;
+                LoginUIButtonManager.cc = false;
                 return;
             }
 
 
-            aa = true;
+            LoginUIButtonManager.cc = true;
             FirebaseUser newUser = task.Result.User;
 
             //FirebaseUser newUser = task.Result;
             Debug.LogError("로그인 완료");
             
             
-            loginUIButtonManager.Experiment1SetActive();
+            //loginUIButtonManager.Experiment1SetActive();
         });
 
-        if (aa)
-        {
-            LoginUI.SetActive(false);
-            Experiment1.SetActive(true);
-            GroupCodeSet.SetActive(true);
-            bgmsound.SetActive(true);
-        }
+        
+
+        //if (aa)
+        //{
+        //    LoginUI.SetActive(false);
+        //    Experiment1.SetActive(true);
+        //    GroupCodeSet.SetActive(true);
+        //    bgmsound.SetActive(true);
+        //}
     }
 
     public void LogOut()

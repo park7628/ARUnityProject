@@ -54,15 +54,31 @@ public class MainUI : MonoBehaviour
 
     public void Nav2()
     {
-        //다 끄고 그룹 T1 화면만 켜기
-        Experiment1.SetActive(false);
-        Experiment2.SetActive(false);
-        GroupS.SetActive(false);
-        GroupT1.SetActive(true);
-        GroupT2.SetActive(false);
-        Game.SetActive(false);
-        Information1.SetActive(false);
-        Information2.SetActive(false);
+
+        if (LoginUIButtonManager.lst.Contains(LoginUIButtonManager.loginTeacherEmailCheck))
+        {
+            //다 끄고 그룹 T1 화면만 켜기
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
+            GroupS.SetActive(false);
+            GroupT1.SetActive(true);
+            GroupT2.SetActive(false);
+            Game.SetActive(false);
+            Information1.SetActive(false);
+            Information2.SetActive(false);
+        }
+        else
+        {
+            //다 끄고 그룹 GruoupS 화면만 켜기
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
+            GroupS.SetActive(true);
+            GroupT1.SetActive(false);
+            GroupT2.SetActive(false);
+            Game.SetActive(false);
+            Information1.SetActive(false);
+            Information2.SetActive(false);
+        }
     }
 
     public void Nav3()
@@ -142,6 +158,7 @@ public class MainUI : MonoBehaviour
 
         LoginUI.SetActive(true);
         bgmsound.SetActive(false);
+        LoginUIButtonManager.cc = false;
     }
 
     public void O2StartActive()
