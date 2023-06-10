@@ -67,7 +67,7 @@ public class Scene1Ctrl : MonoBehaviour
     private void PlayAnimation2()
     {
 
-        button.interactable = false;
+        //button.interactable = false;
         if (Mangan != null && mangan != null)
             {
                 animator2.SetTrigger(animationTrigger2);
@@ -115,14 +115,14 @@ public class Scene1Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "Water")
+                    if (hit.collider.gameObject.tag == "WATER")
                     {
                         if (Water != null && liquid1 != null)
                         {
                             PlayAnimation1();
                         }
                     }
-                    if (hit.collider.gameObject.tag == "MANGANIZ")
+                    else if (hit.collider.gameObject.tag == "MANGANIZ")
                     {
                         if (Mangan != null && mangan != null)
                         {

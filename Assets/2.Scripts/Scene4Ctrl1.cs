@@ -37,7 +37,7 @@ public class Scene4Ctrl1 : MonoBehaviour
     public void PlayAnimation5()
     {
 
-        button.interactable = false;
+        //button.interactable = false;
         if (gwasan != null)
         {
             animator.SetTrigger(animationTrigger);
