@@ -34,6 +34,12 @@ public class LoginUIButtonManager : MonoBehaviour
     public Toggle ToggleT3;
 
 
+    public static List<string> lst = new List<string>() { "teacher@naver.com" };
+    public InputField teacherEmailData;
+
+    public InputField loginTeacherEmaildData;
+    public static string loginTeacherEmailCheck;
+
     public static bool cc;
 
     private void Start()
@@ -42,6 +48,16 @@ public class LoginUIButtonManager : MonoBehaviour
         cc = false;
 
         //FirebaseLogInManager.Instance2.Init();
+    }
+    public void CheackTeacherEmail()
+    {
+        loginTeacherEmailCheck = loginTeacherEmaildData.text;
+    }
+
+    public void GetTeacherEmail()
+    {
+        lst.Add(teacherEmailData.text);
+        Debug.LogError(lst.ToString());
     }
 
     // FirstUI 에서 로그인 버튼 클릭 시 LoginUI로 이동
