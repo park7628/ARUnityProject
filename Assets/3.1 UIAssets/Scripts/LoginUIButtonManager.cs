@@ -34,7 +34,7 @@ public class LoginUIButtonManager : MonoBehaviour
     public Toggle ToggleT3;
 
 
-    public static List<string> lst = new List<string>() { "teacher@naver.com", "teacherpark@naver.com" };
+    public static List<string> lst = new List<string>() { "teacher@naver.com", "teacherpark@naver.com", "teacherch@naver.com" };
     public InputField teacherEmailData;
 
     public InputField loginTeacherEmaildData;
@@ -250,10 +250,20 @@ public class LoginUIButtonManager : MonoBehaviour
 
         if (cc == true)
         {
-            Debug.LogError("cc = "+cc);
-            LoginUI.SetActive(false);
-            Experiment1.SetActive(true);
-            GroupCodeSet.SetActive(true);
+            if (LoginUIButtonManager.lst.Contains(LoginUIButtonManager.loginTeacherEmailCheck))
+            {
+                LoginUI.SetActive(false);
+                Experiment1.SetActive(true);
+                GroupCodeSet.SetActive(false);
+            }
+            else
+            {
+                LoginUI.SetActive(false);
+                Experiment1.SetActive(true);
+                GroupCodeSet.SetActive(true);
+            }
+            //Debug.LogError("cc = "+cc);
+            
             
         }
         if (cc == false)
