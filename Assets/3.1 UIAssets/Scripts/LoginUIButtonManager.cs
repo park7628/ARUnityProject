@@ -1,11 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
-using System.Threading;
-//using System.Diagnostics;
-using System.Net;
-using UnityEditor;
 using UnityEngine.UI;
 
 public class LoginUIButtonManager : MonoBehaviour
@@ -40,15 +34,6 @@ public class LoginUIButtonManager : MonoBehaviour
     public InputField loginTeacherEmaildData;
     public static string loginTeacherEmailCheck;
 
-    public static bool cc;
-
-    private void Start()
-    {
-
-        cc = false;
-
-        //FirebaseLogInManager.Instance2.Init();
-    }
     public void CheackTeacherEmail()
     {
         loginTeacherEmailCheck = loginTeacherEmaildData.text;
@@ -66,21 +51,6 @@ public class LoginUIButtonManager : MonoBehaviour
     // SSignupUI, TSignupUI에서 회원가입 버튼 클릭 시 LoginUI로 이동
     public void LoginUISetActive()
     {
-        //if (CreateBool == false)
-        //{
-        //    return;
-        //}
-        //if (CreateBool == true)
-        //{
-        //    FirstUI.SetActive(false);
-        //    TSChoiceUI.SetActive(false);
-        //    FindIDUI.SetActive(false);
-        //    FindPWUI.SetActive(false);
-        //    SSignupUI.SetActive(false);
-        //    TSignupUI.SetActive(false);
-
-        //    LoginUI.SetActive(true);
-        //}
         FirstUI.SetActive(false);
         TSChoiceUI.SetActive(false);
         FindIDUI.SetActive(false);
@@ -196,7 +166,6 @@ public class LoginUIButtonManager : MonoBehaviour
 
     // LoginUI에서 뒤로가기 버튼 클릭 시 이전화면(FirstUI)으로 이동
     // TSChoiceUI에서 뒤로가기 버튼 클릭 시 이전화면(FirstUI)으로 이동
-
     public void FirstUISetActive()
     {
         LoginUI.SetActive(false);
@@ -220,70 +189,27 @@ public class LoginUIButtonManager : MonoBehaviour
         
     }
 
-
-
-
-
-    //IEnumerator WaitForIt()
-    //{
-    //    yield return new WaitForSeconds(2.0f);
-    //    Debug.LogError("지연됨");
-
-    //}
-    // LoginUI에서 로그인 버튼 클릭 시 메인 화면(Experiment1)으로 이동
-
-
     public void Experiment1SetActive()
     {
-
-        //쓰려면 void 왼쪽이 async 해줘
-        //await Task.Run(() =>
-        //{
-        //    Debug.LogError("LoginUIButtonManager : 나옴");
-        //    //Debug.LogError("LoginUIButtonManager : " + LogInSystem.password2);
-        //    //LogInSystem.LogIn();
-        //    //LogInSystemScript.GetComponentInChildren<LogInSystem>().LogIn();
-        //});
-
-        LogInSystemScript.GetComponent<FirebaseLogInManager>().Login();
-
-
-        if (cc == true)
+        LogInSystemScript.GetComponent<FirebaseLogInManager>().Login(isSignedIn =>
         {
-            if (LoginUIButtonManager.lst.Contains(LoginUIButtonManager.loginTeacherEmailCheck))
+            // signin successed
+            if (isSignedIn)
             {
+                // To do signin success process
                 LoginUI.SetActive(false);
                 Experiment1.SetActive(true);
-                GroupCodeSet.SetActive(false);
+
+                bool isContainTeacherEmail = LoginUIButtonManager.lst.Contains(LoginUIButtonManager.loginTeacherEmailCheck);
+                GroupCodeSet.SetActive(!isContainTeacherEmail);
             }
             else
             {
-                LoginUI.SetActive(false);
-                Experiment1.SetActive(true);
-                GroupCodeSet.SetActive(true);
+                // or error handling process
+                ToastMsg.Instrance.showMessage("아이디 혹은 비밀번호가 틀립니다.", 1.0f);
+                ImageToast.Instrance.showImage(1.0f);
+                Debug.Log("Fail");
             }
-            //Debug.LogError("cc = "+cc);
-            
-            
-        }
-        if (cc == false)
-        {
-            Debug.LogError("cc = false");
-            ToastMsg.Instrance.showMessage("아이디 혹은 비밀번호가 틀립니다.", 1.0f);
-            ImageToast.Instrance.showImage(1.0f);
-        }
-        
-        
-        
-        
-        
+        });
     }
-
-    public void Update()
-    {
-        //
-        //Experiment1SetActive();
-        //cc = FirebaseLogInManager.aa;
-    }
-
 }

@@ -1,9 +1,9 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Auth;
 using UnityEngine.UI;
-
+using System;
 
 public class FirebaseLogInManager : MonoBehaviour
 {
@@ -50,18 +50,18 @@ public class FirebaseLogInManager : MonoBehaviour
         {
             if (task.IsCanceled)
             {
-                Debug.LogError("È¸¿ø°¡ÀÔ Ãë¼Ò");
+                Debug.LogError("íšŒì›ê°€ì… ì·¨ì†Œ");
                 return;
             }
             if (task.IsFaulted)
             {
-                Debug.LogError("È¸¿ø°¡ÀÔ ½ÇÆĞ");
+                Debug.LogError("íšŒì›ê°€ì… ì‹¤íŒ¨");
                 return;
             }
 
             FirebaseUser newUser = task.Result.User;
             //newUser.User.DisplayName, newUser.User.UserId);
-            Debug.LogError("È¸¿ø°¡ÀÔ ¿Ï·á");
+            Debug.LogError("íšŒì›ê°€ì… ì™„ë£Œ");
         });
     }
 
@@ -71,58 +71,46 @@ public class FirebaseLogInManager : MonoBehaviour
         {
             if (task.IsCanceled)
             {
-                Debug.LogError("È¸¿ø°¡ÀÔ Ãë¼Ò");
+                Debug.LogError("íšŒì›ê°€ì… ì·¨ì†Œ");
                 return;
             }
             if (task.IsFaulted)
             {
-                Debug.LogError("È¸¿ø°¡ÀÔ ½ÇÆĞ");
+                Debug.LogError("íšŒì›ê°€ì… ì‹¤íŒ¨");
                 return;
             }
 
             FirebaseUser newUser = task.Result.User;
             //newUser.User.DisplayName, newUser.User.UserId);
-            Debug.LogError("È¸¿ø°¡ÀÔ ¿Ï·á");
+            Debug.LogError("íšŒì›ê°€ì… ì™„ë£Œ");
         });
     }
 
-    public void Login()
+    public void Login(Action<bool> isSignedIn)
     {
         auth.SignInWithEmailAndPasswordAsync(email.text, password.text).ContinueWith(task =>
         {
-            
             if (task.IsCanceled)
             {
-                //Debug.LogError("·Î±×ÀÎ Ãë¼Ò");
-                LoginUIButtonManager.cc = false;
-                return;
+                Debug.LogError("ë¡œê·¸ì¸ ì·¨ì†Œ");
+                isSignedIn?.Invoke(false);
             }
-            if (task.IsFaulted)
+            else if (task.IsFaulted)
             {
-                Debug.LogError("·Î±×ÀÎ ½ÇÆĞ");
-                LoginUIButtonManager.cc = false;
-                return;
+                Debug.LogError("ë¡œê·¸ì¸ ì‹¤íŒ¨");
+                isSignedIn?.Invoke(false);
             }
-
-
-            LoginUIButtonManager.cc = true;
-            FirebaseUser newUser = task.Result.User;
-
-            //FirebaseUser newUser = task.Result;
-            Debug.LogError("·Î±×ÀÎ ¿Ï·á");
-            
-            
-            //loginUIButtonManager.Experiment1SetActive();
+            else
+            {
+                Debug.LogError("ë¡œê·¸ì¸ ì™„ë£Œ");
+                isSignedIn?.Invoke(true);
+            }            
         });
-
-        
-
-        
     }
 
     public void LogOut()
     {
         auth.SignOut();
-        Debug.Log("·Î±×¾Æ¿ô");
+        Debug.Log("ë¡œê·¸ì•„ì›ƒ");
     }
 }
