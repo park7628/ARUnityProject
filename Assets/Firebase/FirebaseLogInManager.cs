@@ -117,13 +117,7 @@ public class FirebaseLogInManager : MonoBehaviour
 
         
 
-        //if (aa)
-        //{
-        //    LoginUI.SetActive(false);
-        //    Experiment1.SetActive(true);
-        //    GroupCodeSet.SetActive(true);
-        //    bgmsound.SetActive(true);
-        //}
+        
     }
 
     public void LogOut()
