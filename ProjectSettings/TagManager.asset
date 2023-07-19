@@ -6,10 +6,7 @@ TagManager:
   tags:
   - funnel
   - tube1
-  - material2
-  - material
   - pinch
-  - lid
   - flask
   - glasstube
   - watertank
@@ -40,6 +37,9 @@ TagManager:
   - co2start
   - LoginUIButtonManager
   - MainUI
+  - motar
+  - material
+  - pinchline
   layers:
   - Default
   - TransparentFX

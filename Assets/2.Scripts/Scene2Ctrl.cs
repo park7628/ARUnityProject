@@ -38,8 +38,23 @@ public class Scene2Ctrl : MonoBehaviour
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("gum");
-                
-                Invoke("ChangeScene23", 3.5f);
+            if (gum.GetComponent<Outline>().enabled)
+            {
+                gum.GetComponent<Outline>().enabled = false;
+            }
+            if (gum.GetComponent<ObjectFlickering>().enabled)
+            {
+                gum.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            if (flask.GetComponent<Outline>().enabled)
+            {
+                flask.GetComponent<Outline>().enabled = false;
+            }
+            if (flask.GetComponent<ObjectFlickering>().enabled)
+            {
+                flask.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            Invoke("ChangeScene23", 3.5f);
 
 
             }
@@ -71,7 +86,7 @@ public class Scene2Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "flask")
+                    if (hit.collider.gameObject.tag == "flask" || hit.collider.gameObject.tag == "gum_cover")
                     {
                         if (gum != null)
                         {

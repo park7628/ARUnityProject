@@ -47,7 +47,15 @@ public class Scene0Ctrl : MonoBehaviour
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("YFLASK1");
-                gameobject.SetActive(false);
+            if (flask.GetComponent<Outline>().enabled)
+            {
+                flask.GetComponent<Outline>().enabled = false;
+            }
+            if (flask.GetComponent<ObjectFlickering>().enabled)
+            {
+                flask.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            gameobject.SetActive(false);
                 Invoke("ChangeScene01", 4.5f);
 
                 //StartCoroutine(WaitForAnimation(animator));

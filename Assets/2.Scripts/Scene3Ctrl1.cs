@@ -30,14 +30,24 @@ public class Scene3Ctrl1 : MonoBehaviour
 
     public void PlayAnimation4()
     {
+
+
         button.interactable = false;
         if (flask != null)
+        {
+            animator.SetTrigger(animationTrigger);
+            flask.GetComponent<Animator>().Play("yflask");
+            if (flask.GetComponent<Outline>().enabled)
             {
-                animator.SetTrigger(animationTrigger);
-                flask.GetComponent<Animator>().Play("yflask");
-                Invoke("isgameObject", 1.7f);
-                Invoke("ChangeScene34", 2.8f);
+                flask.GetComponent<Outline>().enabled = false;
             }
+            if (flask.GetComponent<ObjectFlickering>().enabled)
+            {
+                flask.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            Invoke("isgameObject", 1.7f);
+            Invoke("ChangeScene34", 2.8f);
+         }
         
     }
     private void isgameObject()

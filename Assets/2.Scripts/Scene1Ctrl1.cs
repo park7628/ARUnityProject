@@ -11,6 +11,7 @@ public class Scene1Ctrl1 : MonoBehaviour
     private static GameObject liquid1;
     private static GameObject Mangan;
     private static GameObject mangan;
+    private static GameObject Motar;
 
     public Animator animator1;
     public Animator animator2;
@@ -28,6 +29,7 @@ public class Scene1Ctrl1 : MonoBehaviour
         Water = GameObject.FindWithTag("WATER");
         liquid1 = GameObject.FindWithTag("liquid1");
         Mangan = GameObject.FindWithTag("MANGANIZ");
+        Motar = GameObject.FindWithTag("motar");
         mangan = GameObject.FindWithTag("mangan");
 
         animator1 = Water.GetComponent<Animator>();
@@ -46,16 +48,24 @@ public class Scene1Ctrl1 : MonoBehaviour
     private void PlayAnimation1()
     {
 
-        
+
         //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
+
 
         if (Water != null && liquid1 != null)
             {
                 //UnityEngine.Debug.Log("settrigger");
                 animator1.SetTrigger(animationTrigger1);
                 Water.GetComponent<Animator>().Play("Water");
-
-                Invoke("IsWater", 1.7f);
+            if (Water.GetComponent<Outline>().enabled)
+            {
+                Water.GetComponent<Outline>().enabled = false;
+            }
+            if (Water.GetComponent<ObjectFlickering>().enabled)
+            {
+                Water.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            Invoke("IsWater", 1.7f);
 
 
                 button.onClick.AddListener(PlayAnimation2);
@@ -72,8 +82,23 @@ public class Scene1Ctrl1 : MonoBehaviour
             {
                 animator2.SetTrigger(animationTrigger2);
                 Mangan.GetComponent<Animator>().Play("MANG");
-
-                Invoke("IsMang", 2.5f);
+            if (Mangan.GetComponent<Outline>().enabled)
+            {
+                Mangan.GetComponent<Outline>().enabled = false;
+            }
+            if (Mangan.GetComponent<ObjectFlickering>().enabled)
+            {
+                Mangan.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            if (Motar.GetComponent<Outline>().enabled)
+            {
+                Motar.GetComponent<Outline>().enabled = false;
+            }
+            if (Motar.GetComponent<ObjectFlickering>().enabled)
+            {
+                Motar.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            Invoke("IsMang", 2.5f);
                 Invoke("ChangeScene12", 5.0f);
             }
        
@@ -122,7 +147,7 @@ public class Scene1Ctrl1 : MonoBehaviour
                             PlayAnimation1();
                         }
                     }
-                    else if (hit.collider.gameObject.tag == "MANGANIZ")
+                    else if (hit.collider.gameObject.tag == "MANGANIZ" || hit.collider.gameObject.tag == "motar")
                     {
                         if (Mangan != null && mangan != null)
                         {
