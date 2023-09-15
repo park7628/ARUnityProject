@@ -49,6 +49,14 @@ public class Scene6Ctrl1 : MonoBehaviour
             //rtube.GetComponent<Animator>().Play("rtube");
             animator2.SetTrigger(animationTrigger2);
             vial.GetComponent<Animator>().Play("vial");
+            if (vial.GetComponent<Outline>().enabled)
+            {
+                vial.GetComponent<Outline>().enabled = false;
+            }
+            if (vial.GetComponent<ObjectFlickering>().enabled)
+            {
+                vial.GetComponent<ObjectFlickering>().enabled = false;
+            }
             //animator.enabled = false;
             //oxygen.SetActive(false);
             Invoke("ChangeScene67", 3.0f);

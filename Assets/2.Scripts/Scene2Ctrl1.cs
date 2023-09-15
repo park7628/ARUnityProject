@@ -32,17 +32,32 @@ public class Scene2Ctrl1 : MonoBehaviour
 
     public void PlayAnimation3()
     {
+
+
         button.interactable = false;
         //UnityEngine.Debug.Log("Scene2버튼 클릭");
         if (gum != null)
+        {
+            animator.SetTrigger(animationTrigger);
+            flask.GetComponent<Animator>().Play("gum");
+            if (gum.GetComponent<Outline>().enabled)
             {
-                animator.SetTrigger(animationTrigger);
-                flask.GetComponent<Animator>().Play("gum");
-                
-                Invoke("ChangeScene23", 3.5f);
-
-
+                gum.GetComponent<Outline>().enabled = false;
             }
+            if (gum.GetComponent<ObjectFlickering>().enabled)
+            {
+                gum.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            if (flask.GetComponent<Outline>().enabled)
+            {
+                flask.GetComponent<Outline>().enabled = false;
+            }
+            if (flask.GetComponent<ObjectFlickering>().enabled)
+            {
+                flask.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            Invoke("ChangeScene23", 3.5f);
+        }
         
     }
     private void ChangeScene23()
@@ -72,7 +87,7 @@ public class Scene2Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "gum_cover")
+                    if (hit.collider.gameObject.tag == "flask" || hit.collider.gameObject.tag == "gum_cover")
                     {
                         if (gum != null)
                         {

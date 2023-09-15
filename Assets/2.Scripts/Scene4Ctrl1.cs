@@ -37,9 +37,19 @@ public class Scene4Ctrl1 : MonoBehaviour
     public void PlayAnimation5()
     {
 
-        button.interactable = false;
+
+        //button.interactable = false;
         if (gwasan != null)
         {
+            if (gwasan.GetComponent<Outline>().enabled)
+            {
+                gwasan.GetComponent<Outline>().enabled = false;
+            }
+            if (gwasan.GetComponent<ObjectFlickering>().enabled)
+            {
+                gwasan.GetComponent<ObjectFlickering>().enabled = false;
+            }
+
             animator.SetTrigger(animationTrigger);
             gwasan.GetComponent<Animator>().Play("gwasanhwa");
             Invoke("isliquid", 2.7f);
@@ -81,7 +91,6 @@ public class Scene4Ctrl1 : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "gwasanhwa")
                     {
-
                         if (gwasan != null && funnelliquid != null)
                         {
                             PlayAnimation5();

@@ -114,9 +114,13 @@ public class CrashCtrl : MonoBehaviour
         {
             coll.transform.position = this.transform.position;
             coll.transform.rotation = this.transform.rotation;
+            //coll.transform.scale = this.transform.scale;
             name = coll.tag;
             Crash();
-            Destroy(coll, 1.0f);
+            this.gameObject.SetActive(false);
+
+
+            //Destroy(coll, 1.0f);
 
         }
     }

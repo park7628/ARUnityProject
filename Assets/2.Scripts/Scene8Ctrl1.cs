@@ -51,6 +51,14 @@ public class Scene8Ctrl1 : MonoBehaviour
         {
             animator1.SetTrigger(animationTrigger1);
             glass.GetComponent<Animator>().Play("glass");
+            if (glass.GetComponent<Outline>().enabled)
+            {
+                glass.GetComponent<Outline>().enabled = false;
+            }
+            if (glass.GetComponent<ObjectFlickering>().enabled)
+            {
+                glass.GetComponent<ObjectFlickering>().enabled = false;
+            }
             Invoke("vialmoving", 3.5f);
             Invoke("removegameobject", 4.0f);
             Invoke("ChangeScene89", 7.0f);

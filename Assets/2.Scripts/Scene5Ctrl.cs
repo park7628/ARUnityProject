@@ -10,6 +10,9 @@ public class Scene5Ctrl : MonoBehaviour
     private static GameObject bubble;
     private static GameObject oxygen;
     private static GameObject cylinder;
+    private static GameObject pinch;
+    
+    
     public Button button;
     public Animator animator;
     public string animationTrigger;
@@ -35,6 +38,8 @@ public class Scene5Ctrl : MonoBehaviour
         bubble = GameObject.FindWithTag("bubble");
         oxygen = GameObject.FindWithTag("oxygen");
         cylinder = GameObject.FindWithTag("cylinder");
+        pinch = GameObject.FindWithTag("pinch");
+        
         animator1 = cylinder.GetComponent<Animator>();
         bubble.SetActive(false);
         oxygen.SetActive(false);
@@ -45,6 +50,18 @@ public class Scene5Ctrl : MonoBehaviour
     }
     public void PlayAnimation6()
     {
+        if (pinch != null)
+        {
+            if (pinch.GetComponent<Outline>().enabled)
+            {
+                pinch.GetComponent<Outline>().enabled = false;
+            }
+            if (pinch.GetComponent<ObjectFlickering>().enabled)
+            {
+                pinch.GetComponent<ObjectFlickering>().enabled = false;
+            }
+        }
+
         button.interactable = false;
         if (oxygen != null)
         {
@@ -95,7 +112,7 @@ public class Scene5Ctrl : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "pinch")
+                    if (hit.collider.gameObject.tag == "pinch" || hit.collider.gameObject.tag == "pinchline")
                     {
                         if (bubble != null && oxygen != null)
                         {

@@ -55,12 +55,21 @@ public class Scene0Ctrl1 : MonoBehaviour
     public void PlayAnimation()
     {
 
+
         button.interactable = false;
             if (flask != null)
             {
                 animator.SetTrigger(animationTrigger);
                 flask.GetComponent<Animator>().Play("YFLASK1");
-                gameobject.SetActive(false);
+            if (flask.GetComponent<Outline>().enabled)
+            {
+                flask.GetComponent<Outline>().enabled = false;
+            }
+            if (flask.GetComponent<ObjectFlickering>().enabled)
+            {
+                flask.GetComponent<ObjectFlickering>().enabled = false;
+            }
+            gameobject.SetActive(false);
                 Invoke("ChangeScene01", 4.5f);
 
                 //StartCoroutine(WaitForAnimation(animator));
@@ -113,7 +122,7 @@ public class Scene0Ctrl1 : MonoBehaviour
 
                 if (Physics.Raycast(touchray, out hit))
                 {
-                    if (hit.collider.gameObject.tag == "Y_Flask")
+                    if (hit.collider.gameObject.tag == "flask")
                     {
 
                         if (flask != null && gameobject != null) 
