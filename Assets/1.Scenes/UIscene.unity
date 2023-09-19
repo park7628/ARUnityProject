@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999946, b: 0.99999946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -730,8 +730,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 29808696}
   m_HandleRect: {fileID: 29808695}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.70699173
+  m_Value: 1
+  m_Size: 0.50589365
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -953,7 +953,7 @@ RectTransform:
   m_Father: {fileID: 1323647032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.29300827}
+  m_AnchorMin: {x: 0, y: 0.4941063}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.60601807}
   m_SizeDelta: {x: 20, y: 18.787}
@@ -1149,7 +1149,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 1fadc4a9ca7da3f4db2a07643f5a9913, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1170,7 +1170,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 36041411}
+  m_TargetGraphic: {fileID: 1499046194}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -4391,8 +4391,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000054633, y: 38.142}
-  m_SizeDelta: {x: 225, y: 174.353}
+  m_AnchoredPosition: {x: -0.000054633, y: 43}
+  m_SizeDelta: {x: 225, y: 189.334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124339138
 MonoBehaviour:
@@ -5094,7 +5094,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 158.51749}
+  m_SizeDelta: {x: 0, y: 267.31152}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &140592408
 MonoBehaviour:
@@ -9198,7 +9198,7 @@ RectTransform:
   m_Father: {fileID: 1552560519}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.10833001}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -9593,7 +9593,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -9604,7 +9604,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: cabda00cb33920941a1d141ce5cf856b, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -9614,7 +9614,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 248091550}
+  m_TargetGraphic: {fileID: 825147461}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -11295,7 +11295,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -36, y: 0}
-  m_SizeDelta: {x: -35.99997, y: -87.12802}
+  m_SizeDelta: {x: -35.99997, y: 21.666016}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &282332640
 MonoBehaviour:
@@ -11662,6 +11662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -19193,8 +19194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000050068, y: 25}
-  m_SizeDelta: {x: 225, y: 178.331}
+  m_AnchoredPosition: {x: -0.0000050068, y: 37.616}
+  m_SizeDelta: {x: 225, y: 203.563}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486774260
 MonoBehaviour:
@@ -19316,8 +19317,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 243695887}
   m_HandleRect: {fileID: 243695886}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000004
+  m_Size: 0.89167
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -19679,8 +19680,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1505073856}
   m_HandleRect: {fileID: 1505073855}
   m_Direction: 2
-  m_Value: 1.0000011
-  m_Size: 0.5955835
+  m_Value: 1.0000006
+  m_Size: 0.37223983
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -21178,8 +21179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -100}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchoredPosition: {x: 100, y: -106.82}
+  m_SizeDelta: {x: 213.63, y: 213.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541451185
 MonoBehaviour:
@@ -21201,7 +21202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3de1d04e9ce7c9548bf09b9d40f4ba1e, type: 3}
+  m_Texture: {fileID: 2800000, guid: 102138ffe98baff4288cf001494e86da, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -22208,7 +22209,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -36, y: 0}
-  m_SizeDelta: {x: -36, y: -128.55792}
+  m_SizeDelta: {x: -36, y: -19.763855}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &566864861
 MonoBehaviour:
@@ -22360,7 +22361,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -22371,7 +22372,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 842b45f908bc82e49b943630a6f67125, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -22381,7 +22382,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 569049418}
+  m_TargetGraphic: {fileID: 342813213}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -22910,6 +22911,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: TSignupUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27285,8 +27298,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 705605514}
   m_HandleRect: {fileID: 705605513}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1.0000002
+  m_Size: 0.7644929
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -27439,7 +27452,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -27450,7 +27463,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 6969af41a0acdd24d8713c9c008cc26e, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -27460,7 +27473,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 700664796}
+  m_TargetGraphic: {fileID: 1697954867}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -27851,7 +27864,7 @@ RectTransform:
   m_Father: {fileID: 1383100776}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.23550707}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.60601807}
   m_SizeDelta: {x: 20, y: 18.787}
@@ -29034,6 +29047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -29537,8 +29551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -100}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchoredPosition: {x: 100, y: -106.82}
+  m_SizeDelta: {x: 213.63, y: 213.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777953600
 MonoBehaviour:
@@ -29560,7 +29574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3de1d04e9ce7c9548bf09b9d40f4ba1e, type: 3}
+  m_Texture: {fileID: 2800000, guid: 102138ffe98baff4288cf001494e86da, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -31803,7 +31817,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1116930641}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.8988194
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -32821,7 +32835,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -207.48251}
+  m_SizeDelta: {x: 0, y: -98.68848}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &863393607
 MonoBehaviour:
@@ -33184,6 +33198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -34039,6 +34054,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &884516944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34789,6 +34816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -36247,7 +36275,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 35}
-  m_SizeDelta: {x: 225, y: 185.825}
+  m_SizeDelta: {x: 225, y: 198.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917790224
 MonoBehaviour:
@@ -39302,6 +39330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -41971,7 +42000,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -41982,7 +42011,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: baf8dc3f89513fa43bc975284833b8a3, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -41992,7 +42021,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1050665488}
+  m_TargetGraphic: {fileID: 936365076}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -43257,7 +43286,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -43268,7 +43297,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 24a05efc3f06fd6449eaaa46077a6303, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -43278,7 +43307,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1086780726}
+  m_TargetGraphic: {fileID: 285110969}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -43580,7 +43609,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -43591,7 +43620,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: a9ee12c54b75067408caab19a019170a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -43601,7 +43630,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1099112852}
+  m_TargetGraphic: {fileID: 1218688153}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -44962,7 +44991,7 @@ RectTransform:
   m_Father: {fileID: 1838910781}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.10118061}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -45793,7 +45822,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -45804,7 +45833,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: f1596212f9a3928439fc33ce070d37d4, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -45814,7 +45843,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1148021098}
+  m_TargetGraphic: {fileID: 124339138}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -46265,6 +46294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -46791,7 +46821,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -46802,7 +46832,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 933f7cca5b9877d47b3d008cc74b523a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -46812,7 +46842,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1175326794}
+  m_TargetGraphic: {fileID: 886426567}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -47035,7 +47065,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -47046,7 +47076,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 194e3998f7fc7fc40a63132373a04fbd, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -47056,7 +47086,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1177585538}
+  m_TargetGraphic: {fileID: 1216118343}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -47694,7 +47724,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -65.688385}
+  m_SizeDelta: {x: 0, y: 84.31152}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1184218415
 MonoBehaviour:
@@ -50189,7 +50219,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -36, y: 0}
-  m_SizeDelta: {x: -35.99997, y: -127.12802}
+  m_SizeDelta: {x: -35.99997, y: -18.333984}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1226422848
 MonoBehaviour:
@@ -58564,7 +58594,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1606257233}
   m_HandleRect: {fileID: 1606257232}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -60604,8 +60634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00041044, y: 15}
-  m_SizeDelta: {x: 225, y: 184.334}
+  m_AnchoredPosition: {x: -0.00041044, y: 17}
+  m_SizeDelta: {x: 225, y: 197.499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1499046194
 MonoBehaviour:
@@ -60832,7 +60862,7 @@ RectTransform:
   m_Father: {fileID: 1303164057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4044165}
+  m_AnchorMin: {x: 0, y: 0.6277602}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -67607,8 +67637,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -99.60303}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchoredPosition: {x: 100, y: -106.82}
+  m_SizeDelta: {x: 213.63, y: 213.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695728541
 MonoBehaviour:
@@ -67630,7 +67660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3de1d04e9ce7c9548bf09b9d40f4ba1e, type: 3}
+  m_Texture: {fileID: 2800000, guid: 102138ffe98baff4288cf001494e86da, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -68445,6 +68475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -69594,7 +69625,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -225, y: -0.00024414062}
-  m_SizeDelta: {x: 431.522, y: 271.6101}
+  m_SizeDelta: {x: 431.522, y: 421.61002}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1731454846
 MonoBehaviour:
@@ -69952,7 +69983,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -69963,7 +69994,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 7c3f297da77086241a5eea9bea66a773, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -69973,7 +70004,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1738526672}
+  m_TargetGraphic: {fileID: 486774260}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -70790,7 +70821,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -70801,7 +70832,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: fc3ea563fc485984c8acbac631d60ab8, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -70811,7 +70842,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1754875685}
+  m_TargetGraphic: {fileID: 1508646330}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -71535,6 +71566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -72530,6 +72562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -74381,7 +74414,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -74392,7 +74425,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 246fec96cc8e593468265908980b7cf8, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -74402,7 +74435,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1863977890}
+  m_TargetGraphic: {fileID: 248445404}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -74629,7 +74662,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 293274708}
   m_HandleRect: {fileID: 293274707}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -74838,6 +74871,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: TSChoiceUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -75731,7 +75776,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -36, y: 0}
-  m_SizeDelta: {x: -36, y: -88.55792}
+  m_SizeDelta: {x: -36, y: 20.236145}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1910694704
 MonoBehaviour:
@@ -76224,6 +76269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -78571,6 +78617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -79197,7 +79244,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -79208,7 +79255,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: e51ea3c3edbc0244580cc3a29189be48, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -79218,7 +79265,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1980763725}
+  m_TargetGraphic: {fileID: 917790224}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -80486,8 +80533,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -99.60303}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchoredPosition: {x: 100, y: -106.82}
+  m_SizeDelta: {x: 213.63, y: 213.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2022205974
 MonoBehaviour:
@@ -80509,7 +80556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3de1d04e9ce7c9548bf09b9d40f4ba1e, type: 3}
+  m_Texture: {fileID: 2800000, guid: 102138ffe98baff4288cf001494e86da, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -82989,7 +83036,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -83000,7 +83047,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 13c6a8a1bb63e30488021013d367f58c, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -83010,7 +83057,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2084672957}
+  m_TargetGraphic: {fileID: 1396288335}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -83282,6 +83329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 274676912}
   Experiment2: {fileID: 2049346908}
   GroupS: {fileID: 917780616}
@@ -84744,6 +84792,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1892380780}
     - target: {fileID: 917394301407630913, guid: ba55830007d9f2240b4b46c8205e7515, type: 3}
+      propertyPath: FirstUI
+      value: 
+      objectReference: {fileID: 4054449057154242054}
+    - target: {fileID: 917394301407630913, guid: ba55830007d9f2240b4b46c8205e7515, type: 3}
       propertyPath: GroupS1
       value: 
       objectReference: {fileID: 0}
@@ -85408,6 +85460,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &217954417969630730
 GameObject:
   m_ObjectHideFlags: 0
@@ -85612,6 +85676,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: LoginUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -87087,7 +87163,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.00012207031}
-  m_SizeDelta: {x: 494, y: -93.00189}
+  m_SizeDelta: {x: 494, y: 56.99803}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &935554002900845399
 RectTransform:
@@ -89534,6 +89610,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1590849210037788666
 Transform:
   m_ObjectHideFlags: 0
@@ -90753,7 +90841,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.0008544922}
-  m_SizeDelta: {x: 494, y: -203.23788}
+  m_SizeDelta: {x: 494, y: -53.237976}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2022603341600260444
 CanvasRenderer:
@@ -92078,7 +92166,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -247, y: -0.00012207031}
-  m_SizeDelta: {x: 494, y: -133.00189}
+  m_SizeDelta: {x: 494, y: 16.998032}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2540872327141840136
 MonoBehaviour:
@@ -93122,8 +93210,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7288233299097044104}
   m_HandleRect: {fileID: 9087888952403173696}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000153
+  m_Size: 0.9150103
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -94511,6 +94599,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3559090752187878308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95321,6 +95421,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 343390847}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &3751060412701970406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -95546,6 +95658,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: SAgreeUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -96159,7 +96283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4058767518954335946
 GameObject:
   m_ObjectHideFlags: 0
@@ -97082,6 +97206,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 343390847}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &4418520563564487181
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -97737,6 +97873,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: SSignupUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -98856,6 +99004,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4971238304436846950
 GameObject:
   m_ObjectHideFlags: 0
@@ -99161,6 +99321,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: TSChoiceUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -99974,6 +100146,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5362558671157961304
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100256,6 +100440,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: LoginUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -100854,8 +101050,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9192821894896902868}
   m_HandleRect: {fileID: 5830215866965812761}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000045
+  m_Size: 0.7625081
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -101256,7 +101452,7 @@ RectTransform:
   m_Father: {fileID: 3565066017920568479}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.2374919}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -101498,6 +101694,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: FindPWUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -105510,6 +105718,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7414311200259649816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105779,6 +105999,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: SAgreeUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -106201,6 +106433,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: FirstUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -106708,6 +106952,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &7414311201033203559
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -106994,6 +107250,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: TAgreeUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -108521,6 +108789,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1322717082}
         m_TargetAssemblyTypeName: LoginUIButtonManager, Assembly-CSharp
         m_MethodName: SAgreeUISetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -110589,6 +110869,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214548752}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &8539069674654209473
 RectTransform:
   m_ObjectHideFlags: 0
@@ -111938,7 +112230,7 @@ RectTransform:
   m_Father: {fileID: 6802904330101573822}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.08498973}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}

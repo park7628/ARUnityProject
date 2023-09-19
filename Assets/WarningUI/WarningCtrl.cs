@@ -9,6 +9,7 @@ public class WarningCtrl : MonoBehaviour
     public Button button;
     public GameObject GuidePanel;
 
+
     public void WarnButtonClick()
     {
         
@@ -16,6 +17,8 @@ public class WarningCtrl : MonoBehaviour
         button.interactable = true;
         button.gameObject.SetActive(true);
         GuidePanel.SetActive(true);
+        
+        
     }
 
     [System.Serializable]

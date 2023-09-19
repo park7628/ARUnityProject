@@ -47,6 +47,14 @@ public class Scene7Ctrl : MonoBehaviour
         {
             animator1.SetTrigger(animationTrigger1);
             vial.GetComponent<Animator>().Play("vial2");
+            if (vial.GetComponent<Outline>().enabled)
+            {
+                vial.GetComponent<Outline>().enabled = false;
+            }
+            if (vial.GetComponent<ObjectFlickering>().enabled)
+            {
+                vial.GetComponent<ObjectFlickering>().enabled = false;
+            }
             Invoke("watering", 1.0f);
             Invoke("Scaling", 2.5f);
             Invoke("ChangeScene78", 7.5f);

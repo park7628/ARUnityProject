@@ -36,11 +36,19 @@ public class Scene4Ctrl : MonoBehaviour
     public void PlayAnimation5()
     {
 
-        button.interactable = false;
+        //button.interactable = false;
         if (gwasan != null)
         {
             animator.SetTrigger(animationTrigger);
             gwasan.GetComponent<Animator>().Play("gwasanhwa");
+            if (gwasan.GetComponent<Outline>().enabled)
+            {
+                gwasan.GetComponent<Outline>().enabled = false;
+            }
+            if (gwasan.GetComponent<ObjectFlickering>().enabled)
+            {
+                gwasan.GetComponent<ObjectFlickering>().enabled = false;
+            }
             Invoke("isliquid", 2.7f);
             Invoke("ChangeScene45", 5.5f);
         }
