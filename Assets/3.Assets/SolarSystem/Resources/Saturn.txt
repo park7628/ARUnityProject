@@ -1,0 +1,28 @@
+﻿Aphelion 	 10.086 AU 	 (1,509 Gm) 
+Perihelion		 9.024 AU 	 (1,350 Gm) 
+Semi-major axis 	 9.554909 AU 	 1,429.39 Gm 
+Eccentricity		 0.05555 
+Orbital period 	 29.4571 yr 	 24,491.07 Saturnian solar days 
+Synodic period 378.09 days 
+Average orbital speed 	 9.69 km/s 
+Mean anomaly 	 317.020° 
+Inclination	 2.485240° to ecliptic 	 5.51° to Sun's equator 
+Longitude of ascending node 	113.665° 
+Argument of perihelion 	 339.392° 
+Known satellites 	 62 with formal designations; innumerable additional moonlets. 
+
+Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter.
+ It is a gas giant with an average radius about nine times that of Earth.
+ Although only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive.
+ Saturn is named after the Roman god of agriculture; its astronomical symbol (♄) represents the god's sickle.
+ 
+Saturn's interior is probably composed of a core of iron–nickel and rock (silicon and oxygen compounds).
+ This core is surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, 
+ and finally outside the Frenkel line a gaseous outer layer. Saturn has a pale yellow hue due to ammonia crystals
+ in its upper atmosphere. Electrical current within the metallic hydrogen layer is thought to give rise to Saturn's planetary
+ magnetic field, which is weaker than Earth's, but has a magnetic moment 580 times that of Earth due to Saturn's larger size. 
+ Saturn's magnetic field strength is around one-twentieth of Jupiter's. The outer atmosphere is generally bland and lacking in contrast,
+ although long-lived features can appear. Wind speeds on Saturn can reach 1,800 km/h (500 m/s), higher than on Jupiter,
+ but not as high as those on Neptune.
+
+ 

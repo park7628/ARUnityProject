@@ -1,0 +1,34 @@
+﻿Aphelion 	 0.466 697 AU 	 69,816,900 km 
+Perihelion 	 0.307 499 AU 	 46,001,200 km 
+Semi-major axis 	 0.387 098 AU 	 57,909,050 km 
+Eccentricity 	 0.205 630 
+Orbital period 	 87.969 1 d 	 0.240 846 yr  
+Synodic period 	 115.88 d 
+Average orbital speed 	 47.362 km/s 
+Mean anomaly 	 174.796° 
+Inclination 	 7.005° to ecliptic 	 3.38° to Sun's equator 
+6.34°to invariable plane 
+Longitude of ascending node 	 48.331° 
+
+Argument of perihelion 	 29.124° 
+
+Satellites 	 None  
+
+Mercury is one of four terrestrial planets in the Solar System, 
+ and is a rocky body like Earth. It is the smallest planet in the 
+ Solar System, with an equatorial radius of 2,439.7 kilometres (1,516.0 mi).
+ Mercury is also smaller-albeit more massive-than the largest natural 
+ satellites in the Solar System, Ganymede and Titan. Mercury consists of 
+ approximately 70% metallic and 30% silicate material. Mercury's density is the 
+ second highest in the Solar System at 5.427 g/cm3, only slightly less than Earth's  
+ density of 5.515 g/cm3. If the effect of gravitational compression were to be 
+ factored out, the materials of which Mercury is made would be denser,
+ with an uncompressed density of 5.3 g/cm3 versus Earth's 4.4 g/cm3. 
+
+Mercury's density can be used to infer details of its inner structure.
+ Although Earth's high density results appreciably from gravitational compression,
+ particularly at the core, Mercury is much smaller and its inner regions are not as compressed. 
+Therefore, for it to have such a high density, its core must be large and rich in iron.
+
+
+

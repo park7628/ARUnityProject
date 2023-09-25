@@ -1,0 +1,36 @@
+﻿Orbital characteristics 
+Periapsis 	 9234.42 km 
+Apoapsis 	 9517.58 km 
+Semi-major axis 	 9376 km (2.76 Mars radii) 
+Eccentricity 	 0.0151 
+Orbital period 	 0.318 d (7 h 39.2 min) 
+Average orbital speed 	 2.138 km/s 
+Inclination 1.093° 	 (to Mars's equator) 
+Satellite of Mars
+
+Dimensions 	 27 × 22 × 18 km  
+Mean radius 	 11.2667 km 	(1.76941 mEarths) 
+Surface area 	 1548.3 km2 	(3.03545 µEarths) 
+Volume 	 5783.61 km3 	 (5.33933 nEarths) 
+Mass 	 1.0659×1016 kg 	 (1.78477 nEarths) 
+Mean density 	 1.876 g/cm3 
+Surface gravity  	0.0057 m/s2 	 (581.4 µ g) 
+Escape velocity 	 11.39 m/s 	 (41 km/h) 
+Rotation period 	 Synchronous 
+Equatorial rotation velocity 	 11.0 km/h (6.8 mph) (at longest axis) 
+Axial tilt 	 0° 
+Albedo 	 0.071 
+Temperature 	 ≈ 233 K 
+
+Phobos (systematic designation: Mars I) is the larger and innermost of the two natural satellites of Mars, the other being Deimos.
+Both moons were discovered in 1877 by American astronomer Asaph Hall.
+
+Phobos is a small, irregularly shaped object with a mean radius of 11 km (7 mi), and is seven times more massive than Deimos, Mars's outer moon.
+Phobos is named after the Greek god Phobos, a son of Ares (Mars) and Aphrodite (Venus) which was the personification of Horror.
+The name "Phobos" is pronounced /ˈfoʊbəs/ foh-bəs or /ˈfoʊbɒs/ foh-bos,[3] or like the Greek Φόβος.
+
+Phobos orbits 6,000 km (3,700 mi) from the Martian surface, closer to its primary than any other known planetary moon.
+It is so close that it orbits Mars faster than Mars rotates, and completes an orbit in just 7 hours and 39 minutes.
+As a result, from the surface of Mars it appears to rise in the west, move across the sky in 4 hours 15 min or less, and set in the east, twice each Martian day.
+Phobos is one of the least reflective bodies in the Solar System, and features a large impact crater, Stickney.
+The temperatures range from about −4 °C (25 °F) on the sunlit side to −112 °C (−170 °F) on the shadowed side.

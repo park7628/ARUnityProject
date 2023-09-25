@@ -1,0 +1,42 @@
+﻿Orbital characteristics 
+Periapsis 23455.5 km 
+Apoapsis 23470.9 km 
+Semi-major axis 
+23463.2 km (6.92 Mars radii) 
+Eccentricity 0.00033 
+Orbital period 1.263 d (30.312 h) 
+Average orbital speed 1.3513 km/s 
+Inclination 0.93° (to Mars's equator)  
+1.791° (to the local Laplace plane)
+27.58° (to the ecliptic) 
+Satellite of Mars  
+
+Physical characteristics
+
+Dimensions 15 × 12.2 × 11 km 
+Mean radius 6.2 ± 0.18 km (0.97316 mEarths) 
+Surface area 495.1548 km2 (97.0755 µEarths) 
+Volume 999.78 km3 (92.2979 nEarths) 
+Mass 1.4762×1015 kg (0.247179 nEarths) 
+Mean density 1.471±0.166 g/cm3 
+Surface gravity 0.003 m/s2 (306 µg) 
+Escape velocity 5.556 m/s (20 km/h) 
+Rotation period Synchronous 
+Albedo 0.068 ± 0.007 
+Temperature ≈ 233 K 
+
+Deimos (systematic designation: Mars II) is the smaller and outer of the two natural satellites of the planet Mars, the other being Phobos.
+Deimos has a mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
+The name Deimos is pronounced /ˈdaɪmɒs/ dy-mos, or sometimes /ˈdiːməs/ dee-məs or like the Greek Δείμος.
+In Greek mythology, Deimos was the twin brother of Phobos and personified terror.
+
+Deimos is 23,460 km (14,580 mi) from Mars, much further than Mars's other moon, Phobos.
+
+Deimos, like Mars's other moon, Phobos, has spectra, albedos and densities similar to those of a C- or D-type asteroid.
+Like most bodies of its size, Deimos is highly non-spherical with triaxial dimensions of 15 × 12.2 × 11 km, making it 0.56 times the size of Phobos.
+
+Deimos is composed of rock rich in carbonaceous material, much like C-type asteroids and carbonaceous chondrite meteorites.
+It is cratered, but the surface is noticeably smoother than that of Phobos, caused by the partial filling of craters with regolith.
+The regolith is highly porous and has a radar-estimated density of only 1.471 g/cm3. The two largest craters, Swift and Voltaire, each measure about 3 km (1.9 mi) across.
+
+It has an escape velocity of 5.6 m/s and apparent magnitude of 12.45.
