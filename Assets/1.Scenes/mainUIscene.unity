@@ -730,8 +730,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 29808696}
   m_HandleRect: {fileID: 29808695}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.539095
+  m_Value: 0.99999994
+  m_Size: 0.35701782
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -44517,7 +44517,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1420139646}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: Ex1
+        m_MethodName: Ex3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
