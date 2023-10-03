@@ -1,0 +1,31 @@
+﻿Aphelion 	 30.33 AU (4,540 Gm) 
+Perihelion		 29.81 AU (4,460 Gm) 
+Semi-major axis 	 30.110387 AU (4,504.45 Gm) 
+Eccentricity 	 0.009456 
+Orbital period 	 164.8 yr 60,182 d 89,666 Neptunian solar days 
+Synodic period 	 367.49 days 
+Average orbital speed 	 5.43 km/s 
+Mean anomaly 	 256.228° 
+Inclination		 1.767975° to ecliptic 
+6.43° to Sun's equator
+0.72° to invariable plane
+Longitude of ascending node 	 131.784° 
+Argument of perihelion 	 276.336° 
+Known satellites 	 14 
+
+Neptune is the eighth and farthest known planet from the Sun. 
+It is the fourth-largest planet by diameter and the third-largest by mass.
+Among the giant planets in the Solar System, Neptune is the most dense. 
+Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus,
+which is 15 times the mass of Earth and slightly larger than Neptune. 
+Neptune orbits the Sun at an average distance of 30.1 astronomical units (4.50×109 km).
+Named after the Roman god of the sea, its astronomical symbol is ♆, a stylised version of the god Neptune's trident.
+
+Neptune is not visible to the unaided eye and is the only planet in the Solar System found
+thus far by mathematical prediction rather than by empirical observation. Unexpected changes
+in the orbit of Uranus led Alexis Bouvard to deduce that its orbit was subject to gravitational
+perturbation by an unknown planet. Neptune was subsequently observed with a telescope on 23 September 1846
+by Johann Galle within a degree of the position predicted by Urbain Le Verrier. Its largest moon, Triton, 
+was discovered shortly thereafter, though none of the planet's remaining known 14 moons were located telescopically
+until the 20th century. The planet's distance from Earth gives it a very small apparent size, making it challenging
+to study with Earth-based telescopes. Neptune was visited by Voyager 2, when it flew by the planet on 25 August 1989.

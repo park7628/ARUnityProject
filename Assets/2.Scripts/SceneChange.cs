@@ -23,7 +23,7 @@ public class SceneChange : MonoBehaviour
     }
     public void Ex3()
     {
-        //SceneManager.LoadScene("ExperimentCO2");
+        SceneManager.LoadScene("Space2");
 
     }
     public void ExUiToUi()

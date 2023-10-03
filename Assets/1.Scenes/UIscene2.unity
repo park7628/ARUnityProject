@@ -175,15 +175,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -196,6 +197,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &5058829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9493,15 +9496,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -9514,6 +9518,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &651117990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14609,15 +14615,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -14630,6 +14637,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &934271787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17186,15 +17195,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -17207,6 +17217,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &1038160080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22249,6 +22261,15 @@ MonoBehaviour:
   TSignupUI: {fileID: 4667734213412464357}
   Experiment1: {fileID: 4549676097158140823}
   GroupCodeSet: {fileID: 2114154822}
+  LogInSystemScript: {fileID: 0}
+  ToggleS1: {fileID: 0}
+  ToggleS2: {fileID: 0}
+  ToggleS3: {fileID: 0}
+  ToggleT1: {fileID: 0}
+  ToggleT2: {fileID: 0}
+  ToggleT3: {fileID: 0}
+  teacherEmailData: {fileID: 0}
+  loginTeacherEmaildData: {fileID: 0}
 --- !u!4 &1322717083
 Transform:
   m_ObjectHideFlags: 0
@@ -30806,15 +30827,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -30827,6 +30849,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &1913337200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31365,15 +31389,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -31386,6 +31411,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &1949596369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32995,15 +33022,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -33016,6 +33044,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &2017246519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53932,15 +53962,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -53953,6 +53984,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!114 &4549676096852977029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61444,15 +61477,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1c01d8f7bd6243b6285c8e297786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstUI: {fileID: 0}
   Experiment1: {fileID: 4549676097158140823}
   Experiment2: {fileID: 4549676097700317062}
+  Experiment3: {fileID: 0}
   GroupS: {fileID: 4549676098025650611}
   GroupT1: {fileID: 4549676097532145653}
   GroupT2: {fileID: 4549676097338979367}
   Game: {fileID: 4549676097191017578}
   Information1: {fileID: 4549676097637491756}
   Information2: {fileID: 4549676098494165085}
-  GroupS1: {fileID: 0}
   LoginUI: {fileID: 0}
   setE1: {fileID: 0}
   setE2: {fileID: 0}
@@ -61465,6 +61499,8 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  RotatingStart: {fileID: 0}
+  bgmsound: {fileID: 0}
 --- !u!1 &4549676097452621032
 GameObject:
   m_ObjectHideFlags: 0

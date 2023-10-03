@@ -11,6 +11,7 @@ public class MainUI : MonoBehaviour
     public GameObject FirstUI;
     public GameObject Experiment1;
     public GameObject Experiment2;
+    public GameObject Experiment3;
     public GameObject GroupS;
     public GameObject GroupT1;
     public GameObject GroupT2;
@@ -29,6 +30,7 @@ public class MainUI : MonoBehaviour
     public GameObject GroupCodeSet;
     public GameObject O2Start;
     public GameObject CO2Start;
+    public GameObject RotatingStart;
     public GameObject bgmsound;
 
     // public GameObject setGS1;
@@ -114,9 +116,20 @@ public class MainUI : MonoBehaviour
         Experiment2.SetActive(true);
         O2Start.SetActive(false);
         CO2Start.SetActive(false);
+        RotatingStart.SetActive(false);
         FirstUI.SetActive(false);
     }
 
+    public void experimentC4()
+    {
+        Experiment1.SetActive(false);
+        Experiment3.SetActive(true);
+        O2Start.SetActive(false);
+        CO2Start.SetActive(false);
+        RotatingStart.SetActive(false);
+        FirstUI.SetActive(false);
+
+    }
     public void experimentC9()
     {
         //토스트를 이용해 아직 준비가 되어있지 않다고 띄움
@@ -175,5 +188,10 @@ public class MainUI : MonoBehaviour
         CO2Start.SetActive(true);
     }
 
+    public void RotatingStartActive()
+    {
+        Experiment3.SetActive(false);
+        RotatingStart.SetActive(true);
+    }
 
 }

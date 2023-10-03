@@ -40,6 +40,12 @@ TagManager:
   - motar
   - material
   - pinchline
+  - material2
+  - AstronomicalBody
+  - Orbit
+  - Earth
+  - Satellite
+  - arrow
   layers:
   - Default
   - TransparentFX

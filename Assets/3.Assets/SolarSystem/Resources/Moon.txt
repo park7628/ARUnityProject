@@ -1,0 +1,27 @@
+﻿Perigee 362600 km (356400–370400 km) 
+Apogee 405400 km (404000–406700 km) 
+Semi-major axis 384399 km  (0.00257 AU) 
+Eccentricity 0.0549 
+Orbital period 27.321661 d 
+(27 d 7 h 43.19 min 11.5 s)
+Synodic period 29.530589 d 
+(29 d 12 h 44 min 2.9 s)
+Average orbital speed 1.022 km/s 
+Inclination 5.145° to the ecliptic 
+Longitude of ascending node 
+regressing by one revolution in 18.6 years 
+Argument of perigee 
+progressing by one revolution in 8.85 years 
+Satellite of Earth 
+
+The Moon (Greek: σελήνη, Selene; Latin: Luna) is Earth's only natural satellite.
+It is one of the largest natural satellites in the Solar System, and, among planetary satellites, the largest relative to the size of the planet it orbits (its primary).
+It is the second-densest satellite among those whose densities are known (after Jupiter's satellite Io).
+
+The Moon is thought to have formed approximately 4.5 billion years ago, not long after Earth.
+There are several hypotheses for its origin; the most widely accepted explanation is that the Moon formed from the debris left over after a giant impact between Earth and a Mars-sized body called Theia.
+
+The Moon is in synchronous rotation with Earth, always showing the same face with its near side marked by dark volcanic maria that fill between the bright ancient crustal highlands and the prominent impact craters.
+It is the second-brightest regularly visible celestial object in Earth's sky after the Sun, as measured by illuminance on Earth's surface.
+Although it can appear a very bright white, its surface is actually dark, with a reflectance just slightly higher than that of worn asphalt.
+Its prominence in the sky and its regular cycle of phases have, since ancient times, made the Moon an important cultural influence on language, calendars, art, and mythology.
