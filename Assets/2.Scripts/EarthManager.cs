@@ -18,7 +18,7 @@ public class EarthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //toucharrow();
+        toucharrow();
     }
 
 
