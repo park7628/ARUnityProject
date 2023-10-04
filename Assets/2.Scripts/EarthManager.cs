@@ -6,6 +6,13 @@ public class EarthManager : MonoBehaviour
 {
 
     public GameObject earth;
+
+    public GameObject Day;
+    public GameObject Night;
+
+    private int count = 0;
+    private int count1 = 0;
+
     //private static GameObject arrow1;
 
 
@@ -37,10 +44,21 @@ public class EarthManager : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "arrow")
                     {
-                        //if (arrow1 != null)
-                        //{
-                            earth.transform.Rotate(-Vector3.up * 30.0f);
-                        //}
+                        count1 += 1;
+                        earth.transform.Rotate(-Vector3.up * 30.0f);
+
+                        if (count % 12 == 4)
+                        {
+                            Day.SetActive(false);
+                            Night.SetActive(true);
+                        }
+
+                        else if (count % 12 == 10)
+                        {
+                            Day.SetActive(true);
+                            Night.SetActive(false);
+                        }
+
                     }
                 }
             }
@@ -49,7 +67,19 @@ public class EarthManager : MonoBehaviour
 
     public void Rearth()
     {
+        count += 1;
         earth.transform.Rotate(-Vector3.up * 30.0f);
+
+        if (count % 12 == 4)
+        {
+            Day.SetActive(false);
+            Night.SetActive(true);
+        }
+        else if (count % 12 == 10)
+        {
+            Day.SetActive(true);
+            Night.SetActive(false);
+        }
     }
 
 

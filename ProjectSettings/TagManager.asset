@@ -46,6 +46,7 @@ TagManager:
   - Earth
   - Satellite
   - arrow
+  - incense
   layers:
   - Default
   - TransparentFX
