@@ -135,7 +135,6 @@ public class Scene9Ctrl : MonoBehaviour
                         {
                             PlayAnimation11();
                         }
-
                     }
                 }
             }
