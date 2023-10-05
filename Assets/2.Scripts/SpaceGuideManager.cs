@@ -14,6 +14,8 @@ public class SpaceGuideManager : MonoBehaviour
 
     public GameObject WCamUI;
     public GameObject InvenPanel;
+    public GameObject arrow1;
+    public GameObject arrow2;
 
     public GameObject text1;
     public GameObject text2;
@@ -109,13 +111,14 @@ public class SpaceGuideManager : MonoBehaviour
         Robj.SetActive(true);
         WCamUI.SetActive(true);//캠 켜지기
         Crobj.SetActive(false);
+        arrow1.SetActive(true);
+        arrow2.SetActive(true);
     }
     public void Gtext6() //지구는 서쪽에서 동쪽(시계 반대 방향)으로 회전합니다. 지구 옆의 화살표를 눌러 지구를 자전시켜 보세요. 트리거 : 화살표 누르기
     {
         
         RBT.onClick.RemoveListener(Gtext6);
         RBT.onClick.AddListener(Gtext7);
-        
         text6.SetActive(false);
         text7.SetActive(true);
     }
@@ -126,7 +129,7 @@ public class SpaceGuideManager : MonoBehaviour
          //지구가 서쪽에서 동쪽으로 자전하기 때문에 태양과 달이 동쪽에서 서쪽으로 움직이는 것처럼 보입니다. ( 중앙에 팝업창으로 정보 전달력을 주면서 닫기 버튼으로 닫을 수 있도록)
         
         i += 1;
-        if (i == 6)
+        if (i == 12)
         {
             Cobj.SetActive(true);
             Robj.SetActive(false);
@@ -154,7 +157,7 @@ public class SpaceGuideManager : MonoBehaviour
     {
         
         i += 1;
-        if (i == 6)
+        if (i == 12)
         {
             Cobj.SetActive(true);
             Robj.SetActive(false);

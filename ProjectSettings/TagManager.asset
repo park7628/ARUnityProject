@@ -47,6 +47,8 @@ TagManager:
   - Satellite
   - arrow
   - incense
+  - Sun
+  - Moon
   layers:
   - Default
   - TransparentFX
@@ -54,9 +56,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Planet
+  - PlanetSun1
+  - PlanetSun2
   - 
   - 
   - 

@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/1.Scenes/mainUIscene.unity
     guid: 25923c8ccc54805438df70ce6f13be01
-  - enabled: 1
+  - enabled: 0
     path: Assets/1.Scenes/ExperimentPrepare.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/1.Scenes/ExperimentO2.unity
     guid: 90c60a9ab60f37f47853fe49652f8228
-  - enabled: 1
+  - enabled: 0
     path: Assets/1.Scenes/ExperimentCO2.unity
     guid: a20941055d61fa048bedfe1d788b60a0
   - enabled: 1
