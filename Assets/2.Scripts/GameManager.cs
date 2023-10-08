@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     static public bool isScene6 = false;
     static public bool isScene7 = false;
     static public bool isScene8 = false;
+    static public bool isScene9 = false;
 
     static public bool isFinish = false;
 
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
     public GameObject Scene6;
     public GameObject Scene7;
     public GameObject Scene8;
+    public GameObject Scene9;
 
     //public GameObject QuizPanel;
     //public GameObject GuidePanel;
@@ -44,7 +46,8 @@ public class GameManager : MonoBehaviour
         SCENE5,
         SCENE6,
         SCENE7,
-        SCENE8
+        SCENE8,
+        SCENE9
     }
 
     public State state = State.SCENE0;
@@ -138,6 +141,14 @@ public class GameManager : MonoBehaviour
             }
             else if (isScene8)
             {
+                IsSceneTransitionAllowed = false;
+                state = State.SCENE9;
+                Scene8.SetActive(false);
+                Scene9.SetActive(true);
+                IsSceneTransitionAllowed = true;
+            }
+            else if (isScene9)
+            {
                 isFinish = true;//모든 실험 끝남
                 //GuidePanel.SetActive(false);
                 //button.interactable = false;
@@ -185,6 +196,8 @@ public class GameManager : MonoBehaviour
                     break;
                 case State.SCENE8:
                     //Scene8Ctrl.touchvial();
+                    break;
+                case State.SCENE9:
                     break;
 
             }
