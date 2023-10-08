@@ -11,9 +11,12 @@ public class SpaceGuideManager : MonoBehaviour
     public GameObject EarthW;
     public GameObject Moon;
     public GameObject MoonW;
+    public GameObject Human;
+    public GameObject HumanW;
 
     public GameObject WCamUI;
     public GameObject InvenPanel;
+    public GameObject InvelPanel2;
     public GameObject arrow1;
     public GameObject arrow2;
 
@@ -98,11 +101,21 @@ public class SpaceGuideManager : MonoBehaviour
         Moon.SetActive(true);
         MoonW.SetActive(false);
         CrBT.onClick.RemoveListener(Gtext4);
-        CrBT.onClick.AddListener(Gtext5);
+        CrBT.onClick.AddListener(Gtext4_1);
         text4.SetActive(false);
         text5.SetActive(true);
         InvenPanel.SetActive(false);
+        InvelPanel2.SetActive(true);
     }
+
+    public void Gtext4_1()
+    {
+        Human.SetActive(true);
+        HumanW.SetActive(false);
+        CrBT.onClick.RemoveListener(Gtext4_1);
+        CrBT.onClick.AddListener(Gtext5);
+    }
+
     public void Gtext5() //지구에 살고 있는 관측자입니다. 지구에 관측자를 올려주세요. 트리거 : 관측자 지구에 가져다대기
     {
         
