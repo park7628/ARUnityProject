@@ -114,6 +114,9 @@ public class SpaceGuideManager : MonoBehaviour
         HumanW.SetActive(false);
         CrBT.onClick.RemoveListener(Gtext4_1);
         CrBT.onClick.AddListener(Gtext5);
+
+        InvelPanel2.SetActive(false);
+        WCamUI.SetActive(true);
     }
 
     public void Gtext5() //지구에 살고 있는 관측자입니다. 지구에 관측자를 올려주세요. 트리거 : 관측자 지구에 가져다대기
