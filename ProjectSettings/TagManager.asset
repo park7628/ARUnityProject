@@ -49,6 +49,11 @@ TagManager:
   - incense
   - Sun
   - Moon
+  - stealingpoint
+  - sittingpoint
+  - pickuppoint
+  - waypoint
+  - UI Canvas
   layers:
   - Default
   - TransparentFX
