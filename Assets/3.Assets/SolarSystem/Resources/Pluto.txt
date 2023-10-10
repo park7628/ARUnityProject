@@ -1,0 +1,27 @@
+﻿Aphelion 	 49.319 AU 	 (7,378.07 Gm) 
+Perihelion 	 29.656 AU 	 (4,436.4 Gm) 
+Semi-major axis 	 39.54 AU 	 (5,915 Gm) 
+Eccentricity 	 0.24905 
+Orbital period 	 248.00 years 	 90,581 d 
+Synodic period 	 366.73 days 
+Average orbital speed 	 4.67 km/s 
+Mean anomaly 	 14.53 deg 
+Inclination 	 17.1405° 	 (11.88° to Sun's equator) 
+Longitude of ascending 	 node 110.299° 
+Argument of perihelion 	 113.834° 
+Known satellites 	 5 
+
+Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune.
+It was the first Kuiper belt object to be discovered.
+It is the largest and second-most-massive known dwarf planet in the Solar System and the ninth-largest and tenth-most-massive known object directly orbiting the Sun.
+It is the largest known trans-Neptunian object by volume but is less massive than Eris, a dwarf planet in the scattered disc. 
+
+Like other Kuiper belt objects, Pluto is primarily made of ice and rock and is relatively small—about one-sixth the mass of Earth's Moon and one-third its volume.
+It has a moderately eccentric and inclined orbit during which it ranges from 30 to 49 astronomical units or AU (4.4–7.4 billion km) from the Sun.
+This means that Pluto periodically comes closer to the Sun than Neptune, but a s	le orbital resonance with Neptune prevents them from colliding.
+Light from the Sun takes about 5.5 hours to reach Pluto at its average distance (39.5 AU).
+
+Pluto was discovered by Clyde Tombaugh in 1930, and was originally considered the ninth planet from the Sun.
+After 1992, its status as a planet fell into question following the discovery of several objects of similar size in the Kuiper belt.
+In 2005, Eris, which is 27% more massive than Pluto, was discovered, which led the International Astronomical Union (IAU) to define the term "planet" formally for the first time the following year.
+This definition excluded Pluto and reclassified it as a member of the new "dwarf planet" category.

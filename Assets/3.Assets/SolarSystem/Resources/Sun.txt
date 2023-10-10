@@ -1,0 +1,35 @@
+﻿Equatorial radius 	 696,342±65 km 
+109 x Earth 
+Equatorial circumference 	 4.379x106 km 
+
+Surface area 	 6.09x1012 km2 
+12,000 x Earth
+Volume 	 1.41x1018 km3 
+1,300,000 x Earth 
+Mass 	 (1.98855±0.00025)x1030 kg 
+333,000 x Earth 
+Average density 	 1.408 g/cm3 
+0.255 x Earth 
+Center density (modeled) 	 162.2 g/cm3 
+12.4 x Earth 
+Equatorial surface gravity 	 274.0 m/s2 
+28 x Earth
+Escape velocity (from the surface) 	 617.7 km/s 
+55 x Earth 
+Temperature Center 	 1.57x107 K 
+Photosphere (effective): 	 5,778 K 
+Corona: 5x106 K 
+Luminosity (Lsol) 	 3.846x1026 W 
+Age 	 4.6 billion years 
+
+The Sun (in Greek: Helios, in Latin: Sol[a]) 
+ is the star at the center of the Solar System 
+ and is by far the most important source of energy for 
+ life on Earth. It is a nearly perfect spherical ball of hot plasma, 
+ with internal convective motion that generates a magnetic field 
+ via a dynamo process. Its diameter is about 109 times that of Earth,
+ and it has a mass about 330,000 times that of Earth, accounting for 
+ about 99.86% of the total mass of the Solar System. About three quarters  
+ of the Sun's mass consists of hydrogen; the rest is mostly helium, with much 
+ smaller quantities of heavier elements, including oxygen, carbon, neon and iron.
+

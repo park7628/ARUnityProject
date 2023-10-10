@@ -12,8 +12,8 @@ public class QuizButtonCtrl : MonoBehaviour
 
     public void QuizButtonClick()
     {
-        if (GameManager.isFinish)
-        {
+        //if (GameManager.isFinish)
+        //{
             if (!isOn) //¥›«Ù¿÷¿∏∏È ƒ˚¡Ó ø≠±‚
             {
                 GuidePanel.SetActive(false);
@@ -32,7 +32,7 @@ public class QuizButtonCtrl : MonoBehaviour
 
             }
 
-        }
+        //}
 
 
     }
