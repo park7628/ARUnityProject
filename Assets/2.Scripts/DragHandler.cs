@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using static UnityEditor.Progress;
+//using static UnityEditor.Progress;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 {

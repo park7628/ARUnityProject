@@ -54,6 +54,9 @@ TagManager:
   - pickuppoint
   - waypoint
   - UI Canvas
+  - SunP
+  - MoonP
+  - EarthP
   layers:
   - Default
   - TransparentFX

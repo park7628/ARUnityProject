@@ -23,7 +23,7 @@ public class Scene5Ctrl1 : MonoBehaviour
     public GameObject WarningPanel;
     public GameObject GuidePanel;
 
-    private int i = 0;
+   
     // Start is called before the first frame update
     void Start()
     {

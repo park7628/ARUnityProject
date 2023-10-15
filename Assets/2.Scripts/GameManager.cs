@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -59,6 +60,42 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(CheckSceneState()); // while(1) : only 상태
         StartCoroutine(SceneAction());
+
+    }
+    void OnEnable()
+    {
+        // 씬 매니저의 sceneLoaded에 체인을 건다.
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) //체인을 걸어서 매 씬마다 호출되는 함수
+    {
+        isScene0 = false; //0이 true가 되면 SCENE1이 켜지고 SCENE1 완료하면 isScene1 true
+        isScene1 = false;
+        isScene2 = false;
+        isScene3 = false;
+        isScene4 = false;
+        isScene5 = false;
+        isScene6 = false;
+        isScene7 = false;
+        isScene8 = false;
+        isScene9 = false;
+
+        state = State.SCENE0;
+
+        Scene0.SetActive(true);
+        Scene1.SetActive(false);
+        Scene2.SetActive(false);
+        Scene3.SetActive(false);
+        Scene4.SetActive(false);
+        Scene5.SetActive(false);
+        Scene6.SetActive(false);
+        Scene7.SetActive(false);
+        Scene8.SetActive(false);
+        Scene9.SetActive(false);
     }
 
     // Update is called once per frame

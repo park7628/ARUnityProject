@@ -45,7 +45,7 @@ public class EarthManager : MonoBehaviour
                     if (hit.collider.gameObject.tag == "arrow")
                     {
                         count1 += 1;
-                        earth.transform.Rotate(-Vector3.up * 7.5f);
+                        earth.transform.Rotate(-Vector3.up * 30.0f);
 
                         if (count % 12 == 4)
                         {

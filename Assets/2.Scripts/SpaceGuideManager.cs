@@ -7,10 +7,13 @@ public class SpaceGuideManager : MonoBehaviour
 {
     public GameObject Sun;
     public GameObject SunW;
+    private static GameObject SunP;
     public GameObject Earth;
     public GameObject EarthW;
+    private static GameObject EarthP;
     public GameObject Moon;
     public GameObject MoonW;
+    private static GameObject MoonP;
     public GameObject Human;
     public GameObject HumanW;
 
@@ -80,6 +83,11 @@ public class SpaceGuideManager : MonoBehaviour
     }
     public void Gtext2() //퀴즈에 맞는 별 또는 행성을 알맞은 자리에 넣어주세요. 태양계에서 유일한 별이자 모든 에너지의 근원은? 트리거 : 태양 가져다대기
     {
+        SunP = GameObject.FindWithTag("SunP");
+        if(SunP != null)
+        {
+            Destroy(SunP);
+        }
         Sun.SetActive(true);
         SunW.SetActive(false);
         CrBT.onClick.RemoveListener(Gtext2);
@@ -89,6 +97,11 @@ public class SpaceGuideManager : MonoBehaviour
     }
     public void Gtext3() //퀴즈에 맞는 별 또는 행성을 알맞은 자리에 넣어주세요. 태양으로부터 세번째 행성으로 우리가 살고 있는 행성은? 트리거 : 지구 가져다대기
     {
+        EarthP = GameObject.FindWithTag("EarthP");
+        if (EarthP != null)
+        {
+            Destroy(EarthP);
+        }
         Earth.SetActive(true);
         EarthW.SetActive(false);
         CrBT.onClick.RemoveListener(Gtext3);
@@ -98,17 +111,22 @@ public class SpaceGuideManager : MonoBehaviour
     }
     public void Gtext4() //퀴즈에 맞는 별 또는 행성을 알맞은 자리에 넣어주세요. 지구를 중심으로 공전하고 있는 위성은? 트리거 : 달 가져다대기
     {
+        MoonP = GameObject.FindWithTag("MoonP");
+        if (MoonP != null)
+        {
+            Destroy(MoonP);
+        }
         Moon.SetActive(true);
         MoonW.SetActive(false);
         CrBT.onClick.RemoveListener(Gtext4);
-        CrBT.onClick.AddListener(Gtext4_1);
+        CrBT.onClick.AddListener(Gtext5);
         text4.SetActive(false);
         text5.SetActive(true);
         InvenPanel.SetActive(false);
         InvelPanel2.SetActive(true);
     }
 
-    public void Gtext4_1()
+    /*public void Gtext4_1()
     {
         Human.SetActive(true);
         HumanW.SetActive(false);
@@ -116,12 +134,15 @@ public class SpaceGuideManager : MonoBehaviour
         CrBT.onClick.AddListener(Gtext5);
 
         InvelPanel2.SetActive(false);
-        WCamUI.SetActive(true);
-    }
+        
+    }*/
 
     public void Gtext5() //지구에 살고 있는 관측자입니다. 지구에 관측자를 올려주세요. 트리거 : 관측자 지구에 가져다대기
     {
-        
+        Human.SetActive(true);
+        HumanW.SetActive(false);
+        InvelPanel2.SetActive(false);
+
         text5.SetActive(false);
         text6.SetActive(true);
         Robj.SetActive(true);

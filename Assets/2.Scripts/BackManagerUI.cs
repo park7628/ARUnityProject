@@ -13,6 +13,7 @@ public class BackManagerUI : MonoBehaviour
     int chooseexp;
     public GameObject O2Start;
     public GameObject CO2Start;
+    public GameObject SpaceStart;
 
     /*public bool isback = false;
     void Start()
@@ -55,7 +56,7 @@ public class BackManagerUI : MonoBehaviour
 
         if (BackManager.isback)
         {
-            if (O2Start != null && CO2Start != null)
+            if (O2Start != null && CO2Start != null && SpaceStart != null)
             {
                 BacktoStartScene();
             }
@@ -65,10 +66,6 @@ public class BackManagerUI : MonoBehaviour
     }
 
 
-    void Update()
-    {
-
-    }
     public void BacktoStartScene()
     {
 
@@ -82,6 +79,10 @@ public class BackManagerUI : MonoBehaviour
             CO2Start.SetActive(true);
         }
 
+        else if (SceneChange.SelectedExperiment == 3)
+        {
+            SpaceStart.SetActive(true);
+        }
     }
 
 }
