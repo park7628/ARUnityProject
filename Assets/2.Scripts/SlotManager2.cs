@@ -12,6 +12,7 @@ public class SlotManager2 : MonoBehaviour, IDropHandler
     public Sprite after_img2;
     public Sprite after_img3;
     public Sprite after_img4;
+    public Sprite nullImg;
     public static int a2 = DragHandler.a;
     GameObject ArrayManager;
 
@@ -47,5 +48,12 @@ public class SlotManager2 : MonoBehaviour, IDropHandler
             _icon.sprite = after_img4;
             ArrayManager.GetComponent<ArrayManager>().CArray();
         }
+    }
+    public void RemoveSlot()
+    {
+        _icon.sprite = nullImg;
+        
+        // 초기화 안 해주면 이미지 없는데 O/X 이미지 나옴
+        a2 = 0;
     }
 }
