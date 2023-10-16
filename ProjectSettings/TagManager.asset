@@ -57,6 +57,10 @@ TagManager:
   - SunP
   - MoonP
   - EarthP
+  - hydrogenBtn
+  - hydrochloricBtn
+  - manganeseBtn
+  - limestoneBtn
   layers:
   - Default
   - TransparentFX

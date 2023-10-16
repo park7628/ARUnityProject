@@ -3,36 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-//using static UnityEditor.Progress;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     Transform _startParent;
     public static GameObject _itemBeingDragged;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static int a = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        
         _itemBeingDragged = gameObject;
         //_startParent = transform.parent;
         transform.SetParent(GameObject.FindGameObjectWithTag("UI Canvas").transform);
         GetComponent<Image>().raycastTarget = false;
         //_itemBeingDragged = gameObject;
+        
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        // 현재 드래그되고있는 오브젝트 가져오기
+        GameObject tempBtn = EventSystem.current.currentSelectedGameObject;
+
+        // 태그로 비교
+        if (tempBtn.CompareTag("hydrogenBtn"))
+        {
+            a = 1;
+        }
+        else if (tempBtn.CompareTag("hydrochloricBtn"))
+        {
+            a = 2;
+        }
+        else if (tempBtn.CompareTag("manganeseBtn"))
+        {
+            a = 3;
+        }
+        else if (tempBtn.CompareTag("limestoneBtn"))
+        {
+            a = 4;
+        }
+
         transform.position = eventData.position;
     }
 
