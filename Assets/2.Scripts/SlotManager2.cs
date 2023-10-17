@@ -15,7 +15,7 @@ public class SlotManager2 : MonoBehaviour, IDropHandler
     public Sprite nullImg;
     public static int a2 = DragHandler.a;
     GameObject ArrayManager;
-
+    public GameObject slot2;
 
     public void OnDrop(PointerEventData eventData)
     {
