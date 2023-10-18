@@ -45,6 +45,10 @@ public class ArrayManager : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("False").gameObject.SetActive(true);
 
             // ¸ñ¼û -1
+            if (life == 0)
+            {
+                life = 3;
+            }
             life -= 1;
             LifeScoreMgr.GetComponent<LifeScoreMgr>().LifeDown(life);
 
