@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 5231496328456905051}
   - component: {fileID: 5231496328456905028}
   - component: {fileID: 5231496328456905050}
+  - component: {fileID: 7960889939269342387}
   m_Layer: 0
   m_Name: EarthP
   m_TagString: EarthP
@@ -367,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5231496328456904981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.24, y: 1.14, z: 15.87}
+  m_LocalPosition: {x: -1.24, y: 1.14, z: 13.75}
   m_LocalScale: {x: 0.686026, y: 0.686026, z: 0.686026}
   m_Children:
   - {fileID: 5231496328456905001}
@@ -518,6 +519,22 @@ MonoBehaviour:
   onSelectedSelectFingerUp:
     m_PersistentCalls:
       m_Calls: []
+--- !u!54 &7960889939269342387
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5231496328456904981}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5231496328456904982
 GameObject:
   m_ObjectHideFlags: 0

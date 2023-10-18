@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EarthManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class EarthManager : MonoBehaviour
 
     private int count = 0;
     private int count1 = 0;
+
+    public Button RBT;
 
     //private static GameObject arrow1;
 
@@ -44,8 +47,7 @@ public class EarthManager : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "arrow")
                     {
-                        count1 += 1;
-                        earth.transform.Rotate(-Vector3.up * 30.0f);
+                        RBT.onClick.Invoke();
 
                         if (count % 12 == 4)
                         {

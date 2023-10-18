@@ -13,14 +13,11 @@ public class CrashCtrl : MonoBehaviour
     public GameObject tube1;
     public GameObject pinch;
     public GameObject glasstube;
-    //public GameObject lid;
     public GameObject flask;
     public GameObject tube2;
     public GameObject rtube;
-    public GameObject tank_base;
     public GameObject watertank;
     public GameObject vial;
-
 
     public TMP_Text text;
     private string name;
@@ -112,33 +109,52 @@ public class CrashCtrl : MonoBehaviour
     {
         if (this.gameObject.tag == coll.tag)
         {
-            coll.transform.position = this.transform.position;
-            coll.transform.rotation = this.transform.rotation;
-            //coll.transform.scale = this.transform.scale;
-            name = coll.tag;
-            Crash();
+
+            switch (this.gameObject.tag)
+            {
+                case "tube1":
+                    tube1.SetActive(true);
+                    break;
+
+                case "pinch":
+                    pinch.SetActive(true);
+                    break;
+
+                case "glasstube"://유리관
+                    glasstube.SetActive(true);
+                    break;
+
+                case "flask"://가지달린플라스크
+                    flask.SetActive(true);
+                    break;
+
+                case "tube2": //가지에 고무관
+                    tube2.SetActive(true);
+                    break;
+
+                case "rtube": //고무관 끝에 ㄱ자, tank_base 바닥 SetActive true
+                    rtube.SetActive(true);
+                    break;
+                case "watertank"://수조 바닥에 수조, tank_base 바닥 SetActive false
+                    watertank.SetActive(true);
+                    break;
+                case "vial":
+                    vial.SetActive(true);
+                    break;
+                case "funnel":
+                    funnel.SetActive(true);
+                    break;
+            }
+
+            Destroy(coll.gameObject);
             this.gameObject.SetActive(false);
 
 
-            //Destroy(coll, 1.0f);
-
         }
+
+
+
     }
 
 
-    private void Crash()
-    {
-        text.text = name + "Crash";
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 }

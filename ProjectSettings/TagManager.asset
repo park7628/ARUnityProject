@@ -61,6 +61,8 @@ TagManager:
   - hydrochloricBtn
   - manganeseBtn
   - limestoneBtn
+  - HumanP
+  - Human
   layers:
   - Default
   - TransparentFX

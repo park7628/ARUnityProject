@@ -16,6 +16,7 @@ public class SpaceGuideManager : MonoBehaviour
     private static GameObject MoonP;
     public GameObject Human;
     public GameObject HumanW;
+    private static GameObject HumanP;
 
     public GameObject WCamUI;
     public GameObject InvenPanel;
@@ -68,11 +69,6 @@ public class SpaceGuideManager : MonoBehaviour
         Crobj.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Gtext1() //Gtext1 이 화면에 뜨는 가이드를 잘 읽고 실험을 진행하세요. 우측 시작 버튼을 눌러 실험을 시작하세요. 트리거 : 시작버튼 누르기
     {
         Sobj.SetActive(false);
@@ -141,6 +137,11 @@ public class SpaceGuideManager : MonoBehaviour
     {
         Human.SetActive(true);
         HumanW.SetActive(false);
+        HumanP = GameObject.FindWithTag("HumanP");
+        if (HumanP != null)
+        {
+            Destroy(HumanP);
+        }
         InvelPanel2.SetActive(false);
 
         text5.SetActive(false);
