@@ -181,7 +181,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 1e07ecdd0918ce244b023de7d1695ef3, type: 3}
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e050a9a4b37474449f53ac66a3af5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LifeScoreMgr: {fileID: 2070505010}
+  LifeScoreMgr: {fileID: 632685378}
 --- !u!4 &109049431
 Transform:
   m_ObjectHideFlags: 0
@@ -589,7 +589,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ecd723e0adabe1f46b47493a2fde33f3, type: 3}
     m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
@@ -626,7 +626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1041, y: 736}
+  m_AnchoredPosition: {x: 1041, y: 721}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &330022906
@@ -1194,6 +1194,13 @@ MonoBehaviour:
   - {fileID: 1272837266}
   - {fileID: 850597880}
   - {fileID: 1526024992}
+  UILife:
+  - {fileID: 219517974}
+  - {fileID: 1287208823}
+  - {fileID: 2068127540}
+  UIScore: {fileID: 328942840}
+  ScoreResult: {fileID: 1507887320}
+  GameOver: {fileID: 66705212}
 --- !u!4 &632685380
 Transform:
   m_ObjectHideFlags: 0
@@ -2010,7 +2017,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 1e07ecdd0918ce244b023de7d1695ef3, type: 3}
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
@@ -2427,7 +2434,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ecd723e0adabe1f46b47493a2fde33f3, type: 3}
     m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
@@ -2596,8 +2603,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2070505011}
-        m_TargetAssemblyTypeName: LifeScoreMgr, Assembly-CSharp
+      - m_Target: {fileID: 632685379}
+        m_TargetAssemblyTypeName: Co2O2GameManager, Assembly-CSharp
         m_MethodName: RetryOnClick
         m_Mode: 1
         m_Arguments:
@@ -3495,56 +3502,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &2070505010
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2070505012}
-  - component: {fileID: 2070505011}
-  m_Layer: 0
-  m_Name: LifeScoreMgr
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2070505011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070505010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e7a153d50f60244e9d6e189685c515c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UILife:
-  - {fileID: 219517974}
-  - {fileID: 1287208823}
-  - {fileID: 2068127540}
-  UIScore: {fileID: 328942840}
-  ScoreResult: {fileID: 1507887320}
-  GameOver: {fileID: 66705212}
---- !u!4 &2070505012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070505010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 746.8187, y: 888.6895, z: -179.53677}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2086434905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,7 +3603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723583669642887913, guid: 41a7793c62ee8de4a96c902294baf8c2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1723583669642887913, guid: 41a7793c62ee8de4a96c902294baf8c2, type: 3}
       propertyPath: m_AnchorMax.x

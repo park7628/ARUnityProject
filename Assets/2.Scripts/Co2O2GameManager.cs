@@ -28,6 +28,14 @@ public class Co2O2GameManager : MonoBehaviour
     public int score;
 
     public List<GameObject> firePos = new List<GameObject> { };
+
+    // 점수, 목숨
+    public Image[] UILife;
+    public Text UIScore;
+    public Text ScoreResult;
+    public GameObject GameOver;
+    int point = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -101,4 +109,63 @@ public class Co2O2GameManager : MonoBehaviour
         firePos[range].SetActive(false);
         Debug.Log("firePos[" + range + "] " + "비활성화 완료");
     }
+
+
+
+    // 목숨 -1 시 색상 변경
+    public void LifeDown(int life)
+    {
+        if (life > 0)
+        {
+
+            //색상변경
+            UILife[life].color = new Color(1, 0, 0, 0.4f);
+        }
+        else
+        {
+            //색상변경
+            UILife[0].color = new Color(1, 0, 0, 0.4f);
+
+            //게임오버
+            // 게임오버 후 클론 생성 멈춰야함!!
+            // 씬 바꾸는 방식으로 해야하나...?
+            GameOver.SetActive(true);
+            ScoreResult.text = "Score: " + point.ToString();
+            LifeUp();
+        }
+    }
+
+    // Retry시 목숨 색 원래대로
+    public void LifeUp()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            UILife[i].color = new Color(1, 0, 0, 1);
+        }
+
+    }
+
+    // 점수 +10
+    public void GetScore()
+    {
+        point += 10;
+        SetText();
+    }
+
+    public void SetText()
+    {
+        UIScore.text = point.ToString();
+    }
+
+
+    // retry 버튼 클릭 시
+    public void RetryOnClick()
+    {
+        GameOver.SetActive(false);
+        point = 0;
+        SetText();
+    }
+
+    // exit 버튼 클릭 시
+
 }

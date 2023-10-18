@@ -25,7 +25,7 @@ public class ArrayManager : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("True").gameObject.SetActive(true);
 
             // 점수 +10
-            LifeScoreMgr.GetComponent<LifeScoreMgr>().GetScore();
+            LifeScoreMgr.GetComponent<Co2O2GameManager>().GetScore();
 
             Invoke("RemoveTF", 1f); // 2초 후 이미지 비활성화
         }
@@ -35,7 +35,7 @@ public class ArrayManager : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("True").gameObject.SetActive(true);
 
             // 점수 +10
-            LifeScoreMgr.GetComponent<LifeScoreMgr>().GetScore();
+            LifeScoreMgr.GetComponent<Co2O2GameManager>().GetScore();
 
             Invoke("RemoveTF", 1f); // 2초 후 이미지 비활성화
         }
@@ -44,13 +44,15 @@ public class ArrayManager : MonoBehaviour
             Debug.Log("오답입니다");
             GameObject.Find("Canvas").transform.Find("False").gameObject.SetActive(true);
 
-            // 목숨 -1
+            // 게임오버 후 life가 0일 때 3으로 다시 초기화
             if (life == 0)
             {
                 life = 3;
             }
+
+            // 목숨 -1
             life -= 1;
-            LifeScoreMgr.GetComponent<LifeScoreMgr>().LifeDown(life);
+            LifeScoreMgr.GetComponent<Co2O2GameManager>().LifeDown(life);
 
             Invoke("RemoveTF", 1f); // 2초 후 이미지 비활성화
             
