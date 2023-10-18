@@ -14,7 +14,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
+        Debug.Log("OnBeingDrag");
         _itemBeingDragged = gameObject;
         //_startParent = transform.parent;
         transform.SetParent(GameObject.FindGameObjectWithTag("UI Canvas").transform);
@@ -25,6 +25,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
+        GetComponent<Image>().raycastTarget = false;
         // 현재 드래그되고있는 오브젝트 가져오기
         GameObject tempBtn = EventSystem.current.currentSelectedGameObject;
 
