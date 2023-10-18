@@ -20,13 +20,14 @@ public class Co2O2GameManager : MonoBehaviour
     public GameObject canvas;
 
     public GameObject firepos1;
-
+    public static int checkFireRange;
+    public static List<int> missFire = new List<int> { }; // 불꽃을 놓쳤을 때 점수를 깍기 위한 변수
 
     float playTime;
     public int num = 0;
     public Vector3 firePosition;
     public int score;
-
+    public int game; // 게임 실행 변수
     public List<GameObject> firePos = new List<GameObject> { };
 
     // 점수, 목숨
@@ -39,7 +40,13 @@ public class Co2O2GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        for( int i = 0; i < firePos.Count; i++ )
+        {
+            missFire.Add(0);
+        }
+        Debug.Log(missFire.Count);
+        game = 1;
+        
     }
 
     // Update is called once per frame
@@ -48,16 +55,23 @@ public class Co2O2GameManager : MonoBehaviour
 
         playTime += Time.deltaTime;
 
-        if (score < 10 && score >= 0)
+        if (game == 1)
         {
-            if (playTime > 5)
+            if (score < 10 && score >= 0)
             {
-                createFire();
-                playTime = 0;
+                if (playTime > 5)
+                {
+                    createFire();
+                    playTime = 0;
+                }
+
+
             }
-
-
         }
+        else if (game == 0) { 
+        
+        }
+        
         
     }
 
@@ -67,11 +81,12 @@ public class Co2O2GameManager : MonoBehaviour
         int range = Random.Range(0, firePos.Count);
         if (firePos[range].activeSelf == false)
         {
-            Debug.Log("if문 활성화");
+            //Debug.Log("if문 활성화");
             firePosition = firePos[range].transform.position;
             firePos[range].SetActive(true);
+            missFire[range] = 1;
 
-            Debug.Log(range);
+            //Debug.Log(range);
             fire.transform.position = firePosition;
             GameObject firepos = Instantiate(fire, firePosition, Quaternion.identity); // 버튼 누를 때 마다 Clone 생성은 잘 되는데 왜 불은 안보일까??..ㅎㅎ 이거 해결해야됨 -> canvas안에 안있어서 안보였던거임
             firepos.transform.SetParent(canvas.transform);
@@ -79,6 +94,7 @@ public class Co2O2GameManager : MonoBehaviour
             //List<float> checkTime = new List<float>();
             //checkTime.Add(Time.deltaTime);
             //Destroy(firepos, 4.0f);
+            
             StartCoroutine(DestroyFirePosAfterDelay(firepos, 6.0f, range));
             //if (checkTime[num] > 4)
             //{
@@ -92,7 +108,7 @@ public class Co2O2GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("if문 비활성화");
+            //Debug.Log("if문 비활성화");
             createFire();
         }
 
@@ -100,26 +116,35 @@ public class Co2O2GameManager : MonoBehaviour
 
     private IEnumerator DestroyFirePosAfterDelay(GameObject firepos, float delay, int range)
     {
+        checkFireRange = range; // 스테틱 변수에 range값 할당
         yield return new WaitForSeconds(delay);
 
+        if (missFire[range] == 1)
+        {
+            Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+            //ArrayManager.life -= 1;
+            LifeDown();
+        }
         // 지연 후에 firepos를 제거
         Destroy(firepos);
 
         // firePos[range]를 비활성화
         firePos[range].SetActive(false);
-        Debug.Log("firePos[" + range + "] " + "비활성화 완료");
+        //Debug.Log("firePos[" + range + "] " + "비활성화 완료");
     }
 
 
 
     // 목숨 -1 시 색상 변경
-    public void LifeDown(int life)
+    public void LifeDown()
     {
-        if (life > 0)
+        ArrayManager.life -= 1;
+        if (ArrayManager.life > 0)
         {
 
             //색상변경
-            UILife[life].color = new Color(1, 0, 0, 0.4f);
+            UILife[ArrayManager.life].color = new Color(1, 0, 0, 0.4f); 
+            Debug.Log(ArrayManager.life);
         }
         else
         {
@@ -129,9 +154,11 @@ public class Co2O2GameManager : MonoBehaviour
             //게임오버
             // 게임오버 후 클론 생성 멈춰야함!!
             // 씬 바꾸는 방식으로 해야하나...?
+            game = 0;
             GameOver.SetActive(true);
             ScoreResult.text = "Score: " + point.ToString();
-            LifeUp();
+
+            //LifeUp(); // 테스트 해야되서 비활성화 시킴
         }
     }
 
@@ -161,7 +188,11 @@ public class Co2O2GameManager : MonoBehaviour
     // retry 버튼 클릭 시
     public void RetryOnClick()
     {
+        ArrayManager.life = 3;
+        LifeUp();
         GameOver.SetActive(false);
+        
+        game = 1;
         point = 0;
         SetText();
     }
