@@ -43,7 +43,7 @@ public class ArrayManager : MonoBehaviour
 
             Invoke("RemoveTF", 1f); // 2초 후 이미지 비활성화
         }
-        else if ((a1 == 1 && a2 == 2) || (a1 == 1 && a2 == 3) || (a1 == 2 && a2 == 1) || (a1 == 3 && a2 == 1) || (a1 == 2 && a2 == 4) || (a1 == 4 && a2 == 2) || (a1 == 3 && a2 == 4) || (a1 == 4 && a2 == 3))
+        else if ((a1 == 1 && a2 == 2) || (a1 == 1 && a2 == 3) || (a1 == 2 && a2 == 1) || (a1 == 3 && a2 == 1) || (a1 == 2 && a2 == 4) || (a1 == 4 && a2 == 2) || (a1 == 3 && a2 == 4) || (a1 == 4 && a2 == 3) || (a1 == 1 && a2 == 1) || (a1 == 2 && a2 == 2) || (a1 == 3 && a2 == 3) || (a1 == 4 && a2 == 4))
         {
             Debug.Log("오답입니다");
             GameObject.Find("Canvas").transform.Find("False").gameObject.SetActive(true);
