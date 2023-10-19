@@ -11,6 +11,9 @@ public class BackManagerUI : MonoBehaviour
 
     //GameObject BackManager;
     int chooseexp;
+    public GameObject Experiment1;
+    public GameObject Experiment2;
+
     public GameObject O2Start;
     public GameObject CO2Start;
     public GameObject SpaceStart;
@@ -72,16 +75,22 @@ public class BackManagerUI : MonoBehaviour
         if (SceneChange.SelectedExperiment == 1)
         {
             O2Start.SetActive(true);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
         }
 
         else if (SceneChange.SelectedExperiment == 2)
         {
             CO2Start.SetActive(true);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
         }
 
         else if (SceneChange.SelectedExperiment == 3)
         {
             SpaceStart.SetActive(true);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
         }
     }
 

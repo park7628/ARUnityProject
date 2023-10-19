@@ -5049,9 +5049,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39c1a36edc3ccd49aabfc846d5a05b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Experiment1: {fileID: 274676912}
+  Experiment2: {fileID: 2049346908}
   O2Start: {fileID: 749014223}
   CO2Start: {fileID: 1572997141}
-  SpaceStart: {fileID: 0}
+  SpaceStart: {fileID: 1324612443}
 --- !u!1 &132083767
 GameObject:
   m_ObjectHideFlags: 0
@@ -12676,6 +12678,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &290624446
@@ -31819,6 +31822,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &765631456
@@ -36479,6 +36483,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &869733989
@@ -38099,6 +38104,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &893403295
@@ -42984,6 +42990,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &987497092
@@ -50648,6 +50655,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &1161361935
@@ -74912,6 +74920,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &1707996637
@@ -76109,6 +76118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39c1a36edc3ccd49aabfc846d5a05b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Experiment1: {fileID: 0}
+  Experiment2: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
   SpaceStart: {fileID: 0}
@@ -78355,6 +78366,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &1783090275
@@ -79353,6 +79365,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &1807624542
@@ -83455,6 +83468,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &1919550669
@@ -85957,6 +85971,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &1954507563
@@ -90980,6 +90995,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &2088155886
@@ -92690,6 +92706,7 @@ MonoBehaviour:
   GroupCodeSet: {fileID: 0}
   O2Start: {fileID: 0}
   CO2Start: {fileID: 0}
+  O2CO2GameStart: {fileID: 0}
   RotatingStart: {fileID: 0}
   bgmsound: {fileID: 0}
 --- !u!114 &2137922956
@@ -114271,7 +114288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7414311200696239463
 Transform:
   m_ObjectHideFlags: 0
