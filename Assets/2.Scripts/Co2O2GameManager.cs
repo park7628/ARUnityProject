@@ -18,6 +18,7 @@ public class Co2O2GameManager : MonoBehaviour
     public GameObject fire;
     public GameObject needFire;
     public GameObject canvas;
+    public GameObject FireParent;
 
     public GameObject firepos1;
     public static int checkFireRange;
@@ -89,7 +90,7 @@ public class Co2O2GameManager : MonoBehaviour
             //Debug.Log(range);
             fire.transform.position = firePosition;
             GameObject firepos = Instantiate(fire, firePosition, Quaternion.identity); // 버튼 누를 때 마다 Clone 생성은 잘 되는데 왜 불은 안보일까??..ㅎㅎ 이거 해결해야됨 -> canvas안에 안있어서 안보였던거임
-            firepos.transform.SetParent(canvas.transform);
+            firepos.transform.SetParent(FireParent.transform);
 
             //List<float> checkTime = new List<float>();
             //checkTime.Add(Time.deltaTime);
