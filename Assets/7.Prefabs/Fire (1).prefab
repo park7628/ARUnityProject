@@ -246,7 +246,7 @@ MonoBehaviour:
   after_img2: {fileID: 21300000, guid: fedb96e9881a49048b677cee46e7b5c6, type: 3}
   after_img3: {fileID: 21300000, guid: 8272675788bf3dc45ba7a7e8cf09ba37, type: 3}
   after_img4: {fileID: 21300000, guid: e15e5914fe80d91458bd5bddec694731, type: 3}
-  nullImg: {fileID: 0}
+  nullImg: {fileID: 21300000, guid: e88d7cd8357d98b45bc7f86cdd424594, type: 3}
   slot1: {fileID: 3933396201667327704}
 --- !u!1 &3933396202132698305
 GameObject:
@@ -341,5 +341,5 @@ MonoBehaviour:
   after_img2: {fileID: 21300000, guid: fedb96e9881a49048b677cee46e7b5c6, type: 3}
   after_img3: {fileID: 21300000, guid: 8272675788bf3dc45ba7a7e8cf09ba37, type: 3}
   after_img4: {fileID: 21300000, guid: e15e5914fe80d91458bd5bddec694731, type: 3}
-  nullImg: {fileID: 0}
+  nullImg: {fileID: 21300000, guid: e88d7cd8357d98b45bc7f86cdd424594, type: 3}
   slot2: {fileID: 3933396202132698305}
