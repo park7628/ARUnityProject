@@ -24,6 +24,7 @@ public class ArrayManager : MonoBehaviour
             Debug.Log("이산화탄소 발생");
             GameObject.Find("Canvas").transform.Find("True").gameObject.SetActive(true);
             Co2O2GameManager.missFire[Co2O2GameManager.checkFireRange] = 0;
+            Co2O2GameManager.missNeedFire[Co2O2GameManager.checkNeedFireRange] = 0;
             Debug.Log("ArrayManger에서 missFire의 값을 0으로 바꿨습니다.");
             // 점수 +10
             LifeScoreMgr.GetComponent<Co2O2GameManager>().GetScore();
@@ -36,6 +37,7 @@ public class ArrayManager : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("True").gameObject.SetActive(true);
 
             Co2O2GameManager.missFire[Co2O2GameManager.checkFireRange] = 0;
+            Co2O2GameManager.missNeedFire[Co2O2GameManager.checkNeedFireRange] = 0;
             Debug.Log("ArrayManger에서 missFire의 값을 0으로 바꿨습니다.");
 
             // 점수 +10
