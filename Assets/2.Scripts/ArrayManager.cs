@@ -16,6 +16,8 @@ public class ArrayManager : MonoBehaviour
     {
         var a1 = SlotManager1.a1;
         var a2 = SlotManager2.a2;
+        var a3 = SlotManager3.a3;
+        var a4 = SlotManager4.a4;
         RemoveSlotMgr = GameObject.Find("RemoveSlotMgr");
 
 
@@ -31,7 +33,7 @@ public class ArrayManager : MonoBehaviour
 
             Invoke("RemoveTF", 1f); // 2초 후 이미지 비활성화
         }
-        else if ((a1 == 1 && a2 == 4) || (a1 == 4 && a2 == 1))
+        else if ((a3 == 1 && a4 == 4) || (a3 == 4 && a4 == 1))
         {
             Debug.Log("산소 발생");
             GameObject.Find("Canvas").transform.Find("True").gameObject.SetActive(true);
@@ -45,7 +47,9 @@ public class ArrayManager : MonoBehaviour
 
             Invoke("RemoveTF", 1f); // 2초 후 이미지 비활성화
         }
-        else if ((a1 == 1 && a2 == 2) || (a1 == 1 && a2 == 3) || (a1 == 2 && a2 == 1) || (a1 == 3 && a2 == 1) || (a1 == 2 && a2 == 4) || (a1 == 4 && a2 == 2) || (a1 == 3 && a2 == 4) || (a1 == 4 && a2 == 3) || (a1 == 1 && a2 == 1) || (a1 == 2 && a2 == 2) || (a1 == 3 && a2 == 3) || (a1 == 4 && a2 == 4))
+        else if ((a1 == 1 && a2 == 2) || (a1 == 1 && a2 == 3) || (a1 == 2 && a2 == 1) || (a1 == 3 && a2 == 1) || (a1 == 2 && a2 == 4) || (a1 == 4 && a2 == 2) || (a1 == 3 && a2 == 4) || (a1 == 4 && a2 == 3) || (a1 == 1 && a2 == 1) || (a1 == 2 && a2 == 2) || (a1 == 3 && a2 == 3) || (a1 == 4 && a2 == 4) ||
+            (a3 == 1 && a4 == 2) || (a3 == 1 && a4 == 3) || (a3 == 2 && a4 == 1) || (a3 == 3 && a4 == 1) || (a3 == 2 && a4 == 4) || (a3 == 4 && a4 == 2) || (a3 == 3 && a4 == 4) || (a3 == 4 && a4 == 3) || (a3 == 1 && a4 == 1) || (a3 == 2 && a4 == 2) || (a3 == 3 && a4 == 3) || (a3 == 4 && a4 == 4) ||
+            (a1 == 1 && a2 == 4) || (a1 == 4 && a2 == 1) || (a3 == 2 && a4 == 3) || (a3 == 3 && a4 == 2))
         {
             Debug.Log("오답입니다");
             GameObject.Find("Canvas").transform.Find("False").gameObject.SetActive(true);
@@ -75,6 +79,8 @@ public class ArrayManager : MonoBehaviour
 
         RemoveSlotMgr.GetComponent<SlotManager1>().RemoveSlot();
         RemoveSlotMgr.GetComponent<SlotManager2>().RemoveSlot();
+        RemoveSlotMgr.GetComponent<SlotManager3>().RemoveSlot();
+        RemoveSlotMgr.GetComponent<SlotManager4>().RemoveSlot();
 
     }
 
