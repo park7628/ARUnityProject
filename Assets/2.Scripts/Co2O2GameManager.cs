@@ -208,17 +208,25 @@ public class Co2O2GameManager : MonoBehaviour
     public void LifeDown()
     {
         ArrayManager.life -= 1;
+
         if (ArrayManager.life > 0)
         {
-
             //색상변경
-            UILife[ArrayManager.life].color = new Color(1, 0, 0, 0.4f); 
+            UILife[ArrayManager.life].color = new Color(1, 0, 0, 0.4f);
+
+            // 목숨 깎임 효과음
+            AudioSource LifeDownAudio = UILife[ArrayManager.life].GetComponent<AudioSource>();
+            LifeDownAudio.Play();
+
             Debug.Log(ArrayManager.life);
         }
         else
         {
             //색상변경
             UILife[0].color = new Color(1, 0, 0, 0.4f);
+
+            AudioSource LifeDownAudio = UILife[0].GetComponent<AudioSource>();
+            LifeDownAudio.Play();
 
             //게임오버
             // 게임오버 후 클론 생성 멈춰야함!!
