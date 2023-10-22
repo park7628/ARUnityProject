@@ -49,6 +49,20 @@ TagManager:
   - incense
   - Sun
   - Moon
+  - stealingpoint
+  - sittingpoint
+  - pickuppoint
+  - waypoint
+  - UI Canvas
+  - SunP
+  - MoonP
+  - EarthP
+  - hydrogenBtn
+  - hydrochloricBtn
+  - manganeseBtn
+  - limestoneBtn
+  - HumanP
+  - Human
   layers:
   - Default
   - TransparentFX

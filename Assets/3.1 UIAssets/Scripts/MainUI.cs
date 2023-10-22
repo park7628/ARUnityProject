@@ -30,6 +30,7 @@ public class MainUI : MonoBehaviour
     public GameObject GroupCodeSet;
     public GameObject O2Start;
     public GameObject CO2Start;
+    public GameObject O2CO2GameStart;
     public GameObject RotatingStart;
     public GameObject bgmsound;
 
@@ -186,6 +187,18 @@ public class MainUI : MonoBehaviour
     {
         Experiment2.SetActive(false);
         CO2Start.SetActive(true);
+    }
+
+    public void O2CO2GameStartActive()
+    {
+        Game.SetActive(false);
+        O2CO2GameStart.SetActive(true);
+    }
+
+    public void O2CO2GameExitActive()
+    {
+        Game.SetActive(true);
+        O2CO2GameStart.SetActive(false);
     }
 
     public void RotatingStartActive()

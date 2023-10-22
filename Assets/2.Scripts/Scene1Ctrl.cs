@@ -12,6 +12,7 @@ public class Scene1Ctrl : MonoBehaviour
     private static GameObject Mangan;
     private static GameObject mangan;
     private static GameObject Motar;
+    private bool iswater = false; //물 넣었는지 확인
 
     public Animator animator1;
     public Animator animator2;
@@ -52,10 +53,10 @@ public class Scene1Ctrl : MonoBehaviour
         //UnityEngine.Debug.Log("애니메이션 함수 들어옴");
 
         if (Water != null && liquid1 != null)
-            {
+        {
                 //UnityEngine.Debug.Log("settrigger");
-                animator1.SetTrigger(animationTrigger1);
-                Water.GetComponent<Animator>().Play("Water");
+            animator1.SetTrigger(animationTrigger1);
+            Water.GetComponent<Animator>().Play("Water");
             if (Water.GetComponent<Outline>().enabled)
             {
                 Water.GetComponent<Outline>().enabled = false;
@@ -66,10 +67,10 @@ public class Scene1Ctrl : MonoBehaviour
             }
             Invoke("IsWater", 1.7f);
 
-
-                button.onClick.AddListener(PlayAnimation2);
-                button.onClick.RemoveListener(PlayAnimation1);
-            }
+            iswater = true;
+            button.onClick.AddListener(PlayAnimation2);
+            button.onClick.RemoveListener(PlayAnimation1);
+        }
         
     }
    
@@ -146,7 +147,7 @@ public class Scene1Ctrl : MonoBehaviour
                             PlayAnimation1();
                         }
                     }
-                    else if (hit.collider.gameObject.tag == "MANGANIZ" || hit.collider.gameObject.tag == "motar")
+                    else if ((hit.collider.gameObject.tag == "MANGANIZ" || hit.collider.gameObject.tag == "motar") && iswater == true)
                     {
                         if (Mangan != null && mangan != null)
                         {

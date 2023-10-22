@@ -11,8 +11,13 @@ public class BackManagerUI : MonoBehaviour
 
     //GameObject BackManager;
     int chooseexp;
+    public GameObject Experiment1;
+    public GameObject Experiment2;
+
     public GameObject O2Start;
     public GameObject CO2Start;
+    public GameObject SpaceStart;
+    public GameObject CO2o2GameStart;
 
     /*public bool isback = false;
     void Start()
@@ -55,7 +60,7 @@ public class BackManagerUI : MonoBehaviour
 
         if (BackManager.isback)
         {
-            if (O2Start != null && CO2Start != null)
+            if (O2Start != null && CO2Start != null && SpaceStart != null && CO2o2GameStart)
             {
                 BacktoStartScene();
             }
@@ -65,23 +70,39 @@ public class BackManagerUI : MonoBehaviour
     }
 
 
-    void Update()
-    {
-
-    }
     public void BacktoStartScene()
     {
 
         if (SceneChange.SelectedExperiment == 1)
         {
             O2Start.SetActive(true);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
+            CO2o2GameStart.SetActive(false);
         }
 
         else if (SceneChange.SelectedExperiment == 2)
         {
             CO2Start.SetActive(true);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
+            CO2o2GameStart.SetActive(false);
         }
 
+        else if (SceneChange.SelectedExperiment == 3)
+        {
+            SpaceStart.SetActive(true);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
+            CO2o2GameStart.SetActive(false);
+        }
+        else if (SceneChange.SelectedExperiment == 4)
+        {
+            CO2o2GameStart.SetActive(true);
+            SpaceStart.SetActive(false);
+            Experiment1.SetActive(false);
+            Experiment2.SetActive(false);
+        }
     }
 
 }

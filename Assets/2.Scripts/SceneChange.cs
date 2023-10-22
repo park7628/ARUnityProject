@@ -24,10 +24,17 @@ public class SceneChange : MonoBehaviour
     public void Ex3()
     {
         SceneManager.LoadScene("Space2");
+        SelectedExperiment = 3;
 
     }
     public void ExUiToUi()
     {
         SceneManager.LoadScene("UIscene");
+    }
+
+    public void Co2O2GamePlay()
+    {
+        SceneManager.LoadScene("ExperimentCO2Game");
+        SelectedExperiment = 4;
     }
 }

@@ -14,6 +14,7 @@ public class Scene9Ctrl : MonoBehaviour
 
     private static GameObject watchglass;
     private static GameObject incense;
+    private bool isopen = false; //watchglass 열렸는지 확인
 
     public Animator animator1;
     public Animator animator2;
@@ -57,7 +58,7 @@ public class Scene9Ctrl : MonoBehaviour
             {
                 watchglass.GetComponent<ObjectFlickering>().enabled = false;
             }
-
+            isopen = true;
             button.onClick.AddListener(PlayAnimation11);
             button.onClick.RemoveListener(PlayAnimation10);
         }
@@ -129,7 +130,7 @@ public class Scene9Ctrl : MonoBehaviour
                             PlayAnimation10();
                         }
                     }
-                    else if (hit.collider.gameObject.tag == "incense")
+                    else if (hit.collider.gameObject.tag == "incense" && isopen == true)
                     {
                         if (watchglass != null && incense != null)
                         {

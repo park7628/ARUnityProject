@@ -56,7 +56,7 @@ public class Scene0Ctrl1 : MonoBehaviour
     {
 
 
-        button.interactable = false;
+        //button.interactable = false;
             if (flask != null)
             {
                 animator.SetTrigger(animationTrigger);

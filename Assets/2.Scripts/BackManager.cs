@@ -19,8 +19,16 @@ public class BackManager : MonoBehaviour
         //BackManagerUI backManagerUI = backmanager.GetComponent<BackManagerUI>();
         //backManagerUI.isback = true;
         isback = true;
-        SceneManager.LoadScene("UIscene");
+        SceneManager.LoadScene("mainUIscene");
         DontDestroyOnLoad(backmanager);
         //æ¿¿Ãµø
     }
+
+    public void RelodO2Co2GameScene()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(5);
+    }
+
+
 }
