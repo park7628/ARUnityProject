@@ -151,8 +151,8 @@ public class Co2O2GameManager : MonoBehaviour
             //Debug.Log(range);
             needFire.transform.position = needFirePosition;
             GameObject needFirepos = Instantiate(needFire, needFirePosition, Quaternion.identity); // 버튼 누를 때 마다 Clone 생성은 잘 되는데 왜 불은 안보일까??..ㅎㅎ 이거 해결해야됨 -> canvas안에 안있어서 안보였던거임
-            //needFirepos.transform.SetParent(needFireParent.transform); // 이거는 왜 이렇게 바꼈던거야?..
-            needFirepos.transform.SetParent(canvas.transform);
+            needFirepos.transform.SetParent(needFireParent.transform); // 이거는 왜 이렇게 바꼈던거야?..
+            //needFirepos.transform.SetParent(canvas.transform);
 
             if(playTime < 30)
             {
@@ -222,8 +222,8 @@ public class Co2O2GameManager : MonoBehaviour
             //Debug.Log(range);
             fire.transform.position = firePosition;
             GameObject firepos = Instantiate(fire, firePosition, Quaternion.identity); // 버튼 누를 때 마다 Clone 생성은 잘 되는데 왜 불은 안보일까??..ㅎㅎ 이거 해결해야됨 -> canvas안에 안있어서 안보였던거임
-            //firepos.transform.SetParent(fireParent.transform);// -> 이거는 왜 이렇게 바꼈던거야?..
-            firepos.transform.SetParent(canvas.transform);
+            firepos.transform.SetParent(fireParent.transform);// -> 이거는 왜 이렇게 바꼈던거야?..
+            //firepos.transform.SetParent(canvas.transform);
 
 
             if (playTime < 30)
@@ -301,8 +301,8 @@ public class Co2O2GameManager : MonoBehaviour
             // 씬 바꾸는 방식으로 해야하나...?
             game = 0;
             GameOver.SetActive(true);
-            //needFireParent.SetActive(false);
-            //fireParent.SetActive(false);
+            needFireParent.SetActive(false);
+            fireParent.SetActive(false);
             ScoreResult.text = "Score: " + point.ToString();
 
             //LifeUp(); // 테스트 해야되서 비활성화 시킴
@@ -337,8 +337,8 @@ public class Co2O2GameManager : MonoBehaviour
     {
         ArrayManager.life = 3;
         LifeUp();
-        //needFireParent.SetActive(true);
-        //fireParent.SetActive(true);
+        needFireParent.SetActive(true);
+        fireParent.SetActive(true);
         GameOver.SetActive(false);
 
         fireTime = 5f;
