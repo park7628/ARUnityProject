@@ -33,7 +33,7 @@ public class SlotManager1 : MonoBehaviour, IDropHandler
 
         if (a1 == 1)
         {
-            Debug.Log("¡¢√À");
+            //Debug.Log("¡¢√À");
             _icon.sprite = after_img1;
             ArrayManager.GetComponent<ArrayManager>().CArray();
             //_icon.sprite = item.sprite;

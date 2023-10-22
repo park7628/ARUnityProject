@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
+//using System.Diagnostics;
 
 public class Co2O2GameManager : MonoBehaviour
 {
@@ -18,11 +19,12 @@ public class Co2O2GameManager : MonoBehaviour
     public GameObject fire;
     public GameObject needFire;
     public GameObject canvas;
-    public GameObject FireParent;
+    public GameObject fireParent;
+    public GameObject needFireParent;
 
     public GameObject firepos1;
-    public static int checkFireRange;
-    public static int checkNeedFireRange;
+    public static List<int> checkFireRange = new List<int>{ };
+    public static List <int> checkNeedFireRange = new List<int> { };
     public static List<int> missFire = new List<int> { }; // 불꽃을 놓쳤을 때 점수를 깍기 위한
     public static List<int> missNeedFire = new List<int> { };
 
@@ -52,17 +54,20 @@ public class Co2O2GameManager : MonoBehaviour
         for( int i = 0; i < firePos.Count; i++ )
         {
             missFire.Add(0);
+            //checkFireRange.Add(0);
         }
         for (int i = 0; i < needFirePos.Count; i++)
         {
             missNeedFire.Add(0);
+            //checkNeedFireRange.Add(0);
         }
-        Debug.Log(missFire.Count);
-        Debug.Log(missNeedFire.Count);
+        //Debug.Log(missFire.Count);
+        //Debug.Log(missNeedFire.Count);
         game = 1;
         
         fireTime = 5f;
         needFireTime = 6f;
+        playTime = 0;
     }
 
     // Update is called once per frame
@@ -90,8 +95,38 @@ public class Co2O2GameManager : MonoBehaviour
                     needFireTime = 0;
                 }
             }
+            else if (playTime >= 30 && playTime < 60)
+            {
+                if (fireTime > 6)
+                {
+                    createFire();
 
-            
+                    fireTime = 0;
+                }
+
+                if (needFireTime > 5)
+                {
+                    createNeedFire();
+                    needFireTime = 0;
+                }
+            }
+            else if(playTime >= 60)
+            {
+                if (fireTime > 4)
+                {
+                    createFire();
+
+                    fireTime = 0;
+                }
+
+                if (needFireTime > 3)
+                {
+                    createNeedFire();
+                    needFireTime = 0;
+                }
+            }
+
+
         }
         else if (game == 0) { 
         
@@ -116,10 +151,21 @@ public class Co2O2GameManager : MonoBehaviour
             //Debug.Log(range);
             needFire.transform.position = needFirePosition;
             GameObject needFirepos = Instantiate(needFire, needFirePosition, Quaternion.identity); // 버튼 누를 때 마다 Clone 생성은 잘 되는데 왜 불은 안보일까??..ㅎㅎ 이거 해결해야됨 -> canvas안에 안있어서 안보였던거임
-            //firepos.transform.SetParent(FireParent.transform); -> 이거는 왜 이렇게 바꼈던거야?..
+            //needFirepos.transform.SetParent(needFireParent.transform); // 이거는 왜 이렇게 바꼈던거야?..
             needFirepos.transform.SetParent(canvas.transform);
 
-            StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 5.0f, range));
+            if(playTime < 30)
+            {
+                StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 7.0f, range));
+            }
+            else if(playTime < 60 && playTime >= 30)
+            {
+                StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range));
+            }
+            else if (playTime >= 60)
+            {
+                StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range));
+            }
 
             return; // 함수 종료
         }
@@ -134,12 +180,19 @@ public class Co2O2GameManager : MonoBehaviour
 
     private IEnumerator DestroyNeedFirePosAfterDelay(GameObject needfirepos, float delay, int range)
     {
-        checkNeedFireRange = range; // 스테틱 변수에 range값 할당
+        checkNeedFireRange.Add(range); // 스테틱 변수에 range값
+        
+        for (int i =0; i < checkNeedFireRange.Count; i++)
+        {
+            Debug.Log("checkNeedFIreRange :" + checkNeedFireRange[i]);
+        }
+        
         yield return new WaitForSeconds(delay);
+        //Debug.Log("checkNeedFIreRange :" + checkNeedFireRange);
 
         if (missNeedFire[range] == 1)
         {
-            Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+            //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
             //ArrayManager.life -= 1;
             LifeDown();
         }
@@ -169,10 +222,23 @@ public class Co2O2GameManager : MonoBehaviour
             //Debug.Log(range);
             fire.transform.position = firePosition;
             GameObject firepos = Instantiate(fire, firePosition, Quaternion.identity); // 버튼 누를 때 마다 Clone 생성은 잘 되는데 왜 불은 안보일까??..ㅎㅎ 이거 해결해야됨 -> canvas안에 안있어서 안보였던거임
-            //firepos.transform.SetParent(FireParent.transform); -> 이거는 왜 이렇게 바꼈던거야?..
+            //firepos.transform.SetParent(fireParent.transform);// -> 이거는 왜 이렇게 바꼈던거야?..
             firepos.transform.SetParent(canvas.transform);
 
-            StartCoroutine(DestroyFirePosAfterDelay(firepos, 6.0f, range));
+
+            if (playTime < 30)
+            {
+                StartCoroutine(DestroyFirePosAfterDelay(firepos, 8.0f, range));
+            }
+            else if (playTime < 60 && playTime >= 30)
+            {
+                StartCoroutine(DestroyFirePosAfterDelay(firepos, 7.0f, range));
+            }
+            else if (playTime >= 60)
+            {
+                StartCoroutine(DestroyFirePosAfterDelay(firepos, 6.0f, range));
+            }
+
 
             return; // 함수 종료
         }
@@ -187,12 +253,14 @@ public class Co2O2GameManager : MonoBehaviour
 
     private IEnumerator DestroyFirePosAfterDelay(GameObject firepos, float delay, int range)
     {
-        checkFireRange = range; // 스테틱 변수에 range값 할당
+        checkFireRange.Add(range); // 스테틱 변수에 range값 할당
+        //Debug.Log("checkFIreRange :" + checkFireRange);
         yield return new WaitForSeconds(delay);
+        //Debug.Log("checkFIreRange :" + checkFireRange);
 
         if (missFire[range] == 1)
         {
-            Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+            //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
             //ArrayManager.life -= 1;
             LifeDown();
         }
@@ -233,6 +301,8 @@ public class Co2O2GameManager : MonoBehaviour
             // 씬 바꾸는 방식으로 해야하나...?
             game = 0;
             GameOver.SetActive(true);
+            //needFireParent.SetActive(false);
+            //fireParent.SetActive(false);
             ScoreResult.text = "Score: " + point.ToString();
 
             //LifeUp(); // 테스트 해야되서 비활성화 시킴
@@ -267,8 +337,14 @@ public class Co2O2GameManager : MonoBehaviour
     {
         ArrayManager.life = 3;
         LifeUp();
+        //needFireParent.SetActive(true);
+        //fireParent.SetActive(true);
         GameOver.SetActive(false);
-        
+
+        fireTime = 5f;
+        needFireTime = 6f;
+        playTime = 0;
+
         game = 1;
         point = 0;
         SetText();
