@@ -33795,6 +33795,7 @@ MonoBehaviour:
   O2Start: {fileID: 8849586352064188392, guid: fde499313885bdc43ad0b2bf887b0f21, type: 3}
   CO2Start: {fileID: 700482351159214113, guid: cd0e2d1a7ba02b74f9d841c5090e8f17, type: 3}
   SpaceStart: {fileID: 0}
+  CO2o2GameStart: {fileID: 2348697673090069100, guid: 6ce41010a7192294b9fd0699cad5c4d4, type: 3}
 --- !u!1001 &1753230233
 PrefabInstance:
   m_ObjectHideFlags: 0
