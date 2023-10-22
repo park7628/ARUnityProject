@@ -31,4 +31,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("UIscene");
     }
+
+    public void Co2O2GamePlay()
+    {
+        SceneManager.LoadScene("ExperimentCO2Game");
+    }
 }

@@ -18,6 +18,8 @@ public class GlobalBgm : MonoBehaviour
     void Start()
     {
         button.onClick.AddListener(() => BgmOnOff());
+        soundOnIcom.enabled = true;
+        soundOffIcom.enabled = false;
 
         //if (!PlayerPrefs.HasKey("isOn"))
         //{

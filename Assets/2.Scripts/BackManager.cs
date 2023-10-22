@@ -23,4 +23,12 @@ public class BackManager : MonoBehaviour
         DontDestroyOnLoad(backmanager);
         //æ¿¿Ãµø
     }
+
+    public void RelodO2Co2GameScene()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(5);
+    }
+
+
 }

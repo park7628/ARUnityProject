@@ -195,6 +195,12 @@ public class MainUI : MonoBehaviour
         O2CO2GameStart.SetActive(true);
     }
 
+    public void O2CO2GameExitActive()
+    {
+        Game.SetActive(true);
+        O2CO2GameStart.SetActive(false);
+    }
+
     public void RotatingStartActive()
     {
         Experiment3.SetActive(false);
