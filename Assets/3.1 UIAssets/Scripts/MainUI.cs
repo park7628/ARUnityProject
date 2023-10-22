@@ -46,6 +46,7 @@ public class MainUI : MonoBehaviour
         //다 끄고 실험1 화면만 켜기
         Experiment1.SetActive(true);
         Experiment2.SetActive(false);
+        Experiment3.SetActive(false);
         GroupS.SetActive(false);
         GroupT1.SetActive(false);
         GroupT2.SetActive(false);
