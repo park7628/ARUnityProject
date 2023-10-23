@@ -33,7 +33,7 @@ public class SpaceGuideManager : MonoBehaviour
     public GameObject text7;
     public GameObject text8;
     public GameObject text9;
-    public GameObject Robj, Cobj, Qobj, Sobj, Crobj;
+    public GameObject Robj, Cobj, Qobj, Sobj, Crobj, Hobj;
     public GameObject Info1, Info2;
     public Button SBT, RBT, CBT, CrBT;
     private int i = 0;
@@ -67,6 +67,14 @@ public class SpaceGuideManager : MonoBehaviour
         CrBT.onClick.AddListener(Gtext2);
         Robj.SetActive(false);
         Crobj.SetActive(false);
+    }
+
+    public void ShowHelpButton(Toggle toggletest)
+    {
+        if (toggletest.isOn)
+            Hobj.SetActive(true);
+        else 
+            Hobj.SetActive(false);
     }
 
     public void Gtext1() //Gtext1 이 화면에 뜨는 가이드를 잘 읽고 실험을 진행하세요. 우측 시작 버튼을 눌러 실험을 시작하세요. 트리거 : 시작버튼 누르기

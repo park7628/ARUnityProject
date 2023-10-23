@@ -6,8 +6,8 @@ public class ToastGame : MonoBehaviour
 {
     public void Toast()
     {
-        ToastMsg.Instrance.showMessage("게임 만드는 중!", 1.0f);
-        ImageToast.Instrance.showImage(1.0f);
+        ToastMsg2.Instrance2.showMessage2("게임 만드는 중!", 1.0f);
+        ImageToast2.Instrance2.showImage2(1.0f);
     }
 }
 

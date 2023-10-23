@@ -27,6 +27,7 @@ public class Co2O2GameManager : MonoBehaviour
     public static List <int> checkNeedFireRange = new List<int> { };
     public static List<int> missFire = new List<int> { }; // 불꽃을 놓쳤을 때 점수를 깍기 위한
     public static List<int> missNeedFire = new List<int> { };
+    GameObject RemoveSlotMgr;
 
 
     
@@ -38,6 +39,8 @@ public class Co2O2GameManager : MonoBehaviour
     public Vector3 needFirePosition;
     public int score;
     public int game; // 게임 실행 변수
+    static public bool pauseIs; // 일시정지 변수
+    static public int pauseCheck;
     public List<GameObject> firePos = new List<GameObject> { }; //불꽃 생성 위치
     public List<GameObject> needFirePos = new List<GameObject> { }; //후라이팬 생성 위치
 
@@ -48,11 +51,50 @@ public class Co2O2GameManager : MonoBehaviour
     public GameObject GameOver;
     int point = 0;
 
+    // 코루틴 변수
+    IEnumerator fireCoroutine1;
+    IEnumerator fireCoroutine2;
+    IEnumerator fireCoroutine3;
+    IEnumerator fireCoroutine4;
+    IEnumerator fireCoroutine5;
+    IEnumerator fireCoroutine6;
+    IEnumerator fireCoroutine7;
+
+    IEnumerator needFireCoroutine1;
+    IEnumerator needFireCoroutine2;
+    IEnumerator needFireCoroutine3;
+    IEnumerator needFireCoroutine4;
+    IEnumerator needFireCoroutine5;
+    IEnumerator needFireCoroutine6;
+
+    List<IEnumerator> fireEnumerators = new List<IEnumerator>();
+    List<IEnumerator> needFireEnumerators = new List<IEnumerator>();
     // Start is called before the first frame update
     void Start()
     {
-        for( int i = 0; i < firePos.Count; i++ )
+        RemoveSlotMgr = GameObject.Find("RemoveSlotMgr");
+
+        fireEnumerators.Add(fireCoroutine1);
+        fireEnumerators.Add(fireCoroutine2);
+        fireEnumerators.Add(fireCoroutine3);
+        fireEnumerators.Add(fireCoroutine4);
+        fireEnumerators.Add(fireCoroutine5);
+        fireEnumerators.Add(fireCoroutine6);
+        fireEnumerators.Add(fireCoroutine7);
+
+        needFireEnumerators.Add(needFireCoroutine1);
+        needFireEnumerators.Add(needFireCoroutine2);
+        needFireEnumerators.Add(needFireCoroutine3);
+        needFireEnumerators.Add(needFireCoroutine4);
+        needFireEnumerators.Add(needFireCoroutine5);
+        needFireEnumerators.Add(needFireCoroutine6);
+
+        pauseIs = false;
+        pauseCheck = 1;
+
+        for ( int i = 0; i < firePos.Count; i++ )
         {
+            
             missFire.Add(0);
             //checkFireRange.Add(0);
         }
@@ -74,63 +116,110 @@ public class Co2O2GameManager : MonoBehaviour
     void Update()
     {
 
-        playTime += Time.deltaTime;
-        fireTime += Time.deltaTime;
-        needFireTime += Time.deltaTime;
 
-        if (game == 1)
+        if (pauseIs == false)
         {
-            if ( playTime < 30 )
+            if(pauseCheck == 0)
             {
-                if (fireTime > 8)
+                for (int i = 0; i < needFireEnumerators.Count; i++)
                 {
-                    createFire();
-                    
-                    fireTime = 0;
+                    if (needFireEnumerators[i] != null)
+                    {
+                        Debug.Log(needFireEnumerators[i].ToString());
+                        StartCoroutine(needFireEnumerators[i]);
+                    }
                 }
 
-                if (needFireTime > 7)
+                for (int i = 0; i < fireEnumerators.Count; i++)
                 {
-                    createNeedFire();
-                    needFireTime = 0;
+                    if (fireEnumerators[i] != null)
+                    {
+                        StartCoroutine(fireEnumerators[i]);
+                    }
                 }
             }
-            else if (playTime >= 30 && playTime < 60)
+            pauseCheck = 1;
+            
+            playTime += Time.deltaTime;
+            fireTime += Time.deltaTime;
+            needFireTime += Time.deltaTime;
+
+            if (game == 1)
             {
-                if (fireTime > 6)
+                if (playTime < 30)
                 {
-                    createFire();
+                    if (fireTime > 8)
+                    {
+                        createFire();
 
-                    fireTime = 0;
+                        fireTime = 0;
+                    }
+
+                    if (needFireTime > 7)
+                    {
+                        createNeedFire();
+                        needFireTime = 0;
+                    }
+                }
+                else if (playTime >= 30 && playTime < 60)
+                {
+                    if (fireTime > 6)
+                    {
+                        createFire();
+
+                        fireTime = 0;
+                    }
+
+                    if (needFireTime > 5)
+                    {
+                        createNeedFire();
+                        needFireTime = 0;
+                    }
+                }
+                else if (playTime >= 60)
+                {
+                    if (fireTime > 4)
+                    {
+                        createFire();
+
+                        fireTime = 0;
+                    }
+
+                    if (needFireTime > 3)
+                    {
+                        createNeedFire();
+                        needFireTime = 0;
+                    }
                 }
 
-                if (needFireTime > 5)
-                {
-                    createNeedFire();
-                    needFireTime = 0;
-                }
+
             }
-            else if(playTime >= 60)
+            else if (game == 0)
             {
-                if (fireTime > 4)
-                {
-                    createFire();
 
-                    fireTime = 0;
-                }
-
-                if (needFireTime > 3)
-                {
-                    createNeedFire();
-                    needFireTime = 0;
-                }
             }
-
-
         }
-        else if (game == 0) { 
+
+        else if(pauseIs == true)
+        {
+            pauseCheck = 0;
+            for (int i = 0; i < needFireEnumerators.Count; i++)
+            {
+                if (needFireEnumerators[i] != null)
+                {
+                    StopCoroutine(needFireEnumerators[i]);
+                }
+            }
+
+            for (int i = 0; i < fireEnumerators.Count; i++)
+            {
+                if (fireEnumerators[i] != null)
+                {
+                    StopCoroutine(fireEnumerators[i]);
+                }
+            }
+        }
         
-        }
         
         
     }
@@ -154,17 +243,25 @@ public class Co2O2GameManager : MonoBehaviour
             needFirepos.transform.SetParent(needFireParent.transform); // 이거는 왜 이렇게 바꼈던거야?..
             //needFirepos.transform.SetParent(canvas.transform);
 
+            
+
             if(playTime < 30)
             {
-                StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 7.0f, range));
+                needFireEnumerators[range] = DestroyNeedFirePosAfterDelay(needFirepos, 7.0f, range);
+                StartCoroutine(needFireEnumerators[range]);
+                //StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 7.0f, range));
             }
             else if(playTime < 60 && playTime >= 30)
             {
-                StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range));
+                needFireEnumerators[range] = DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range);
+                //StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range));
+                StartCoroutine(needFireEnumerators[range]);
             }
             else if (playTime >= 60)
             {
-                StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range));
+                needFireEnumerators[range] = DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range);
+                //StartCoroutine(DestroyNeedFirePosAfterDelay(needFirepos, 6.0f, range));
+                StartCoroutine(needFireEnumerators[range]);
             }
 
             return; // 함수 종료
@@ -182,6 +279,7 @@ public class Co2O2GameManager : MonoBehaviour
     {
         checkNeedFireRange.Add(range); // 스테틱 변수에 range값
         
+
         for (int i =0; i < checkNeedFireRange.Count; i++)
         {
             Debug.Log("checkNeedFIreRange :" + checkNeedFireRange[i]);
@@ -198,9 +296,12 @@ public class Co2O2GameManager : MonoBehaviour
         }
         // 지연 후에 firepos를 제거
         Destroy(needfirepos);
+        RemoveSlotMgr.GetComponent<SlotManager3>().RemoveSlot();
+        RemoveSlotMgr.GetComponent<SlotManager4>().RemoveSlot();
 
         // firePos[range]를 비활성화
         needFirePos[range].SetActive(false);
+        needFireEnumerators[range] = null;
         //Debug.Log("firePos[" + range + "] " + "비활성화 완료");
     }
 
@@ -226,17 +327,25 @@ public class Co2O2GameManager : MonoBehaviour
             //firepos.transform.SetParent(canvas.transform);
 
 
+            
+
             if (playTime < 30)
             {
-                StartCoroutine(DestroyFirePosAfterDelay(firepos, 8.0f, range));
+                fireEnumerators[range] = DestroyFirePosAfterDelay(firepos, 8.0f, range);
+                StartCoroutine(fireEnumerators[range]);
+                //StartCoroutine(DestroyFirePosAfterDelay(firepos, 8.0f, range));
             }
             else if (playTime < 60 && playTime >= 30)
             {
-                StartCoroutine(DestroyFirePosAfterDelay(firepos, 7.0f, range));
+                fireEnumerators[range] = DestroyFirePosAfterDelay(firepos, 7.0f, range);
+                StartCoroutine(fireEnumerators[range]);
+                //StartCoroutine(DestroyFirePosAfterDelay(firepos, 7.0f, range));
             }
             else if (playTime >= 60)
             {
-                StartCoroutine(DestroyFirePosAfterDelay(firepos, 6.0f, range));
+                fireEnumerators[range] = DestroyFirePosAfterDelay(firepos, 6.0f, range);
+                StartCoroutine(fireEnumerators[range]);
+                //StartCoroutine(DestroyFirePosAfterDelay(firepos, 6.0f, range));
             }
 
 
@@ -255,6 +364,7 @@ public class Co2O2GameManager : MonoBehaviour
     {
         checkFireRange.Add(range); // 스테틱 변수에 range값 할당
         //Debug.Log("checkFIreRange :" + checkFireRange);
+        
         yield return new WaitForSeconds(delay);
         //Debug.Log("checkFIreRange :" + checkFireRange);
 
@@ -266,9 +376,12 @@ public class Co2O2GameManager : MonoBehaviour
         }
         // 지연 후에 firepos를 제거
         Destroy(firepos);
+        RemoveSlotMgr.GetComponent<SlotManager1>().RemoveSlot();
+        RemoveSlotMgr.GetComponent<SlotManager2>().RemoveSlot();
 
         // firePos[range]를 비활성화
         firePos[range].SetActive(false);
+        fireEnumerators[range] = null;
         //Debug.Log("firePos[" + range + "] " + "비활성화 완료");
     }
 
@@ -300,6 +413,8 @@ public class Co2O2GameManager : MonoBehaviour
             // 게임오버 후 클론 생성 멈춰야함!!
             // 씬 바꾸는 방식으로 해야하나...?
             game = 0;
+            StopAllCoroutines(); // 모든 코루틴 중지 만약에 안되면 부모를 비활성화 시키기
+            
             GameOver.SetActive(true);
             needFireParent.SetActive(false);
             fireParent.SetActive(false);
@@ -331,12 +446,23 @@ public class Co2O2GameManager : MonoBehaviour
         UIScore.text = point.ToString();
     }
 
+    public void pauseButton()
+    {
+        pauseIs = true;
+    }
+
+    public void replayButton()
+    {
+        pauseIs = false;
+    }
 
     // retry 버튼 클릭 시
     public void RetryOnClick()
     {
         ArrayManager.life = 3;
         LifeUp();
+
+
         needFireParent.SetActive(true);
         fireParent.SetActive(true);
         GameOver.SetActive(false);

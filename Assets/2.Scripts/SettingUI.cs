@@ -26,6 +26,8 @@ public class SettingUI : MonoBehaviour
         gameObject.SetActive(false);
         animator.ResetTrigger("close");
     }
+
+    
 }
 
 
