@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 //using System.Diagnostics;
 
 public class Co2O2GameManager : MonoBehaviour
@@ -70,6 +71,30 @@ public class Co2O2GameManager : MonoBehaviour
     List<IEnumerator> fireEnumerators = new List<IEnumerator>();
     List<IEnumerator> needFireEnumerators = new List<IEnumerator>();
     // Start is called before the first frame update
+
+    void OnEnable()
+    {
+        // 씬 매니저의 sceneLoaded에 체인을 건다.
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) //체인을 걸어서 매 씬마다 호출되는 함수
+    {
+
+        ArrayManager.life = 3;
+        pauseIs = false;
+        pauseCheck = 1;
+        game = 1;
+        fireTime = 5f;
+        needFireTime = 6f;
+        playTime = 0;
+    }
+
+
+
     void Start()
     {
         RemoveSlotMgr = GameObject.Find("RemoveSlotMgr");
