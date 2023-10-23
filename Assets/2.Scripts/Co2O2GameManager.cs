@@ -41,6 +41,8 @@ public class Co2O2GameManager : MonoBehaviour
     public int score;
     public int game; // 게임 실행 변수
     static public bool pauseIs; // 일시정지 변수
+    public bool IsPausedFire;
+    public bool IsPausedNeedFire;
     static public int pauseCheck;
     public List<GameObject> firePos = new List<GameObject> { }; //불꽃 생성 위치
     public List<GameObject> needFirePos = new List<GameObject> { }; //후라이팬 생성 위치
@@ -252,7 +254,7 @@ public class Co2O2GameManager : MonoBehaviour
     public void createNeedFire()
     {
         //int maxAttempts = 10; // 최대 시도 횟수 설정 -> 스텍 오브플로우 발생시 활성화시키고 else문 주석처리
-
+        IsPausedNeedFire = false;
         //for ( int i = 0; i<maxAttempts; i++ ) { 
         int range = Random.Range(0, needFirePos.Count);
         if (needFirePos[range].activeSelf == false)
@@ -313,20 +315,53 @@ public class Co2O2GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         //Debug.Log("checkNeedFIreRange :" + checkNeedFireRange);
 
-        if (missNeedFire[range] == 1)
+        while (true)
         {
-            //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
-            //ArrayManager.life -= 1;
-            LifeDown();
-        }
-        // 지연 후에 firepos를 제거
-        Destroy(needfirepos);
-        RemoveSlotMgr.GetComponent<SlotManager3>().RemoveSlot();
-        RemoveSlotMgr.GetComponent<SlotManager4>().RemoveSlot();
+            yield return new WaitForSeconds(0.5f);
+            if (IsPausedNeedFire == false)
+            {
+                Destroy(needfirepos);
+                if (missNeedFire[range] == 1)
+                {
+                    //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+                    //ArrayManager.life -= 1;
+                    LifeDown();
+                }
+                RemoveSlotMgr.GetComponent<SlotManager3>().RemoveSlot();
+                RemoveSlotMgr.GetComponent<SlotManager4>().RemoveSlot();
 
-        // firePos[range]를 비활성화
-        needFirePos[range].SetActive(false);
-        needFireEnumerators[range] = null;
+                // firePos[range]를 비활성화
+                needFirePos[range].SetActive(false);
+                needFireEnumerators[range] = null;
+
+                break;
+            }
+            else if (IsPausedNeedFire == true)
+            {
+                Debug.Log("일시중지 적용");
+                yield return new WaitForSeconds(4);
+
+                Destroy(needfirepos);
+                if (missNeedFire[range] == 1)
+                {
+                    //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+                    //ArrayManager.life -= 1;
+                    LifeDown();
+                }
+                RemoveSlotMgr.GetComponent<SlotManager3>().RemoveSlot();
+                RemoveSlotMgr.GetComponent<SlotManager4>().RemoveSlot();
+
+                // firePos[range]를 비활성화
+                needFirePos[range].SetActive(false);
+                needFireEnumerators[range] = null;
+                IsPausedNeedFire = false;
+
+                break;
+            }
+        }
+        
+        // 지연 후에 firepos를 제거
+       
         //Debug.Log("firePos[" + range + "] " + "비활성화 완료");
     }
 
@@ -335,7 +370,7 @@ public class Co2O2GameManager : MonoBehaviour
     public void createFire()
     {
         //int maxAttempts = 10; // 최대 시도 횟수 설정 -> 스텍 오브플로우 발생시 활성화시키고 else문 주석처리
-
+        IsPausedFire = false;
         //for ( int i = 0; i<maxAttempts; i++ ) { 
         int range = Random.Range(0, firePos.Count);
         if (firePos[range].activeSelf == false)
@@ -393,20 +428,52 @@ public class Co2O2GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         //Debug.Log("checkFIreRange :" + checkFireRange);
 
-        if (missFire[range] == 1)
-        {
-            //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
-            //ArrayManager.life -= 1;
-            LifeDown();
-        }
-        // 지연 후에 firepos를 제거
-        Destroy(firepos);
-        RemoveSlotMgr.GetComponent<SlotManager1>().RemoveSlot();
-        RemoveSlotMgr.GetComponent<SlotManager2>().RemoveSlot();
 
-        // firePos[range]를 비활성화
-        firePos[range].SetActive(false);
-        fireEnumerators[range] = null;
+        // 지연 후에 firepos를 제거
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            if (IsPausedFire == false)
+            {
+                Destroy(firepos);
+                if (missFire[range] == 1)
+                {
+                    //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+                    //ArrayManager.life -= 1;
+                    LifeDown();
+                }
+                RemoveSlotMgr.GetComponent<SlotManager1>().RemoveSlot();
+                RemoveSlotMgr.GetComponent<SlotManager2>().RemoveSlot();
+
+                // firePos[range]를 비활성화
+                firePos[range].SetActive(false);
+                fireEnumerators[range] = null;
+
+                break;
+            }
+            else if(IsPausedFire == true)
+            {
+                yield return new WaitForSeconds(4);
+
+                Destroy(firepos);
+                if (missFire[range] == 1)
+                {
+                    //Debug.Log("miss 변수가 1임으로 라이프를 깍습니다.");
+                    //ArrayManager.life -= 1;
+                    LifeDown();
+                }
+                RemoveSlotMgr.GetComponent<SlotManager1>().RemoveSlot();
+                RemoveSlotMgr.GetComponent<SlotManager2>().RemoveSlot();
+
+                // firePos[range]를 비활성화
+                firePos[range].SetActive(false);
+                fireEnumerators[range] = null;
+                IsPausedFire = false;
+
+                break;
+            }
+        }
+        
         //Debug.Log("firePos[" + range + "] " + "비활성화 완료");
     }
 
@@ -474,6 +541,8 @@ public class Co2O2GameManager : MonoBehaviour
     public void pauseButton()
     {
         pauseIs = true;
+        IsPausedNeedFire = true;
+        IsPausedFire = true;
     }
 
     public void replayButton()
